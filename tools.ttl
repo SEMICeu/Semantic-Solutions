@@ -1,0 +1,2800 @@
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <https://spdx.org/licenses/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix lic: <http://publications.europa.eu/resource/authority/licence/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix source: <https://example.com/SourceCode/> .
+@prefix skills: <https://example.com/skills/> .
+@prefix sd: <https://w3id.org/okn/o/sd#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix function: <https://example.com/Functionality/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix comp: <https://example.com/ArchComp/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix xls2rdf: <https://xls2rdf.sparna.fr/vocabulary#> .
+@prefix ldso: <https://data.europa.eu/lds/ontology#> .
+@prefix DatasetSpecification: <https://example.com/DataSpec/> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dbp: <https://dbpedia.org/property/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix esco: <http://data.europa.eu/esco/model#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+
+dbr:Graphical_user_interface a skos:Concept;
+  dct:identifier "Graphical_user_interface";
+  skos:prefLabel "Graphical user interface"@en;
+  skos:inScheme <https://dbpedia.org/resource/>;
+  skos:topConceptOf <https://dbpedia.org/resource/> .
+
+dbr:Command-line_interface a skos:Concept;
+  dct:identifier "Command-line_interface";
+  skos:prefLabel "Command-line interface"@en;
+  skos:inScheme <https://dbpedia.org/resource/>;
+  skos:topConceptOf <https://dbpedia.org/resource/> .
+
+dbr:Web_API a skos:Concept;
+  dct:identifier "Web_API";
+  skos:prefLabel "Web API"@en;
+  skos:inScheme <https://dbpedia.org/resource/>;
+  skos:topConceptOf <https://dbpedia.org/resource/> .
+
+<https://dbpedia.org/resource/> a skos:ConceptScheme;
+  skos:hasTopConcept dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API .
+
+function:1 a skos:Concept;
+  dct:identifier "1";
+  skos:prefLabel "Form based edit"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:2 a skos:Concept;
+  dct:identifier "2";
+  skos:prefLabel "Harvest"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:3 a skos:Concept;
+  dct:identifier "3";
+  skos:prefLabel "Ontology/SKOS Alignment generation"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:4 a skos:Concept;
+  dct:identifier "4";
+  skos:prefLabel "Ontology/SKOS Alignment viewer"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:5 a skos:Concept;
+  dct:identifier "5";
+  skos:prefLabel "Publishing"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:6 a skos:Concept;
+  dct:identifier "6";
+  skos:prefLabel "Query Building"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:7 a skos:Concept;
+  dct:identifier "7";
+  skos:prefLabel "RDF validation"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:8 a skos:Concept;
+  dct:identifier "8";
+  skos:prefLabel "Serialisation"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:9 a skos:Concept;
+  dct:identifier "9";
+  skos:prefLabel "SKOS editing"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:10 a skos:Concept;
+  dct:identifier "10";
+  skos:prefLabel "SKOS validation"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:11 a skos:Concept;
+  dct:identifier "11";
+  skos:prefLabel "Transform from RDF"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:12 a skos:Concept;
+  dct:identifier "12";
+  skos:prefLabel "Transform to RDF"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:13 a skos:Concept;
+  dct:identifier "13";
+  skos:prefLabel "Visualisation"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+function:14 a skos:Concept;
+  dct:identifier "14";
+  skos:prefLabel "Ontology/SKOS Alignment editing"@en;
+  skos:inScheme <https://example.com/Functionality/>;
+  skos:topConceptOf <https://example.com/Functionality/> .
+
+<https://example.com/Functionality/> a skos:ConceptScheme;
+  skos:hasTopConcept function:1, function:2, function:3, function:4, function:5, function:6,
+    function:7, function:8, function:9, function:10, function:11, function:12, function:13,
+    function:14 .
+
+lic:MIT a skos:Concept;
+  dct:identifier "MIT";
+  skos:prefLabel "The MIT License"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:APACHE_2_0 a skos:Concept;
+  dct:identifier "APACHE_2_0";
+  skos:prefLabel "Apache License, Version 2.0"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:BSD_2_CLAUSE a skos:Concept;
+  dct:identifier "BSD_2_CLAUSE";
+  skos:prefLabel "2-Clause BSD License"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:BSD_3_CLAUSE a skos:Concept;
+  dct:identifier "BSD_3_CLAUSE";
+  skos:prefLabel "3-Clause BSD License"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:CC_BYNC_3_0 a skos:Concept;
+  dct:identifier "CC_BYNC_3_0";
+  skos:prefLabel "Creative Commons Attribution–NonCommercial 3.0 Unported"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:CC_BYSA_4_0 a skos:Concept;
+  dct:identifier "CC_BYSA_4_0";
+  skos:prefLabel "Creative Commons Attribution–ShareAlike 4.0 International"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+spdx:CECILL-2.0 a skos:Concept;
+  dct:identifier "CECILL-2.0";
+  skos:prefLabel "CeCILL Free Software License Agreement v2.0"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+spdx:CECILL-C a skos:Concept;
+  dct:identifier "CECILL-C";
+  skos:prefLabel "CeCILL-C Free Software License Agreement"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:EUPL_1_2 a skos:Concept;
+  dct:identifier "EUPL_1_2";
+  skos:prefLabel "European Union Public Licence v. 1.2"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:AGPL_3_0 a skos:Concept;
+  dct:identifier "AGPL_3_0";
+  skos:prefLabel "GNU Affero General Public License version 3"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:LGPL_2_1 a skos:Concept;
+  dct:identifier "LGPL_2_1";
+  skos:prefLabel "GNU Lesser General Public License version 2.1"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:LGPL_3_0 a skos:Concept;
+  dct:identifier "LGPL_3_0";
+  skos:prefLabel "GNU Lesser General Public License version 3"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:GPL_2_0 a skos:Concept;
+  dct:identifier "GPL_2_0";
+  skos:prefLabel "GNU General Public License version 2"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:GPL_3_0 a skos:Concept;
+  dct:identifier "GPL_3_0";
+  skos:prefLabel "GNU General Public License version 3"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:ISC a skos:Concept;
+  dct:identifier "ISC";
+  skos:prefLabel "ISC License (ISC)"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+lic:MPL_1_1 a skos:Concept;
+  dct:identifier "MPL_1_1";
+  skos:prefLabel "Mozilla Public License (MPL), version 1.1 (MPL-1.1)"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+spdx:Unlicense a skos:Concept;
+  dct:identifier "Unlicense";
+  skos:prefLabel "The Unlicense"@en;
+  skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
+  skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
+
+<http://publications.europa.eu/resource/authority/licence/> a skos:ConceptScheme;
+  skos:hasTopConcept lic:MIT, lic:APACHE_2_0, lic:BSD_2_CLAUSE, lic:BSD_3_CLAUSE, lic:CC_BYNC_3_0,
+    lic:CC_BYSA_4_0, spdx:CECILL-2.0, spdx:CECILL-C, lic:EUPL_1_2, lic:AGPL_3_0, lic:LGPL_2_1,
+    lic:LGPL_3_0, lic:GPL_2_0, lic:GPL_3_0, lic:ISC, lic:MPL_1_1, spdx:Unlicense .
+
+<https://example.com/SoftVer/1> a sd:SoftwareVersion;
+  dct:identifier "1";
+  sd:hasSoftwareVersion "1.0";
+  sd:hasConfiguration <https://example.com/SoftCon/1> .
+
+<https://example.com/SoftVer/2> a sd:SoftwareVersion;
+  dct:identifier "2";
+  sd:hasSoftwareVersion "3.2";
+  sd:hasConfiguration <https://example.com/SoftCon/2> .
+
+<https://example.com/SoftVer/3> a sd:SoftwareVersion;
+  dct:identifier "3";
+  sd:hasSoftwareVersion "0.4.9";
+  sd:hasConfiguration <https://example.com/SoftCon/3> .
+
+<https://example.com/SoftVer/4> a sd:SoftwareVersion;
+  dct:identifier "4";
+  sd:hasSoftwareVersion "4.5.0";
+  sd:hasConfiguration <https://example.com/SoftCon/4> .
+
+<https://example.com/SoftVer/5> a sd:SoftwareVersion;
+  dct:identifier "5";
+  sd:hasSoftwareVersion "2.0.9.12";
+  sd:hasConfiguration <https://example.com/SoftCon/5> .
+
+<https://example.com/SoftVer/6> a sd:SoftwareVersion;
+  dct:identifier "6";
+  sd:hasSoftwareVersion "4.3.7";
+  sd:hasConfiguration <https://example.com/SoftCon/6> .
+
+<https://example.com/SoftVer/7> a sd:SoftwareVersion;
+  dct:identifier "7";
+  sd:hasSoftwareVersion "4.11.1";
+  sd:hasConfiguration <https://example.com/SoftCon/7> .
+
+<https://example.com/SoftVer/8> a sd:SoftwareVersion;
+  dct:identifier "8";
+  sd:hasSoftwareVersion "1.5.0";
+  sd:hasConfiguration <https://example.com/SoftCon/8> .
+
+<https://example.com/SoftVer/9> a sd:SoftwareVersion;
+  dct:identifier "9";
+  sd:hasSoftwareVersion "4.1.1";
+  sd:hasConfiguration <https://example.com/SoftCon/9> .
+
+<https://example.com/SoftVer/10> a sd:SoftwareVersion;
+  dct:identifier "10";
+  sd:hasSoftwareVersion "4.10";
+  sd:hasConfiguration <https://example.com/SoftCon/10> .
+
+<https://example.com/SoftVer/11> a sd:SoftwareVersion;
+  dct:identifier "11";
+  sd:hasSoftwareVersion "4.10";
+  sd:hasConfiguration <https://example.com/SoftCon/11> .
+
+<https://example.com/SoftVer/12> a sd:SoftwareVersion;
+  dct:identifier "12";
+  sd:hasSoftwareVersion "0.3.2";
+  sd:hasConfiguration <https://example.com/SoftCon/12> .
+
+<https://example.com/SoftVer/13> a sd:SoftwareVersion;
+  dct:identifier "13";
+  sd:hasSoftwareVersion "2.5.7";
+  sd:hasConfiguration <https://example.com/SoftCon/13> .
+
+<https://example.com/SoftVer/14> a sd:SoftwareVersion;
+  dct:identifier "14";
+  sd:hasSoftwareVersion "2022-12-16";
+  sd:hasConfiguration <https://example.com/SoftCon/14> .
+
+<https://example.com/SoftVer/15> a sd:SoftwareVersion;
+  dct:identifier "15";
+  sd:hasSoftwareVersion "4.0.8";
+  sd:hasConfiguration <https://example.com/SoftCon/15> .
+
+<https://example.com/SoftVer/16> a sd:SoftwareVersion;
+  dct:identifier "16";
+  sd:hasSoftwareVersion "2022-08-30";
+  sd:hasConfiguration <https://example.com/SoftCon/16> .
+
+<https://example.com/SoftVer/17> a sd:SoftwareVersion;
+  dct:identifier "17";
+  sd:hasSoftwareVersion "July-2021";
+  sd:hasConfiguration <https://example.com/SoftCon/17> .
+
+<https://example.com/SoftVer/18> a sd:SoftwareVersion;
+  dct:identifier "18";
+  sd:hasSoftwareVersion "2.3.2";
+  sd:hasConfiguration <https://example.com/SoftCon/18> .
+
+<https://example.com/SoftVer/19> a sd:SoftwareVersion;
+  dct:identifier "19";
+  sd:hasSoftwareVersion "2.6.4";
+  sd:hasConfiguration <https://example.com/SoftCon/19> .
+
+<https://example.com/SoftVer/20> a sd:SoftwareVersion;
+  dct:identifier "20";
+  sd:hasSoftwareVersion "0.3.7";
+  sd:hasConfiguration <https://example.com/SoftCon/20> .
+
+<https://example.com/SoftVer/21> a sd:SoftwareVersion;
+  dct:identifier "21";
+  sd:hasSoftwareVersion "1.7.0";
+  sd:hasConfiguration <https://example.com/SoftCon/21> .
+
+<https://example.com/SoftVer/22> a sd:SoftwareVersion;
+  dct:identifier "22";
+  sd:hasSoftwareVersion "5.1.2";
+  sd:hasConfiguration <https://example.com/SoftCon/22> .
+
+<https://example.com/SoftVer/23> a sd:SoftwareVersion;
+  dct:identifier "23";
+  sd:hasSoftwareVersion "2022-08-20";
+  sd:hasConfiguration <https://example.com/SoftCon/23> .
+
+<https://example.com/SoftVer/24> a sd:SoftwareVersion;
+  dct:identifier "24";
+  sd:hasSoftwareVersion "2.1.1";
+  sd:hasConfiguration <https://example.com/SoftCon/24> .
+
+<https://example.com/SoftVer/25> a sd:SoftwareVersion;
+  dct:identifier "25";
+  sd:hasSoftwareVersion "3.7.7";
+  sd:hasConfiguration <https://example.com/SoftCon/25> .
+
+<https://example.com/SoftVer/26> a sd:SoftwareVersion;
+  dct:identifier "26";
+  sd:hasSoftwareVersion "22.07";
+  sd:hasConfiguration <https://example.com/SoftCon/26> .
+
+<https://example.com/SoftVer/27> a sd:SoftwareVersion;
+  dct:identifier "27";
+  sd:hasSoftwareVersion "0.0.16";
+  sd:hasConfiguration <https://example.com/SoftCon/27> .
+
+<https://example.com/SoftVer/28> a sd:SoftwareVersion;
+  dct:identifier "28";
+  sd:hasSoftwareVersion "0.3";
+  sd:hasConfiguration <https://example.com/SoftCon/28> .
+
+<https://example.com/SoftVer/29> a sd:SoftwareVersion;
+  dct:identifier "29";
+  sd:hasSoftwareVersion "2.2.3";
+  sd:hasConfiguration <https://example.com/SoftCon/29> .
+
+<https://example.com/SoftVer/30> a sd:SoftwareVersion;
+  dct:identifier "30";
+  sd:hasSoftwareVersion "2.13.3";
+  sd:hasConfiguration <https://example.com/SoftCon/30> .
+
+<https://example.com/SoftVer/31> a sd:SoftwareVersion;
+  dct:identifier "31";
+  sd:hasSoftwareVersion "0.25.0";
+  sd:hasConfiguration <https://example.com/SoftCon/31> .
+
+<https://example.com/SoftVer/32> a sd:SoftwareVersion;
+  dct:identifier "32";
+  sd:hasSoftwareVersion "2.0.3";
+  sd:hasConfiguration <https://example.com/SoftCon/32> .
+
+<https://example.com/SoftVer/33> a sd:SoftwareVersion;
+  dct:identifier "33";
+  sd:hasSoftwareVersion "2_2_0_16";
+  sd:hasConfiguration <https://example.com/SoftCon/33> .
+
+<https://example.com/SoftVer/34> a sd:SoftwareVersion;
+  dct:identifier "34";
+  sd:hasSoftwareVersion "2_2_0_16";
+  sd:hasConfiguration <https://example.com/SoftCon/34> .
+
+<https://example.com/SoftVer/35> a sd:SoftwareVersion;
+  dct:identifier "35";
+  sd:hasSoftwareVersion "3.3.1";
+  sd:hasConfiguration <https://example.com/SoftCon/35> .
+
+<https://example.com/SoftVer/36> a sd:SoftwareVersion;
+  dct:identifier "36";
+  sd:hasSoftwareVersion "7.0.0";
+  sd:hasConfiguration <https://example.com/SoftCon/36> .
+
+<https://example.com/SoftVer/37> a sd:SoftwareVersion;
+  dct:identifier "37";
+  sd:hasSoftwareVersion "2023-06-01";
+  sd:hasConfiguration <https://example.com/SoftCon/37> .
+
+<https://example.com/SoftVer/38> a sd:SoftwareVersion;
+  dct:identifier "38";
+  sd:hasSoftwareVersion "1.15";
+  sd:hasConfiguration <https://example.com/SoftCon/38> .
+
+<https://example.com/SoftVer/39> a sd:SoftwareVersion;
+  dct:identifier "39";
+  sd:hasSoftwareVersion "0.7.4";
+  sd:hasConfiguration <https://example.com/SoftCon/39> .
+
+<https://example.com/SoftVer/40> a sd:SoftwareVersion;
+  dct:identifier "40";
+  sd:hasSoftwareVersion "2.5.2";
+  sd:hasConfiguration <https://example.com/SoftCon/40> .
+
+<https://example.com/SoftVer/41> a sd:SoftwareVersion;
+  dct:identifier "41";
+  sd:hasSoftwareVersion "1.0";
+  sd:hasConfiguration <https://example.com/SoftCon/41> .
+
+<https://example.com/SoftVer/42> a sd:SoftwareVersion;
+  dct:identifier "42";
+  sd:hasSoftwareVersion "6.5.1";
+  sd:hasConfiguration <https://example.com/SoftCon/42> .
+
+<https://example.com/SoftVer/43> a sd:SoftwareVersion;
+  dct:identifier "43";
+  sd:hasSoftwareVersion "2.5.0";
+  sd:hasConfiguration <https://example.com/SoftCon/43> .
+
+<https://example.com/SoftVer/44> a sd:SoftwareVersion;
+  dct:identifier "44";
+  sd:hasSoftwareVersion "1.9.5";
+  sd:hasConfiguration <https://example.com/SoftCon/44> .
+
+<https://example.com/SoftVer/45> a sd:SoftwareVersion;
+  dct:identifier "45";
+  sd:hasSoftwareVersion "1.9.5";
+  sd:hasConfiguration <https://example.com/SoftCon/45> .
+
+<https://example.com/SoftVer/46> a sd:SoftwareVersion;
+  dct:identifier "46";
+  sd:hasSoftwareVersion "1.9.5";
+  sd:hasConfiguration <https://example.com/SoftCon/46> .
+
+<https://example.com/SoftVer/47> a sd:SoftwareVersion;
+  dct:identifier "47";
+  sd:hasSoftwareVersion "1.9.5";
+  sd:hasConfiguration <https://example.com/SoftCon/47> .
+
+<https://example.com/SoftVer/48> a sd:SoftwareVersion;
+  dct:identifier "48";
+  sd:hasSoftwareVersion "2.1.2";
+  sd:hasConfiguration <https://example.com/SoftCon/48> .
+
+<https://example.com/SoftVer/49> a sd:SoftwareVersion;
+  dct:identifier "49";
+  sd:hasSoftwareVersion "4.7.2.8";
+  sd:hasConfiguration <https://example.com/SoftCon/49> .
+
+<https://example.com/SoftVer/50> a sd:SoftwareVersion;
+  dct:identifier "50";
+  sd:hasSoftwareVersion "0.7.0";
+  sd:hasConfiguration <https://example.com/SoftCon/50> .
+
+<https://example.com/SoftVer/51> a sd:SoftwareVersion;
+  dct:identifier "51";
+  sd:hasSoftwareVersion "1.0.0";
+  sd:hasConfiguration <https://example.com/SoftCon/51> .
+
+<https://example.com/SoftVer/52> a sd:SoftwareVersion;
+  dct:identifier "52";
+  sd:hasSoftwareVersion "1.1.0";
+  sd:hasConfiguration <https://example.com/SoftCon/52> .
+
+<https://example.com/SoftVer/53> a sd:SoftwareVersion;
+  dct:identifier "53";
+  sd:hasSoftwareVersion "0.1.00";
+  sd:hasConfiguration <https://example.com/SoftCon/53> .
+
+<https://example.com/SoftVer/54> a sd:SoftwareVersion;
+  dct:identifier "54";
+  sd:hasSoftwareVersion "2.5.1";
+  sd:hasConfiguration <https://example.com/SoftCon/54> .
+
+<https://example.com/SoftVer/55> a sd:SoftwareVersion;
+  dct:identifier "55";
+  sd:hasSoftwareVersion "3.1.0";
+  sd:hasConfiguration <https://example.com/SoftCon/55> .
+
+<https://example.com/SoftVer/56> a sd:SoftwareVersion;
+  dct:identifier "56";
+  sd:hasSoftwareVersion "3.6.0";
+  sd:hasConfiguration <https://example.com/SoftCon/56> .
+
+<https://example.com/SoftVer/57> a sd:SoftwareVersion;
+  dct:identifier "57";
+  sd:hasSoftwareVersion "0.9.1";
+  sd:hasConfiguration <https://example.com/SoftCon/57> .
+
+<https://example.com/SoftVer/58> a sd:SoftwareVersion;
+  dct:identifier "58";
+  sd:hasSoftwareVersion "2023-08-01";
+  sd:hasConfiguration <https://example.com/SoftCon/58> .
+
+<https://example.com/SoftVer/59> a sd:SoftwareVersion;
+  dct:identifier "59";
+  sd:hasSoftwareVersion "2.3.0";
+  sd:hasConfiguration <https://example.com/SoftCon/59> .
+
+<https://example.com/SoftVer/60> a sd:SoftwareVersion;
+  dct:identifier "60";
+  sd:hasSoftwareVersion "2.17";
+  sd:hasConfiguration <https://example.com/SoftCon/60> .
+
+<https://example.com/SoftVer/61> a sd:SoftwareVersion;
+  dct:identifier "61";
+  sd:hasSoftwareVersion "2019-04";
+  sd:hasConfiguration <https://example.com/SoftCon/61> .
+
+<https://example.com/SoftVer/62> a sd:SoftwareVersion;
+  dct:identifier "62";
+  sd:hasSoftwareVersion "8.6.0";
+  sd:hasConfiguration <https://example.com/SoftCon/62> .
+
+<https://example.com/SoftVer/63> a sd:SoftwareVersion;
+  dct:identifier "63";
+  sd:hasSoftwareVersion "0.9.0";
+  sd:hasConfiguration <https://example.com/SoftCon/63> .
+
+<https://example.com/SoftVer/64> a sd:SoftwareVersion;
+  dct:identifier "64";
+  sd:hasSoftwareVersion "2.1.0";
+  sd:hasConfiguration <https://example.com/SoftCon/64> .
+
+<https://example.com/SoftVer/65> a sd:SoftwareVersion;
+  dct:identifier "65";
+  sd:hasSoftwareVersion "1.2";
+  sd:hasConfiguration <https://example.com/SoftCon/65> .
+
+<https://example.com/SoftVer/66> a sd:SoftwareVersion;
+  dct:identifier "66";
+  sd:hasSoftwareVersion "3.4.4";
+  sd:hasConfiguration <https://example.com/SoftCon/66> .
+
+<https://example.com/SoftVer/67> a sd:SoftwareVersion;
+  dct:identifier "67";
+  sd:hasSoftwareVersion "1.1.1";
+  sd:hasConfiguration <https://example.com/SoftCon/67> .
+
+<https://example.com/SoftVer/68> a sd:SoftwareVersion;
+  dct:identifier "68";
+  sd:hasSoftwareVersion "12.1.0";
+  sd:hasConfiguration <https://example.com/SoftCon/68> .
+
+<https://example.com/SoftVer/69> a sd:SoftwareVersion;
+  dct:identifier "69";
+  sd:hasSoftwareVersion "2.1";
+  sd:hasConfiguration <https://example.com/SoftCon/69> .
+
+<https://example.com/SoftVer/70> a sd:SoftwareVersion;
+  dct:identifier "70";
+  sd:hasSoftwareVersion "0.0.2";
+  sd:hasConfiguration <https://example.com/SoftCon/70> .
+
+<https://example.com/SoftVer/71> a sd:SoftwareVersion;
+  dct:identifier "71";
+  sd:hasSoftwareVersion "1.1.6";
+  sd:hasConfiguration <https://example.com/SoftCon/71> .
+
+<https://example.com/SoftVer/72> a sd:SoftwareVersion;
+  dct:identifier "72";
+  sd:hasSoftwareVersion "1.4.21";
+  sd:hasConfiguration <https://example.com/SoftCon/72> .
+
+<https://example.com/SoftVer/73> a sd:SoftwareVersion;
+  dct:identifier "73";
+  sd:hasSoftwareVersion "2023-09-13";
+  sd:hasConfiguration <https://example.com/SoftCon/73> .
+
+<https://example.com/SoftVer/74> a sd:SoftwareVersion;
+  dct:identifier "74";
+  sd:hasSoftwareVersion "2.2.0";
+  sd:hasConfiguration <https://example.com/SoftCon/74> .
+
+<https://example.com/SoftVer/75> a sd:SoftwareVersion;
+  dct:identifier "75";
+  sd:hasSoftwareVersion "1.2.0";
+  sd:hasConfiguration <https://example.com/SoftCon/75> .
+
+<https://example.com/SoftVer/76> a sd:SoftwareVersion;
+  dct:identifier "76";
+  sd:hasSoftwareVersion "0.14.2";
+  sd:hasConfiguration <https://example.com/SoftCon/76> .
+
+<https://example.com/SoftVer/77> a sd:SoftwareVersion;
+  dct:identifier "77";
+  sd:hasSoftwareVersion "2.1.10";
+  sd:hasConfiguration <https://example.com/SoftCon/77> .
+
+<https://example.com/SoftCon/1> a sd:SoftwareConfiguration;
+  dct:identifier "1";
+  sd:hasInput "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
+
+<https://example.com/SoftCon/2> a sd:SoftwareConfiguration;
+  dct:identifier "2";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/3> a sd:SoftwareConfiguration;
+  dct:identifier "3";
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80" .
+
+<https://example.com/SoftCon/4> a sd:SoftwareConfiguration;
+  dct:identifier "4" .
+
+<https://example.com/SoftCon/5> a sd:SoftwareConfiguration;
+  dct:identifier "5";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/6> a sd:SoftwareConfiguration;
+  dct:identifier "6";
+  sd:hasInput "DataSpecification:56", "DataSpecification:39", "DataSpecification:38",
+    "DataSpecification:73", "DataSpecification:70";
+  sd:hasOutput "DataSpecification:56", "DataSpecification:39", "DataSpecification:38",
+    "DataSpecification:73", "DataSpecification:70" .
+
+<https://example.com/SoftCon/7> a sd:SoftwareConfiguration;
+  dct:identifier "7";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/8> a sd:SoftwareConfiguration;
+  dct:identifier "8";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/9> a sd:SoftwareConfiguration;
+  dct:identifier "9";
+  sd:hasInput "DataSpecification:62" .
+
+<https://example.com/SoftCon/10> a sd:SoftwareConfiguration;
+  dct:identifier "10";
+  sd:hasInput "DataSpecification:73", "DataSpecification:56", "DataSpecification:39",
+    "DataSpecification:27", "DataSpecification:55", "DataSpecification:70", "DataSpecification:38",
+    "DataSpecification:71", "DataSpecification:57";
+  sd:hasOutput "DataSpecification:73", "DataSpecification:56", "DataSpecification:39",
+    "DataSpecification:27", "DataSpecification:55", "DataSpecification:70", "DataSpecification:38",
+    "DataSpecification:71", "DataSpecification:57" .
+
+<https://example.com/SoftCon/11> a sd:SoftwareConfiguration;
+  dct:identifier "11";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/12> a sd:SoftwareConfiguration;
+  dct:identifier "12";
+  sd:hasInput "DataSpecification:73" .
+
+<https://example.com/SoftCon/13> a sd:SoftwareConfiguration;
+  dct:identifier "13";
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:78", "DataSpecification:79", "DataSpecification:46" .
+
+<https://example.com/SoftCon/14> a sd:SoftwareConfiguration;
+  dct:identifier "14";
+  sd:hasInput "DataSpecification:30", "DataSpecification:20", "DataSpecification:25",
+    "DataSpecification:62", "DataSpecification:12", "DataSpecification:85", "DataSpecification:27",
+    "DataSpecification:80", "DataSpecification:53";
+  sd:hasOutput DatasetSpecification:72 .
+
+<https://example.com/SoftCon/15> a sd:SoftwareConfiguration;
+  dct:identifier "15";
+  sd:hasInput "DataSpecification:12", "DataSpecification:53";
+  sd:hasOutput DatasetSpecification:72 .
+
+<https://example.com/SoftCon/16> a sd:SoftwareConfiguration;
+  dct:identifier "16";
+  sd:hasInput "DataSpecification:46" .
+
+<https://example.com/SoftCon/17> a sd:SoftwareConfiguration;
+  dct:identifier "17";
+  sd:hasInput "DataSpecification:56", "DataSpecification:47", "DataSpecification:46",
+    "DataSpecification:40", "DataSpecification:28", "DataSpecification:73" .
+
+<https://example.com/SoftCon/18> a sd:SoftwareConfiguration;
+  dct:identifier "18";
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:53", "DataSpecification:56", "DataSpecification:73", "DataSpecification:39";
+  sd:hasOutput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:53", "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
+
+<https://example.com/SoftCon/19> a sd:SoftwareConfiguration;
+  dct:identifier "19";
+  sd:hasInput "DataSpecification:37", "DataSpecification:50", "DataSpecification:44",
+    "DataSpecification:64", "DataSpecification:32", "DataSpecification:12", "DataSpecification:72",
+    "DataSpecification:78", "DataSpecification:79", "DataSpecification:49", "DataSpecification:19",
+    "DataSpecification:45", "DataSpecification:66", "DataSpecification:59", "DataSpecification:63",
+    "DataSpecification:41", "DataSpecification:26", "DataSpecification:80" .
+
+<https://example.com/SoftCon/20> a sd:SoftwareConfiguration;
+  dct:identifier "20";
+  sd:hasInput "DataSpecification:46", "DataSpecification:60", "DataSpecification:53" .
+
+<https://example.com/SoftCon/21> a sd:SoftwareConfiguration;
+  dct:identifier "21";
+  sd:hasInput "DataSpecification:46" .
+
+<https://example.com/SoftCon/22> a sd:SoftwareConfiguration;
+  dct:identifier "22";
+  sd:hasInput "DataSpecification:50", "DataSpecification:37", "DataSpecification:32",
+    "DataSpecification:64", "DataSpecification:44", "DataSpecification:14", "DataSpecification:61",
+    "DataSpecification:13", "DataSpecification:22", "DataSpecification:8", "DataSpecification:17",
+    "DataSpecification:2", "DataSpecification:3", "DataSpecification:16", "DataSpecification:69",
+    "DataSpecification:4", "DataSpecification:5", "DataSpecification:6", "DataSpecification:7" .
+
+<https://example.com/SoftCon/23> a sd:SoftwareConfiguration;
+  dct:identifier "23";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/24> a sd:SoftwareConfiguration;
+  dct:identifier "24";
+  sd:hasInput "DataSpecification:58", "DataSpecification:46", "DataSpecification:60" .
+
+<https://example.com/SoftCon/25> a sd:SoftwareConfiguration;
+  dct:identifier "25";
+  sd:hasInput "DataSpecification:12", "DataSpecification:72", "DataSpecification:74",
+    "DataSpecification:26", "DataSpecification:80", "DataSpecification:41", "DataSpecification:78",
+    "DataSpecification:79", "DataSpecification:51", "DataSpecification:31", "DataSpecification:53",
+    "DataSpecification:77";
+  sd:hasOutput DatasetSpecification:12, DatasetSpecification:64, DatasetSpecification:72,
+    DatasetSpecification:78, DatasetSpecification:79, <https://example.com/DataSpec/%2024>,
+    <https://example.com/DataSpec/%2084> .
+
+<https://example.com/SoftCon/26> a sd:SoftwareConfiguration;
+  dct:identifier "26";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/27> a sd:SoftwareConfiguration;
+  dct:identifier "27";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/28> a sd:SoftwareConfiguration;
+  dct:identifier "28";
+  sd:hasInput "DataSpecification:39" .
+
+<https://example.com/SoftCon/29> a sd:SoftwareConfiguration;
+  dct:identifier "29";
+  sd:hasInput "DataSpecification:78" .
+
+<https://example.com/SoftCon/30> a sd:SoftwareConfiguration;
+  dct:identifier "30";
+  sd:hasInput "DataSpecification:46" .
+
+<https://example.com/SoftCon/31> a sd:SoftwareConfiguration;
+  dct:identifier "31";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/32> a sd:SoftwareConfiguration;
+  dct:identifier "32";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/33> a sd:SoftwareConfiguration;
+  dct:identifier "33";
+  sd:hasInput "DataSpecification:80" .
+
+<https://example.com/SoftCon/34> a sd:SoftwareConfiguration;
+  dct:identifier "34";
+  sd:hasInput "DataSpecification:56", "DataSpecification:39", "DataSpecification:73";
+  sd:hasOutput "DataSpecification:56", "DataSpecification:39", "DataSpecification:73" .
+
+<https://example.com/SoftCon/35> a sd:SoftwareConfiguration;
+  dct:identifier "35";
+  sd:hasInput "DataSpecification:39", "DataSpecification:38";
+  sd:hasOutput "DataSpecification:39", "DataSpecification:38" .
+
+<https://example.com/SoftCon/36> a sd:SoftwareConfiguration;
+  dct:identifier "36";
+  sd:hasInput "DataSpecification:56", "DataSpecification:82", "DataSpecification:39",
+    "DataSpecification:38", "DataSpecification:73", "DataSpecification:71", "DataSpecification:27",
+    "DataSpecification:23", "DataSpecification:54", "DataSpecification:34";
+  sd:hasOutput "DataSpecification:56", "DataSpecification:82", "DataSpecification:39",
+    "DataSpecification:38", "DataSpecification:73", "DataSpecification:71", "DataSpecification:27",
+    "DataSpecification:23", "DataSpecification:54", "DataSpecification:34" .
+
+<https://example.com/SoftCon/37> a sd:SoftwareConfiguration;
+  dct:identifier "37";
+  sd:hasInput "DataSpecification:53", "DataSpecification:73" .
+
+<https://example.com/SoftCon/38> a sd:SoftwareConfiguration;
+  dct:identifier "38";
+  sd:hasInput "DataSpecification:57", "DataSpecification:27", "DataSpecification:82",
+    "DataSpecification:38", "DataSpecification:39", "DataSpecification:54", "DataSpecification:55",
+    "DataSpecification:56", "DataSpecification:70", "DataSpecification:71", "DataSpecification:73";
+  sd:hasOutput "DataSpecification:57", "DataSpecification:27", "DataSpecification:82",
+    "DataSpecification:38", "DataSpecification:39", "DataSpecification:54", "DataSpecification:55",
+    "DataSpecification:56", "DataSpecification:70", "DataSpecification:71", "DataSpecification:73" .
+
+<https://example.com/SoftCon/39> a sd:SoftwareConfiguration;
+  dct:identifier "39";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/40> a sd:SoftwareConfiguration;
+  dct:identifier "40";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/41> a sd:SoftwareConfiguration;
+  dct:identifier "41";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/42> a sd:SoftwareConfiguration;
+  dct:identifier "42";
+  sd:hasInput "DataSpecification:79", "DataSpecification:41", "DataSpecification:12",
+    "DataSpecification:26", "DataSpecification:80", "DataSpecification:37", "DataSpecification:50",
+    "DataSpecification:44", "DataSpecification:64", "DataSpecification:62", "DataSpecification:25" .
+
+<https://example.com/SoftCon/43> a sd:SoftwareConfiguration;
+  dct:identifier "43";
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:67" .
+
+<https://example.com/SoftCon/44> a sd:SoftwareConfiguration;
+  dct:identifier "44";
+  sd:hasInput "DataSpecification:26", "DataSpecification:40", "DataSpecification:42",
+    "DataSpecification:43", "DataSpecification:46", "DataSpecification:48", "DataSpecification:73";
+  sd:hasOutput "DataSpecification:26", "DataSpecification:40", "DataSpecification:42",
+    "DataSpecification:43", "DataSpecification:46", "DataSpecification:48", "DataSpecification:73" .
+
+<https://example.com/SoftCon/45> a sd:SoftwareConfiguration;
+  dct:identifier "45";
+  sd:hasInput "DataSpecification:72", "DataSpecification:12", "DataSpecification:24",
+    "DataSpecification:26", "DataSpecification:79" .
+
+<https://example.com/SoftCon/46> a sd:SoftwareConfiguration;
+  dct:identifier "46";
+  sd:hasInput "DataSpecification:46" .
+
+<https://example.com/SoftCon/47> a sd:SoftwareConfiguration;
+  dct:identifier "47";
+  sd:hasInput "DataSpecification:46", "DataSpecification:60" .
+
+<https://example.com/SoftCon/48> a sd:SoftwareConfiguration;
+  dct:identifier "48";
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80" .
+
+<https://example.com/SoftCon/49> a sd:SoftwareConfiguration;
+  dct:identifier "49";
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:52",
+    "DataSpecification:80" .
+
+<https://example.com/SoftCon/50> a sd:SoftwareConfiguration;
+  dct:identifier "50";
+  sd:hasInput "DataSpecification:53", "DataSpecification:80", "DataSpecification:73",
+    "DataSpecification:82", "DataSpecification:70" .
+
+<https://example.com/SoftCon/51> a sd:SoftwareConfiguration;
+  dct:identifier "51";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/52> a sd:SoftwareConfiguration;
+  dct:identifier "52";
+  sd:hasInput "DataSpecification:83", "DataSpecification:58" .
+
+<https://example.com/SoftCon/53> a sd:SoftwareConfiguration;
+  dct:identifier "53";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/54> a sd:SoftwareConfiguration;
+  dct:identifier "54";
+  sd:hasOutput "DataSpecification:73", "DataSpecification:39", "DataSpecification:82" .
+
+<https://example.com/SoftCon/55> a sd:SoftwareConfiguration;
+  dct:identifier "55";
+  sd:hasInput "DataSpecification:62" .
+
+<https://example.com/SoftCon/56> a sd:SoftwareConfiguration;
+  dct:identifier "56";
+  sd:hasInput "DataSpecification:62", "DataSpecification:53", "DataSpecification:26",
+    "DataSpecification:80", "DataSpecification:12", "DataSpecification:37" .
+
+<https://example.com/SoftCon/57> a sd:SoftwareConfiguration;
+  dct:identifier "57";
+  sd:hasInput "DataSpecification:58", "DataSpecification:46", "DataSpecification:60" .
+
+<https://example.com/SoftCon/58> a sd:SoftwareConfiguration;
+  dct:identifier "58";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/59> a sd:SoftwareConfiguration;
+  dct:identifier "59";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/60> a sd:SoftwareConfiguration;
+  dct:identifier "60";
+  sd:hasInput "DataSpecification:62", "DataSpecification:60" .
+
+<https://example.com/SoftCon/61> a sd:SoftwareConfiguration;
+  dct:identifier "61";
+  sd:hasInput "DataSpecification:62" .
+
+<https://example.com/SoftCon/62> a sd:SoftwareConfiguration;
+  dct:identifier "62";
+  sd:hasInput "DataSpecification:62" .
+
+<https://example.com/SoftCon/63> a sd:SoftwareConfiguration;
+  dct:identifier "63";
+  sd:hasInput "DataSpecification:26", "DataSpecification:24", "DataSpecification:12",
+    "DataSpecification:80", "DataSpecification:10", "DataSpecification:74", "DataSpecification:33",
+    "DataSpecification:78", "DataSpecification:79", "DataSpecification:15", "DataSpecification:18",
+    "DataSpecification:9", "DataSpecification:81";
+  sd:hasOutput DatasetSpecification:72 .
+
+<https://example.com/SoftCon/64> a sd:SoftwareConfiguration;
+  dct:identifier "64";
+  sd:hasInput "DataSpecification:53", "DataSpecification:64", "DataSpecification:80",
+    "DataSpecification:26", "DataSpecification:12", "DataSpecification:21", "DataSpecification:24",
+    "DataSpecification:11", "DataSpecification:74", "DataSpecification:36", "DataSpecification:76",
+    "DataSpecification:25" .
+
+<https://example.com/SoftCon/65> a sd:SoftwareConfiguration;
+  dct:identifier "65";
+  sd:hasInput "DataSpecification:12", "DataSpecification:72" .
+
+<https://example.com/SoftCon/66> a sd:SoftwareConfiguration;
+  dct:identifier "66";
+  sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/67> a sd:SoftwareConfiguration;
+  dct:identifier "67";
+  sd:hasInput "DataSpecification:73", "DataSpecification:39" .
+
+<https://example.com/SoftCon/68> a sd:SoftwareConfiguration;
+  dct:identifier "68";
+  sd:hasInput "DataSpecification:46", "DataSpecification:83", "DataSpecification:53",
+    "DataSpecification:60" .
+
+<https://example.com/SoftCon/69> a sd:SoftwareConfiguration;
+  dct:identifier "69";
+  sd:hasInput "DataSpecification:12", "DataSpecification:72", "DataSpecification:78",
+    "DataSpecification:79", "DataSpecification:1", "DataSpecification:29", "DataSpecification:37",
+    "DataSpecification:32", "DataSpecification:50" .
+
+<https://example.com/SoftCon/70> a sd:SoftwareConfiguration;
+  dct:identifier "70";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/71> a sd:SoftwareConfiguration;
+  dct:identifier "71";
+  sd:hasInput "DataSpecification:75", "DataSpecification:26" .
+
+<https://example.com/SoftCon/72> a sd:SoftwareConfiguration;
+  dct:identifier "72";
+  sd:hasInput "DataSpecification:53", "DataSpecification:80", "DataSpecification:73",
+    "DataSpecification:46" .
+
+<https://example.com/SoftCon/73> a sd:SoftwareConfiguration;
+  dct:identifier "73";
+  sd:hasInput "DataSpecification:62" .
+
+<https://example.com/SoftCon/74> a sd:SoftwareConfiguration;
+  dct:identifier "74";
+  sd:hasInput "DataSpecification:78", "DataSpecification:79" .
+
+<https://example.com/SoftCon/75> a sd:SoftwareConfiguration;
+  dct:identifier "75";
+  sd:hasInput "DataSpecification:53" .
+
+<https://example.com/SoftCon/76> a sd:SoftwareConfiguration;
+  dct:identifier "76";
+  sd:hasInput "DataSpecification:39" .
+
+<https://example.com/SoftCon/77> a sd:SoftwareConfiguration;
+  dct:identifier "77";
+  sd:hasInput "DataSpecification:74" .
+
+<http://data.europa.eu/m8g/tools/0.0.1> a dcat:Distribution;
+  vann:preferredNamespaceURI "http://data.europa.eu/m8g/tools";
+  vann:preferredNamespacePrefix "tools";
+  dct:title "Tools";
+  owl:versionIRI <http://data.europa.eu/m8g/tools/0.0.1>;
+  owl:versionInfo "0.0.1";
+  dct:created "2024-01-31"^^xsd:date;
+  dct:creator <http://publications.europa.eu/resource/authority/corporate-body/DIGIT>;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+<https://example.com/tool/1> a ldso:Solution, sd:Software;
+  dct:identifer "1";
+  rdfs:label "Alignment"@en;
+  dct:description "Alignment is a collaborative, system aided, user driven ontology matching application."@en;
+  dct:type comp:1;
+  dct:subject function:3;
+  foaf:homepage <https://alignment.okfn.gr/>;
+  sd:hasSourceCode source:1;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:1" .
+
+<https://example.com/tool/2> a ldso:Solution, sd:Software;
+  dct:identifer "2";
+  rdfs:label "AML"@en;
+  dct:description "AML is an automated and efficient ontology matching system."@en;
+  dct:type comp:1;
+  dct:subject function:3;
+  sd:hasSourceCode source:2;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:2" .
+
+<https://example.com/tool/3> a ldso:Solution, sd:Software;
+  dct:identifer "3";
+  rdfs:label "CARML"@en;
+  dct:description "CARML is a java library that transforms structured sources to RDF as declared in an RML mapping, in accordance with the RML spec."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  sd:hasSourceCode source:3;
+  sd:programmingLanguage "Java";
+  dct:license lic:MIT;
+  dbo:skills skills:5;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:3";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6847963> .
+
+<https://example.com/tool/4> a ldso:Solution, sd:Software;
+  dct:identifer "4";
+  rdfs:label "Corese"@en;
+  dct:description "Corese is a software platform implementing and extending the standards of the Semantic Web. It allows to create, manipulate, parse, serialize, query, reason and validate RDF data."@en;
+  dct:type comp:7;
+  dct:subject function:11;
+  foaf:homepage <https://project.inria.fr/corese/>;
+  sd:hasSourceCode source:4;
+  sd:programmingLanguage "Java";
+  dct:license spdx:CeCILL-C;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:4" .
+
+<https://example.com/tool/5> a ldso:Solution, sd:Software;
+  dct:identifer "5";
+  rdfs:label "Ginco"@en;
+  dct:description "GINCO is a free software developped by the Ministry of Culture and Communication (France) and is dedicated to the management of vocabularies."@en;
+  dct:type comp:2;
+  dct:subject function:9;
+  foaf:homepage <http://culturecommunication.github.io/ginco/>;
+  sd:hasSourceCode source:5;
+  sd:programmingLanguage "Java", "JavaScript";
+  dct:license spdx:CeCILL-2.0;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:5" .
+
+<https://example.com/tool/6> a ldso:Solution, sd:Software;
+  dct:identifer "6";
+  rdfs:label "graphy.js"@en;
+  dct:description "Graphy is a collection of high-performance RDF libraries for JavaScript developers with a focus on usability. API works in both the browser and Node.js. Expressive CLI tool also available for Node.js."@en;
+  dct:type comp:7;
+  dct:subject function:8;
+  foaf:homepage <https://graphy.link/>;
+  sd:hasSourceCode source:6;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:ISC;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:6" .
+
+<https://example.com/tool/7> a ldso:Solution, sd:Software;
+  dct:identifer "7";
+  rdfs:label "iQvoc"@en;
+  dct:description "Can import, display, publish and manage vocabularies and ontologies that are in SKOS format."@en;
+  dct:type comp:2;
+  dct:subject function:9;
+  foaf:homepage <https://iqvoc.net/>;
+  sd:hasSourceCode source:7;
+  sd:programmingLanguage "Ruby";
+  dct:license lic:APACHE_2_0;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:7" .
+
+<https://example.com/tool/8> a ldso:Solution, sd:Software;
+  dct:identifer "8";
+  rdfs:label "ITB-shacl-validator"@en;
+  dct:description "The SHACL validator is a web application to validate RDF data against SHACL shapes."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  sd:hasSourceCode source:8;
+  sd:programmingLanguage "Java";
+  dct:license lic:EUPL_1_2;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:8" .
+
+<https://example.com/tool/9> a ldso:Solution, sd:Software;
+  dct:identifer "9";
+  rdfs:label "Jekyll RDF"@en;
+  dct:description "A Jekyll plugin for including RDF data in your static site."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  foaf:homepage <http://aksw.org/Projects/JekyllRDF>;
+  sd:hasSourceCode source:9;
+  sd:programmingLanguage "Ruby";
+  dct:license lic:MIT;
+  dbo:skills skills:3;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:9";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3402190> .
+
+<https://example.com/tool/10> a ldso:Solution, sd:Software;
+  dct:identifer "10";
+  rdfs:label "Jena-riot"@en;
+  dct:description "Jena-riot is a command line tool for reading and Writing RDF in Apache Jena."@en;
+  dct:type comp:7;
+  dct:subject function:8;
+  foaf:homepage <https://jena.apache.org/documentation/io/>;
+  sd:hasSourceCode source:10;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:10" .
+
+<https://example.com/tool/11> a ldso:Solution, sd:Software;
+  dct:identifer "11";
+  rdfs:label "Jena-shacl"@en;
+  dct:description "Jena-shacl is an implementation of the W3C Shapes Constraint Language (SHACL). It implements SHACL Core and SHACL SPARQL Constraints."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  foaf:homepage <https://jena.apache.org/documentation/shacl/index.html>;
+  sd:hasSourceCode source:11;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:11" .
+
+<https://example.com/tool/12> a ldso:Solution, sd:Software;
+  dct:identifer "12";
+  rdfs:label "JOD"@en;
+  dct:description "Generates documentation web pages from Ontology turtle documents. Based on jekyll and jekyll-rdf plugin."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  sd:hasSourceCode source:12;
+  sd:programmingLanguage "Ruby";
+  dct:license lic:MIT;
+  dbo:skills skills:3;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:12" .
+
+<https://example.com/tool/13> a ldso:Solution, sd:Software;
+  dct:identifer "13";
+  rdfs:label "Karma"@en;
+  dct:description "Karma is an information integration tool that enables users to quickly and easily integrate data from a variety of data sources including databases. Karma learns to recognize the mapping of data to ontology classes and then uses the ontology to propose a model that ties together these classes."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <https://usc-isi-i2.github.io/karma/>;
+  sd:hasSourceCode source:13;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:13" .
+
+<https://example.com/tool/14> a ldso:Solution, sd:Software;
+  dct:identifer "14";
+  rdfs:label "LinkedPipes ETL"@en;
+  dct:description "Low code tool that can cover the entire harvesting process (ETL)."@en;
+  dct:type comp:5, comp:6, comp:7;
+  dct:subject function:2, function:7, function:11, function:12;
+  foaf:homepage <https://etl.linkedpipes.com/>;
+  sd:hasSourceCode source:14;
+  sd:programmingLanguage "Java", "JavaScript";
+  dct:license lic:MIT;
+  dbo:skills skills:6;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:14";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3287800> .
+
+<https://example.com/tool/15> a ldso:Solution, sd:Software;
+  dct:identifer "15";
+  rdfs:label "LinkedDataHub"@en;
+  dct:description "LinkedDataHub is open source software you can use to manage data, create visualizations and build apps on RDF Knowledge Graphs."@en;
+  dct:type <https://example.com/ArchComp/2;comp:3;comp:5>, comp:7;
+  dct:subject function:1, function:7, function:11, function:12, function:13;
+  foaf:homepage <https://atomgraph.github.io/LinkedDataHub/>;
+  sd:hasSourceCode source:15;
+  sd:programmingLanguage "XSLT", "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:6;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:15";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3990893> .
+
+<https://example.com/tool/16> a ldso:Solution, sd:Software;
+  dct:identifer "16";
+  rdfs:label "LODE"@en;
+  dct:description "Tomcat server application that can be used to create HTML documentation for OWL ontologies."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  sd:hasSourceCode source:16;
+  sd:programmingLanguage "XSLT", "CSS", "Java";
+  dct:license lic:ISC;
+  dbo:skills skills:4;
+  dbp:ui dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:16" .
+
+<https://example.com/tool/17> a ldso:Solution, sd:Software;
+  dct:identifer "17";
+  rdfs:label "LogMap-Matcher"@en;
+  dct:description "LogMap is a highly scalable ontology matching system with ‘built-in’ reasoning and inconsistency repair capabilities. LogMap extract mappings between classes, properties and instances."@en;
+  dct:type comp:1;
+  dct:subject function:3;
+  sd:hasSourceCode source:17;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:17" .
+
+<https://example.com/tool/18> a ldso:Solution, sd:Software;
+  dct:identifer "18";
+  rdfs:label "mapping-template"@en;
+  dct:description "Mapping-template is a template-based component exploiting Apache Velocity to define declarative mappings for schema and data transformations."@en;
+  dct:type comp:7;
+  dct:subject function:8, function:12;
+  sd:hasSourceCode source:18;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:18" .
+
+<https://example.com/tool/19> a ldso:Solution, sd:Software;
+  dct:identifer "19";
+  rdfs:label "morph-kgc"@en;
+  dct:description "Morph-KGC is an engine that constructs RDF knowledge graphs from heterogeneous data sources with the R2RML and RML mapping languages."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <https://morph-kgc.readthedocs.io/>;
+  sd:hasSourceCode source:19;
+  sd:programmingLanguage "Python";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:5;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:19" .
+
+<https://example.com/tool/20> a ldso:Solution, sd:Software;
+  dct:identifer "20";
+  rdfs:label "OnAGui"@en;
+  dct:description "Software to help automatic or manual realisation of ontologic alignment."@en;
+  dct:type comp:1;
+  dct:subject function:3;
+  sd:hasSourceCode source:20;
+  sd:programmingLanguage "Java";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:20" .
+
+<https://example.com/tool/21> a ldso:Solution, sd:Software;
+  dct:identifer "21";
+  rdfs:label "Ontoology"@en;
+  dct:description "OnToology will survey OWL files and produce diagrams, a complete documentation and validation based on common pitfalls. It also offers seamless publication of user ontologies with w3id using GitHub pages."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  foaf:homepage <http://ontoology.linkeddata.es/>;
+  sd:hasSourceCode source:21;
+  sd:programmingLanguage "Python";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:21" .
+
+<https://example.com/tool/22> a ldso:Solution, sd:Software;
+  dct:identifer "22";
+  rdfs:label "Ontop"@en;
+  dct:description "Ontop translates SPARQL queries expressed over the knowledge graphs into SQL queries executed by the relational data sources. It relies on R2RML mappings and can take advantage of lightweight ontologies."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <https://ontop-vkg.org/>;
+  sd:hasSourceCode source:22;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:6;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:22";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3287542> .
+
+<https://example.com/tool/23> a ldso:Solution, sd:Software;
+  dct:identifer "23";
+  rdfs:label "Ontoseer"@en;
+  dct:description "OntoSeer is a tool that monitors the ontology development process andprovides suggestions in real time to improve the quality of the ontology under development."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  sd:hasSourceCode source:23;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:23" .
+
+<https://example.com/tool/24> a ldso:Solution, sd:Software;
+  dct:identifer "24";
+  rdfs:label "OntoSpy"@en;
+  dct:description "Lightweight Python library and command line tool for inspecting and visualizing vocabularies encoded using W3C Semantic Web standards, that is, RDF or any of its dialects (RDFS, OWL, SKOS)."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  foaf:homepage <http://lambdamusic.github.io/Ontospy/>;
+  sd:hasSourceCode source:24;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:24";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6847981> .
+
+<https://example.com/tool/25> a ldso:Solution, sd:Software;
+  dct:identifer "25";
+  rdfs:label "OpenRefine"@en;
+  dct:description "OpenRefine is a powerful free, open source tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data."@en;
+  dct:type comp:7;
+  dct:subject function:11, function:12;
+  foaf:homepage <https://openrefine.org/>;
+  sd:hasSourceCode source:25;
+  sd:programmingLanguage "Java", "JavaScript";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:2, skills:9;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:25" .
+
+<https://example.com/tool/26> a ldso:Solution, sd:Software;
+  dct:identifer "26";
+  rdfs:label "Opentheso2"@en;
+  dct:description "Opentheso is a web-based thesaurus management tool dedicated to the management of vocabularies."@en;
+  dct:type comp:2;
+  dct:subject function:9;
+  sd:hasSourceCode source:26;
+  sd:programmingLanguage "Java", "PLpgSQL";
+  dct:license lic:GPL_3_0;
+  dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:26" .
+
+<https://example.com/tool/27> a ldso:Solution, sd:Software;
+  dct:identifer "27";
+  rdfs:label "OxO"@en;
+  dct:description "OxO is a service for finding mappings (or cross-references) between terms from ontologies, vocabularies and coding standards."@en;
+  dct:type comp:3;
+  dct:subject function:4;
+  sd:hasSourceCode source:27;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:APACHE_2_0;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:27" .
+
+<https://example.com/tool/28> a ldso:Solution, sd:Software;
+  dct:identifer "28";
+  rdfs:label "PARIS"@en;
+  dct:description "PARIS is a system for the automatic alignment of RDF knowledge bases. PARIS aligns not only instances, but also relations and classes."@en;
+  dct:type comp:1;
+  dct:subject function:3;
+  sd:hasSourceCode source:28;
+  sd:programmingLanguage "Java";
+  dct:license lic:CC_BYNC_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:28" .
+
+<https://example.com/tool/29> a ldso:Solution, sd:Software;
+  dct:identifer "29";
+  rdfs:label "Protegè Cellfie Plugin"@en;
+  dct:description "Cellfie is a Protégé Desktop plugin for importing spreadsheet data into OWL ontologies."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  sd:hasSourceCode source:29;
+  sd:programmingLanguage "Java";
+  dct:license lic:LGPL_3_0;
+  dbo:skills skills:7;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:29" .
+
+<https://example.com/tool/30> a ldso:Solution, sd:Software;
+  dct:identifer "30";
+  rdfs:label "pyLODE"@en;
+  dct:description "An OWL ontology documentation tool using Python, based on LODE."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  sd:hasSourceCode source:30;
+  sd:programmingLanguage "Python";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:30" .
+
+<https://example.com/tool/31> a ldso:Solution, sd:Software;
+  dct:identifer "31";
+  rdfs:label "pySHACL"@en;
+  dct:description "This is a pure Python module which allows for the validation of RDF graphs against Shapes Constraint Language (SHACL) graphs, including SHACL Advanced Features and SHACL-JS Features."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  sd:hasSourceCode source:31;
+  sd:programmingLanguage "Python";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:31" .
+
+<https://example.com/tool/32> a ldso:Solution, sd:Software;
+  dct:identifer "32";
+  rdfs:label "qskos"@en;
+  dct:description "qSKOS is a tool for finding quality issues in SKOS vocabularies."@en;
+  dct:type comp:5;
+  dct:subject function:10;
+  sd:hasSourceCode source:32;
+  sd:programmingLanguage "Java";
+  dct:license lic:GPL_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:32" .
+
+<https://example.com/tool/33> a ldso:Solution, sd:Software;
+  dct:identifer "33";
+  rdfs:label "Raptor"@en;
+  dct:description """Raptor is a free software / Open Source C library that provides a set of parsers and serializers that
+generate Resource Description Framework (RDF) triples by parsing syntaxes or serialize the triples into a syntax."""@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <https://librdf.org/raptor/>;
+  sd:hasSourceCode source:33;
+  sd:programmingLanguage "C";
+  dct:license lic:LGPL_2_1, lic:APACHE_2_0;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:33" .
+
+<https://example.com/tool/34> a ldso:Solution, sd:Software;
+  dct:identifer "34";
+  rdfs:label "Raptor RDF parser"@en;
+  dct:description "The rapper utility allows parsing of RDF content by the Raptor RDF parser toolkit emitting the results as RDF triples in a choice of syntaxes."@en;
+  dct:type comp:7;
+  dct:subject function:8;
+  foaf:homepage <https://librdf.org/raptor/rapper.html>;
+  sd:hasSourceCode source:34;
+  sd:programmingLanguage "C";
+  dct:license lic:LGPL_2_1, lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:34" .
+
+<https://example.com/tool/35> a ldso:Solution, sd:Software;
+  dct:identifer "35";
+  rdfs:label "rdf.rb"@en;
+  dct:description "Rdf.rb is a pure-Ruby library for working with Resource Description Framework (RDF) data."@en;
+  dct:type comp:7;
+  dct:subject function:8;
+  foaf:homepage <http://rubygems.org/gems/rdf>;
+  sd:hasSourceCode source:35;
+  sd:programmingLanguage "Ruby";
+  dct:license spdx:Unlicense;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:35" .
+
+<https://example.com/tool/36> a ldso:Solution, sd:Software;
+  dct:identifer "36";
+  rdfs:label "rdflib-rdfpipe"@en;
+  dct:description "Rdf-pipe is a commandline tool for parsing RDF in different formats and serializing the resulting graph to a chosen format."@en;
+  dct:type comp:7;
+  dct:subject function:8;
+  foaf:homepage <https://rdflib.readthedocs.io/en/stable/dbr:Web_APIdocs/rdflib.tools.html#rdflib.tools.rdfpipe.parse_and_serialize>;
+  sd:hasSourceCode source:36;
+  sd:programmingLanguage "Python";
+  dct:license lic:BSD_3_CLAUSE;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:36" .
+
+<https://example.com/tool/37> a ldso:Solution, sd:Software;
+  dct:identifer "37";
+  rdfs:label "rdfpuml"@en;
+  dct:description "rdfpuml makes true diagrams directly from Turtle example using PlantUML and GraphViz."@en;
+  dct:type comp:3;
+  dct:subject function:13;
+  sd:hasSourceCode source:37;
+  sd:programmingLanguage "Perl", "Ruby";
+  dct:license lic:APACHE_2_0;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:37" .
+
+<https://example.com/tool/38> a ldso:Solution, sd:Software;
+  dct:identifer "38";
+  rdfs:label "rdf-toolkit"@en;
+  dct:description "The RDF Toolkit is a 'swiss army knife' tool for reading and writing RDF files in multiple formats."@en;
+  dct:type comp:7;
+  dct:subject function:8;
+  sd:hasSourceCode source:38;
+  sd:programmingLanguage "Java", "Scala";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:38" .
+
+<https://example.com/tool/39> a ldso:Solution, sd:Software;
+  dct:identifer "39";
+  rdfs:label "RDFUnit"@en;
+  dct:description "RDFUnit is a test driven data-debugging framework that can run automatically generated (based on a schema) and manually generated test cases against an endpoint, it can validate against OWL and SHACL."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  foaf:homepage <http://rdfunit.aksw.org/>;
+  sd:hasSourceCode source:39;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:39" .
+
+<https://example.com/tool/40> a ldso:Solution, sd:Software;
+  dct:identifer "40";
+  rdfs:label "Re3gistry"@en;
+  dct:description "The Re3gistry software is a reusable open-source solution for managing and sharing ‘reference codes’ through persistent URIs. It can export in HTML, ISO 19135 XML, JSON, RDF/XML, ATOM, Re3gistry XML, CSV, ROR."@en;
+  dct:type comp:2;
+  dct:subject function:9;
+  sd:hasSourceCode source:40;
+  sd:programmingLanguage "Java";
+  dct:license lic:EUPL_1_2;
+  dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:40" .
+
+<https://example.com/tool/41> a ldso:Solution, sd:Software;
+  dct:identifer "41";
+  rdfs:label "Redefer RDF2HTML"@en;
+  dct:description "The RDF to HTML services RDF2HTML generate an HTML representation of the input RDF."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  sd:hasSourceCode source:41;
+  sd:programmingLanguage "Java", "XLST";
+  dct:license lic:GPL_3_0;
+  dbo:skills skills:8;
+  dbp:ui dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:41" .
+
+<https://example.com/tool/42> a ldso:Solution, sd:Software;
+  dct:identifer "42";
+  rdfs:label "RMLMapper"@en;
+  dct:description "The RMLMapper executes RML rules to generate Linked Data. The RMLMapper loads all data in memory, so be aware when working with big datasets."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <http://rml.io/>;
+  sd:hasSourceCode source:42;
+  sd:programmingLanguage "Java";
+  dct:license lic:MIT;
+  dbo:skills skills:5;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:42";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3285193> .
+
+<https://example.com/tool/43> a ldso:Solution, sd:Software;
+  dct:identifer "43";
+  rdfs:label "RMLStreamer"@en;
+  dct:description "RMLStreamer generates RDF from files or data streams using RML. The difference with other RML implementations is that it can handle big input files and continuous data streams, like sensor data."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <http://rml.io/>;
+  sd:hasSourceCode source:43;
+  sd:programmingLanguage "Scala", "Java";
+  dct:license lic:MIT;
+  dbo:skills skills:5;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:43";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3285201> .
+
+<https://example.com/tool/44> a ldso:Solution, sd:Software;
+  dct:identifer "44";
+  rdfs:label "ROBOT-convert"@en;
+  dct:description "ROBOT is a command-line tool and library for automating ontology development tasks, with a focus on Open Biological and Biomedical Ontologies (OBO)."@en;
+  dct:type comp:7;
+  dct:subject function:8;
+  foaf:homepage <https://robot.obolibrary.org/convert>;
+  sd:hasSourceCode source:44;
+  sd:programmingLanguage "Java";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:44" .
+
+<https://example.com/tool/45> a ldso:Solution, sd:Software;
+  dct:identifer "45";
+  rdfs:label "ROBOT-export"@en;
+  dct:description "ROBOT is a command-line tool and library for automating ontology development tasks, with a focus on Open Biological and Biomedical Ontologies (OBO)."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  foaf:homepage <https://robot.obolibrary.org/export>;
+  sd:hasSourceCode source:45;
+  sd:programmingLanguage "Java";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:45" .
+
+<https://example.com/tool/46> a ldso:Solution, sd:Software;
+  dct:identifer "46";
+  rdfs:label "ROBOT-validate"@en;
+  dct:description "ROBOT is a command-line tool and library for automating ontology development tasks, with a focus on Open Biological and Biomedical Ontologies (OBO)."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  foaf:homepage <https://robot.obolibrary.org/validate>;
+  sd:hasSourceCode source:46;
+  sd:programmingLanguage "Java";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:46" .
+
+<https://example.com/tool/47> a ldso:Solution, sd:Software;
+  dct:identifer "47";
+  rdfs:label "ROBOT-verify"@en;
+  dct:description "ROBOT is a command-line tool and library for automating ontology development tasks, with a focus on Open Biological and Biomedical Ontologies (OBO)."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  foaf:homepage <https://robot.obolibrary.org/verify>;
+  sd:hasSourceCode source:47;
+  sd:programmingLanguage "Java";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:47" .
+
+<https://example.com/tool/48> a ldso:Solution, sd:Software;
+  dct:identifer "48";
+  rdfs:label "RocketRML"@en;
+  dct:description "RocketRML is a javascript RML-mapper implementation for the RDF mapping language (RML)."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <https://semantify.it/>;
+  sd:hasSourceCode source:48;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:CC_BYSA_4_0;
+  dbo:skills skills:5;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:48";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6847986> .
+
+<https://example.com/tool/49> a ldso:Solution, sd:Software;
+  dct:identifer "49";
+  rdfs:label "SDM-RDFizer"@en;
+  dct:description "SDM-RDFizer is an interpreter of mapping rules that allows the transformation of (un)structured data into RDF knowledge graphs."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <https://doi.org/10.5281/zenodo.3872103>;
+  sd:hasSourceCode source:49;
+  sd:programmingLanguage "Python";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:5;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:49";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6847988> .
+
+<https://example.com/tool/50> a ldso:Solution, sd:Software;
+  dct:identifer "50";
+  rdfs:label "Shacl Play!"@en;
+  dct:description "Shacl Play ! can validate the conformity of an RDF dataset against a SHACL specification."@en;
+  dct:type comp:3, comp:5;
+  dct:subject function:7, function:13;
+  foaf:homepage <https://shacl-play.sparna.fr/play/validate>;
+  sd:hasSourceCode source:50;
+  sd:programmingLanguage "JavaScript", "Java", "CSS";
+  dct:license lic:LGPL_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:50";
+  owl:sameAs <https://linkedopendata.eu/entity/Q4703817> .
+
+<https://example.com/tool/51> a ldso:Solution, sd:Software;
+  dct:identifer "51";
+  rdfs:label "Shacl Playground"@en;
+  dct:description "Based on its library can validate against SHACL but not SHACL-Sparql constraints"@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  foaf:homepage <https://shacl-playground.zazuko.com/>;
+  sd:hasSourceCode source:51;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:AGPL_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:51" .
+
+<https://example.com/tool/52> a ldso:Solution, sd:Software;
+  dct:identifer "52";
+  rdfs:label "SHACL2MD"@en;
+  dct:description "Shacl2md generates datamodel documentation from SHACL and/or RDFS files."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  sd:hasSourceCode source:52;
+  sd:programmingLanguage "Python", "Jinja";
+  dct:license lic:MIT;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:52";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6874065> .
+
+<https://example.com/tool/53> a ldso:Solution, sd:Software;
+  dct:identifer "53";
+  rdfs:label "Shaclex"@en;
+  dct:description "Can validate against SHACL and Shex."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  foaf:homepage <http://weso.github.io/shaclex>;
+  sd:hasSourceCode source:53;
+  sd:programmingLanguage "Scala", "JavaScript";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:53" .
+
+<https://example.com/tool/54> a ldso:Solution, sd:Software;
+  dct:identifer "54";
+  rdfs:label "SHACLGen"@en;
+  dct:description "Shaclgen takes either an instance graph/data graph (or multiple graphs) or schema(s) as input and generates a basic shape file based on the classes and properties present."@en;
+  dct:type comp:7;
+  dct:subject function:11;
+  sd:hasSourceCode source:54;
+  sd:programmingLanguage "Python";
+  dct:license spdx:Unlicense;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:54" .
+
+<https://example.com/tool/55> a ldso:Solution, sd:Software;
+  dct:identifer "55";
+  rdfs:label "ShowVOC"@en;
+  dct:description "It can create reports (tabular, diagrams) about ontology and display concepts in diagrams"@en;
+  dct:type <https://example.com/ArchComp/3;comp:4>;
+  dct:subject function:4, function:5, function:13;
+  foaf:homepage <https://showvoc.uniroma2.it/downloads/>;
+  sd:hasSourceCode source:55;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:55";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6847992> .
+
+<https://example.com/tool/56> a ldso:Solution, sd:Software;
+  dct:identifer "56";
+  rdfs:label "Silk Framework"@en;
+  dct:description "Silk is an open source framework for integrating heterogeneous data sources. Including generating links between related data items within different Linked Data sources."@en;
+  dct:type comp:1;
+  dct:subject function:3;
+  foaf:homepage <http://silkframework.org/>;
+  sd:hasSourceCode source:56;
+  sd:programmingLanguage "Scala", "TypeScript";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:56" .
+
+<https://example.com/tool/57> a ldso:Solution, sd:Software;
+  dct:identifer "57";
+  rdfs:label "SKOS Play!"@en;
+  dct:description "SKOS Play is a free application to work with thesaurus or classification expressed in SKOS."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  foaf:homepage <http://labs.sparna.fr/skos-play>;
+  sd:hasSourceCode source:57;
+  sd:programmingLanguage "Java";
+  dct:license lic:LGPL_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:57" .
+
+<https://example.com/tool/58> a ldso:Solution, sd:Software;
+  dct:identifer "58";
+  rdfs:label "Skos Testing Tool"@en;
+  dct:description "The SKOS testing tool is a web frontend for qSKOS. It allows to assess the quality of SKOS or SKOS-XL vocabularies, by submitting a file to be validated or by validating a SKOS file published at a given URL."@en;
+  dct:type comp:5;
+  dct:subject function:10;
+  foaf:homepage <https://skos-play.sparna.fr/skos-testing-tool/>;
+  sd:hasSourceCode source:58;
+  sd:programmingLanguage "Java", "JavaScript";
+  dct:license lic:LGPL_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:58" .
+
+<https://example.com/tool/59> a ldso:Solution, sd:Software;
+  dct:identifer "59";
+  rdfs:label "Skosify"@en;
+  dct:description "Skosify is a program that accepts a thesaurus-like vocabulary expressed as RDFS, OWL or SKOS as input and produces a clean SKOS representation, which attempts to represent the input data losslessly using SKOS best practices."@en;
+  dct:type comp:5;
+  dct:subject function:10;
+  foaf:homepage <http://skosify.readthedocs.io/>;
+  sd:hasSourceCode source:59;
+  sd:programmingLanguage "Python";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:59" .
+
+<https://example.com/tool/60> a ldso:Solution, sd:Software;
+  dct:identifer "60";
+  rdfs:label "Skosmos"@en;
+  dct:description "Skosmos is a web-based tool providing services for accessing controlled vocabularies, which are used by indexers describing documents and searchers looking for suitable keywords."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  foaf:homepage <http://skosmos.org/>;
+  sd:hasSourceCode source:60;
+  sd:programmingLanguage "PHP", "JavaScript";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:60" .
+
+<https://example.com/tool/61> a ldso:Solution, sd:Software;
+  dct:identifer "61";
+  rdfs:label "Sparklis"@en;
+  dct:description "Create SPARQL queries without writing them using a GUI no code interface (natural language)."@en;
+  dct:type comp:3;
+  dct:subject function:6;
+  foaf:homepage <http://www.irisa.fr/LIS/ferre/sparklis/examples.html>;
+  sd:hasSourceCode source:61;
+  sd:programmingLanguage "Ocaml";
+  dct:license lic:APACHE_2_0;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:61" .
+
+<https://example.com/tool/62> a ldso:Solution, sd:Software;
+  dct:identifer "62";
+  rdfs:label "Sparnatural"@en;
+  dct:description "Create SPARQL queries without writing them using a GUI no code interface (natural language)."@en;
+  dct:type comp:3;
+  dct:subject function:6;
+  foaf:homepage <https://sparnatural.eu/>;
+  sd:hasSourceCode source:62;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:LGPL_3_0;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:62";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3402605> .
+
+<https://example.com/tool/63> a ldso:Solution, sd:Software;
+  dct:identifer "63";
+  rdfs:label "Sparql Anything"@en;
+  dct:description "SPARQL Anything is a system for Semantic Web re-engineering that allows users to query anything with SPARQL."@en;
+  dct:type comp:6, comp:7;
+  dct:subject function:2, function:11, function:12;
+  foaf:homepage <https://sparql-anything.cc/>;
+  sd:hasSourceCode source:63;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:6;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:63";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3815901> .
+
+<https://example.com/tool/64> a ldso:Solution, sd:Software;
+  dct:identifer "64";
+  rdfs:label "Sparql-Generate"@en;
+  dct:description "SPARQL-Generate is an expressive template-based language to generate RDF streams or text streams from RDF datasets and document streams in arbitrary formats."@en;
+  dct:type comp:6, comp:7;
+  dct:subject function:2, function:11, function:12;
+  foaf:homepage <https://ci.mines-stetienne.fr/sparql-generate/index.html>;
+  sd:hasSourceCode source:64;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:6;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:64";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6847995> .
+
+<https://example.com/tool/65> a ldso:Solution, sd:Software;
+  dct:identifer "65";
+  rdfs:label "Tarql"@en;
+  dct:description "Tarql is a command-line tool for converting CSV files to RDF using SPARQL 1.1 syntax."@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <https://tarql.github.io/>;
+  sd:hasSourceCode source:65;
+  sd:programmingLanguage "Java";
+  dct:license lic:BSD_2_CLAUSE;
+  dbo:skills skills:6;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:65";
+  owl:sameAs <https://linkedopendata.eu/entity/Q3989923> .
+
+<https://example.com/tool/66> a ldso:Solution, sd:Software;
+  dct:identifer "66";
+  rdfs:label "Tematres"@en;
+  dct:description "TemaTres is an open source vocabulary server, web application to manage and exploit vocabularies, thesauri, taxonomies and formal representations of knowledge."@en;
+  dct:type comp:2;
+  dct:subject function:9;
+  foaf:homepage <https://vocabularyserver.com/web/>;
+  sd:hasSourceCode source:66;
+  sd:programmingLanguage "PHP", "JavaScript";
+  dct:license lic:GPL_2_0;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:66" .
+
+<https://example.com/tool/67> a ldso:Solution, sd:Software;
+  dct:identifer "67";
+  rdfs:label "Turtle Validator"@en;
+  dct:description "Syntax validation."@en;
+  dct:type comp:5;
+  dct:subject function:7;
+  foaf:homepage <http://ttl.summerofcode.be/>;
+  sd:hasSourceCode source:67;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:67" .
+
+<https://example.com/tool/68> a ldso:Solution, sd:Software;
+  dct:identifer "68";
+  rdfs:label "VocBench"@en;
+  dct:description "VocBench is a web-based, multilingual, collaborative development platform for managing OWL ontologies, SKOS(/XL) thesauri, Ontolex-lemon lexicons and generic RDF datasets."@en;
+  dct:type comp:1, comp:2, "comp3", "comp5";
+  dct:subject function:1, function:3, function:7, function:9, function:10, function:13,
+    function:14;
+  foaf:homepage <https://vocbench.uniroma2.it/>;
+  sd:hasSourceCode source:68;
+  sd:programmingLanguage "Java";
+  dct:license lic:BSD_3_CLAUSE;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:68";
+  owl:sameAs <https://linkedopendata.eu/entity/Q6850036> .
+
+<https://example.com/tool/69> a ldso:Solution, sd:Software;
+  dct:identifer "69";
+  rdfs:label "VocBench - Sheet2RDF"@en;
+  dct:description "Sheet2RDF is a platform for acquisition and transformation of datasheets into RDF, integrated in VocBench it can leverage its functionalities"@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <http://art.uniroma2.it/sheet2rdf/>;
+  sd:hasSourceCode source:69;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:MPL_1_1;
+  dbo:skills skills:1;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:69" .
+
+<https://example.com/tool/70> a ldso:Solution, sd:Software;
+  dct:identifer "70";
+  rdfs:label "VSCode RDF Sketch"@en;
+  dct:description "Visualise RDF data in VSCode (plug-in)"@en;
+  dct:type comp:3;
+  dct:subject function:13;
+  sd:hasSourceCode source:70;
+  sd:programmingLanguage "TypeScript", "JavaScript";
+  dct:license lic:MIT;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:70" .
+
+<https://example.com/tool/71> a ldso:Solution, sd:Software;
+  dct:identifer "71";
+  rdfs:label "WebVOWL"@en;
+  dct:description "Web app for visualisation installed through CLI."@en;
+  dct:type comp:3;
+  dct:subject function:13;
+  foaf:homepage <http://vowl.visualdataweb.org/webvowl.html>;
+  sd:hasSourceCode source:71;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:MIT;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:71" .
+
+<https://example.com/tool/72> a ldso:Solution, sd:Software;
+  dct:identifer "72";
+  rdfs:label "Widoco"@en;
+  dct:description "WIDOCO helps you publish and create an enriched and customized documentation of your ontology."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  foaf:homepage <https://dgarijo.github.io/Widoco/doc/tutorial/#widoco_intro>;
+  sd:hasSourceCode source:72;
+  sd:programmingLanguage "Java", "XSLT";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:72" .
+
+<https://example.com/tool/73> a ldso:Solution, sd:Software;
+  dct:identifer "73";
+  rdfs:label "Wikidata Query Builder"@en;
+  dct:description "The Wikidata Query Builder provides a visual interface for building a simple Wikidata query. It is ideal for users with little or no experience in SPARQL, the powerful query language."@en;
+  dct:type comp:3;
+  dct:subject function:6;
+  foaf:homepage <https://query.wikidata.org/querybuilder/?uselang=en>;
+  sd:hasSourceCode source:73;
+  sd:programmingLanguage "TypeScript", "Vue";
+  dct:license lic:BSD_3_CLAUSE;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:73" .
+
+<https://example.com/tool/74> a ldso:Solution, sd:Software;
+  dct:identifer "74";
+  rdfs:label "XLS2RDF"@en;
+  dct:description "Can create RDF data by editting formatted Excel spreadsheets. Also, allows to specify metadata, thus it can be used to define ontologies"@en;
+  dct:type comp:7;
+  dct:subject function:12;
+  foaf:homepage <http://labs.sparna.fr/skos-play/convert>;
+  sd:hasSourceCode source:74;
+  sd:programmingLanguage "Java";
+  dct:license lic:LGPL_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:74" .
+
+<https://example.com/tool/75> a ldso:Solution, sd:Software;
+  dct:identifer "75";
+  rdfs:label "Zazuko Graph Explorer"@en;
+  dct:description "Graph Explorer is a JavaScript application and library designed to visualize, navigate, and examine RDF-based knowledge graphs and data sources."@en;
+  dct:type comp:3;
+  dct:subject function:13;
+  sd:hasSourceCode source:75;
+  sd:programmingLanguage "TypeScript";
+  dct:license lic:LGPL_2_1;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:75" .
+
+<https://example.com/tool/76> a ldso:Solution, sd:Software;
+  dct:identifer "76";
+  rdfs:label "Zazuko Ontology Manager"@en;
+  dct:description "The Zazuko Ontology Manager (ZOM) is a web application for serving, browsing and modeling RDF Schemas and Ontologies."@en;
+  dct:type comp:2;
+  dct:subject function:1;
+  foaf:homepage <https://editor.zazuko.com/>;
+  sd:hasSourceCode source:76;
+  sd:programmingLanguage "Vue", "JavaScript";
+  dct:license lic:AGPL_3_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:76" .
+
+<https://example.com/tool/77> a ldso:Solution, sd:Software;
+  dct:identifer "77";
+  rdfs:label "ZOOMA"@en;
+  dct:description "ZOOMA is an application for discovering optimal ontology mappings, developed by the Samples, Phenotypes and Ontologies Team at EMBL-EBI."@en;
+  dct:type comp:1;
+  dct:subject function:3;
+  foaf:homepage <http://www.ebi.ac.uk/spot/zooma>;
+  sd:hasSourceCode source:77;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
+  sd:hasSoftwareVersion "SoftVer:77" .
+
+source:1 a sd:SourceCode;
+  dct:identifier "1";
+  sd:codeRepository <https://github.com/okgreece/Alignment> .
+
+source:2 a sd:SourceCode;
+  dct:identifier "2";
+  sd:codeRepository <https://github.com/AgreementMakerLight/AML-Project> .
+
+source:3 a sd:SourceCode;
+  dct:identifier "3";
+  sd:codeRepository <https://github.com/carml/carml> .
+
+source:4 a sd:SourceCode;
+  dct:identifier "4";
+  sd:codeRepository <https://github.com/Wimmics/corese> .
+
+source:5 a sd:SourceCode;
+  dct:identifier "5";
+  sd:codeRepository <https://github.com/culturecommunication/ginco> .
+
+source:6 a sd:SourceCode;
+  dct:identifier "6";
+  sd:codeRepository <https://github.com/blake-regalia/graphy.js> .
+
+source:7 a sd:SourceCode;
+  dct:identifier "7";
+  sd:codeRepository <https://github.com/innoq/iqvoc> .
+
+source:8 a sd:SourceCode;
+  dct:identifier "8";
+  sd:codeRepository <https://github.com/ISAITB/shacl-validator> .
+
+source:9 a sd:SourceCode;
+  dct:identifier "9";
+  sd:codeRepository <https://github.com/AKSW/jekyll-rdf> .
+
+source:10 a sd:SourceCode;
+  dct:identifier "10";
+  sd:codeRepository <https://github.com/apache/jena/> .
+
+source:11 a sd:SourceCode;
+  dct:identifier "11";
+  sd:codeRepository <https://github.com/apache/jena/> .
+
+source:12 a sd:SourceCode;
+  dct:identifier "12";
+  sd:codeRepository <https://github.com/eccenca/jod> .
+
+source:13 a sd:SourceCode;
+  dct:identifier "13";
+  sd:codeRepository <https://github.com/usc-isi-i2/Web-Karma> .
+
+source:14 a sd:SourceCode;
+  dct:identifier "14";
+  sd:codeRepository <https://github.com/linkedpipes/etl> .
+
+source:15 a sd:SourceCode;
+  dct:identifier "15";
+  sd:codeRepository <https://github.com/AtomGraph/LinkedDataHub> .
+
+source:16 a sd:SourceCode;
+  dct:identifier "16";
+  sd:codeRepository <https://github.com/essepuntato/LODE> .
+
+source:17 a sd:SourceCode;
+  dct:identifier "17";
+  sd:codeRepository <https://github.com/ernestojimenezruiz/logmap-matcher> .
+
+source:18 a sd:SourceCode;
+  dct:identifier "18";
+  sd:codeRepository <https://github.com/cefriel/mapping-template> .
+
+source:19 a sd:SourceCode;
+  dct:identifier "19";
+  sd:codeRepository <https://github.com/morph-kgc/morph-kgc> .
+
+source:20 a sd:SourceCode;
+  dct:identifier "20";
+  sd:codeRepository <https://github.com/lmazuel/onadbr:Graphical_user_interface> .
+
+source:21 a sd:SourceCode;
+  dct:identifier "21";
+  sd:codeRepository <https://github.com/OnToology/OnToology> .
+
+source:22 a sd:SourceCode;
+  dct:identifier "22";
+  sd:codeRepository <https://github.com/ontop/ontop> .
+
+source:23 a sd:SourceCode;
+  dct:identifier "23";
+  sd:codeRepository <https://github.com/kracr/ontoseer> .
+
+source:24 a sd:SourceCode;
+  dct:identifier "24";
+  sd:codeRepository <https://github.com/lambdamusic/Ontospy> .
+
+source:25 a sd:SourceCode;
+  dct:identifier "25";
+  sd:codeRepository <https://github.com/OpenRefine/OpenRefine> .
+
+source:26 a sd:SourceCode;
+  dct:identifier "26";
+  sd:codeRepository <https://github.com/miledrousset/Opentheso2> .
+
+source:27 a sd:SourceCode;
+  dct:identifier "27";
+  sd:codeRepository <https://github.com/EBISPOT/OXO> .
+
+source:28 a sd:SourceCode;
+  dct:identifier "28";
+  sd:codeRepository <https://github.com/dig-team/PARIS> .
+
+source:29 a sd:SourceCode;
+  dct:identifier "29";
+  sd:codeRepository <https://github.com/protegeproject/cellfie-plugin> .
+
+source:30 a sd:SourceCode;
+  dct:identifier "30";
+  sd:codeRepository <https://github.com/RDFLib/pyLODE> .
+
+source:31 a sd:SourceCode;
+  dct:identifier "31";
+  sd:codeRepository <https://github.com/RDFLib/pySHACL> .
+
+source:32 a sd:SourceCode;
+  dct:identifier "32";
+  sd:codeRepository <https://github.com/cmader/qSKOS> .
+
+source:33 a sd:SourceCode;
+  dct:identifier "33";
+  sd:codeRepository <https://github.com/dajobe/raptor> .
+
+source:34 a sd:SourceCode;
+  dct:identifier "34";
+  sd:codeRepository <https://github.com/dajobe/raptor> .
+
+source:35 a sd:SourceCode;
+  dct:identifier "35";
+  sd:codeRepository <https://github.com/ruby-rdf/rdf/> .
+
+source:36 a sd:SourceCode;
+  dct:identifier "36";
+  sd:codeRepository <https://github.com/RDFLib/rdflib> .
+
+source:37 a sd:SourceCode;
+  dct:identifier "37";
+  sd:codeRepository <https://github.com/VladimirAlexiev/rdf2rml> .
+
+source:38 a sd:SourceCode;
+  dct:identifier "38";
+  sd:codeRepository <https://github.com/edmcouncil/rdf-toolkit> .
+
+source:39 a sd:SourceCode;
+  dct:identifier "39";
+  sd:codeRepository <https://github.com/AKSW/RDFUnit> .
+
+source:40 a sd:SourceCode;
+  dct:identifier "40";
+  sd:codeRepository <https://github.com/ec-jrc/re3gistry> .
+
+source:41 a sd:SourceCode;
+  dct:identifier "41";
+  sd:codeRepository <https://github.com/rhizomik/redefer-rdf2html> .
+
+source:42 a sd:SourceCode;
+  dct:identifier "42";
+  sd:codeRepository <https://github.com/RMLio/rmlmapper-java> .
+
+source:43 a sd:SourceCode;
+  dct:identifier "43";
+  sd:codeRepository <https://github.com/RMLio/RMLStreamer> .
+
+source:44 a sd:SourceCode;
+  dct:identifier "44";
+  sd:codeRepository <https://github.com/ontodev/robot> .
+
+source:45 a sd:SourceCode;
+  dct:identifier "45";
+  sd:codeRepository <https://github.com/ontodev/robot> .
+
+source:46 a sd:SourceCode;
+  dct:identifier "46";
+  sd:codeRepository <https://github.com/ontodev/robot> .
+
+source:47 a sd:SourceCode;
+  dct:identifier "47";
+  sd:codeRepository <https://github.com/ontodev/robot> .
+
+source:48 a sd:SourceCode;
+  dct:identifier "48";
+  sd:codeRepository <https://github.com/semantifyit/RocketRML> .
+
+source:49 a sd:SourceCode;
+  dct:identifier "49";
+  sd:codeRepository <https://github.com/SDM-TIB/SDM-RDFizer> .
+
+source:50 a sd:SourceCode;
+  dct:identifier "50";
+  sd:codeRepository <https://github.com/sparna-git/shacl-play> .
+
+source:51 a sd:SourceCode;
+  dct:identifier "51";
+  sd:codeRepository <https://github.com/zazuko/shacl-playground> .
+
+source:52 a sd:SourceCode;
+  dct:identifier "52";
+  sd:codeRepository <https://github.com/viaacode/shacl2md> .
+
+source:53 a sd:SourceCode;
+  dct:identifier "53";
+  sd:codeRepository <https://github.com/weso/shaclex> .
+
+source:54 a sd:SourceCode;
+  dct:identifier "54";
+  sd:codeRepository <https://github.com/AKSW/shaclgen> .
+
+source:55 a sd:SourceCode;
+  dct:identifier "55";
+  sd:codeRepository <https://bitbucket.org/art-uniroma2/showvoc/src/master/> .
+
+source:56 a sd:SourceCode;
+  dct:identifier "56";
+  sd:codeRepository <https://github.com/silk-framework/silk> .
+
+source:57 a sd:SourceCode;
+  dct:identifier "57";
+  sd:codeRepository <https://github.com/sparna-git/skos-play> .
+
+source:58 a sd:SourceCode;
+  dct:identifier "58";
+  sd:codeRepository <https://github.com/sparna-git/skos-testing-tool> .
+
+source:59 a sd:SourceCode;
+  dct:identifier "59";
+  sd:codeRepository <https://github.com/NatLibFi/Skosify> .
+
+source:60 a sd:SourceCode;
+  dct:identifier "60";
+  sd:codeRepository <https://github.com/NatLibFi/Skosmos> .
+
+source:61 a sd:SourceCode;
+  dct:identifier "61";
+  sd:codeRepository <https://github.com/sebferre/sparklis> .
+
+source:62 a sd:SourceCode;
+  dct:identifier "62";
+  sd:codeRepository <https://github.com/sparna-git/Sparnatural> .
+
+source:63 a sd:SourceCode;
+  dct:identifier "63";
+  sd:codeRepository <https://github.com/SPARQL-Anything/sparql.anything> .
+
+source:64 a sd:SourceCode;
+  dct:identifier "64";
+  sd:codeRepository <https://github.com/sparql-generate/sparql-generate> .
+
+source:65 a sd:SourceCode;
+  dct:identifier "65";
+  sd:codeRepository <https://github.com/tarql/tarql> .
+
+source:66 a sd:SourceCode;
+  dct:identifier "66";
+  sd:codeRepository <https://github.com/tematres/TemaTres-Vocabulary-Server> .
+
+source:67 a sd:SourceCode;
+  dct:identifier "67";
+  sd:codeRepository <https://github.com/IDLabResearch/TurtleValidator> .
+
+source:68 a sd:SourceCode;
+  dct:identifier "68";
+  sd:codeRepository <https://bitbucket.org/art-uniroma2/vocbench3/> .
+
+source:69 a sd:SourceCode;
+  dct:identifier "69";
+  sd:codeRepository <https://bitbucket.org/art-uniroma2/sheet2rdf.git/src> .
+
+source:70 a sd:SourceCode;
+  dct:identifier "70";
+  sd:codeRepository <https://github.com/zazuko/vscode-rdf-sketch> .
+
+source:71 a sd:SourceCode;
+  dct:identifier "71";
+  sd:codeRepository <https://github.com/VisualDataWeb/WebVOWL> .
+
+source:72 a sd:SourceCode;
+  dct:identifier "72";
+  sd:codeRepository <https://github.com/dgarijo/Widoco/> .
+
+source:73 a sd:SourceCode;
+  dct:identifier "73";
+  sd:codeRepository <https://github.com/wikimedia/wikidata-query-builder> .
+
+source:74 a sd:SourceCode;
+  dct:identifier "74";
+  sd:codeRepository <https://github.com/sparna-git/xls2rdf/> .
+
+source:75 a sd:SourceCode;
+  dct:identifier "75";
+  sd:codeRepository <https://github.com/zazuko/graph-explorer> .
+
+source:76 a sd:SourceCode;
+  dct:identifier "76";
+  sd:codeRepository <https://github.com/zazuko/ontology-manager> .
+
+source:77 a sd:SourceCode;
+  dct:identifier "77";
+  sd:codeRepository <https://github.com/EBISPOT/ZOOMA> .
+
+skills:1 a esco:Skill;
+  dct:identifier "1";
+  rdfs:label "Coda language" .
+
+skills:2 a esco:Skill;
+  dct:identifier "2";
+  rdfs:label "Grel" .
+
+skills:3 a esco:Skill;
+  dct:identifier "3";
+  rdfs:label "Jekyll" .
+
+skills:4 a esco:Skill;
+  dct:identifier "4";
+  rdfs:label "Linked data" .
+
+skills:5 a esco:Skill;
+  dct:identifier "5";
+  rdfs:label "RML" .
+
+skills:6 a esco:Skill;
+  dct:identifier "6";
+  rdfs:label "Sparql" .
+
+skills:7 a esco:Skill;
+  dct:identifier "7";
+  rdfs:label "Specific DSL" .
+
+skills:8 a esco:Skill;
+  dct:identifier "8";
+  rdfs:label "XSLT" .
+
+skills:9 a esco:Skill;
+  dct:identifier "9";
+  rdfs:label "Jython" .
+
+comp:1 a skos:Concept;
+  dct:identifier "1";
+  skos:prefLabel "Enrichment"@en;
+  skos:inScheme <https://example.com/ArchComp/>;
+  skos:topConceptOf <https://example.com/ArchComp/> .
+
+comp:2 a skos:Concept;
+  dct:identifier "2";
+  skos:prefLabel "Evolution"@en;
+  skos:inScheme <https://example.com/ArchComp/>;
+  skos:topConceptOf <https://example.com/ArchComp/> .
+
+comp:3 a skos:Concept;
+  dct:identifier "3";
+  skos:prefLabel "Exploration"@en;
+  skos:inScheme <https://example.com/ArchComp/>;
+  skos:topConceptOf <https://example.com/ArchComp/> .
+
+comp:4 a skos:Concept;
+  dct:identifier "4";
+  skos:prefLabel "Publishing"@en;
+  skos:inScheme <https://example.com/ArchComp/>;
+  skos:topConceptOf <https://example.com/ArchComp/> .
+
+comp:5 a skos:Concept;
+  dct:identifier "5";
+  skos:prefLabel "Quality"@en;
+  skos:inScheme <https://example.com/ArchComp/>;
+  skos:topConceptOf <https://example.com/ArchComp/> .
+
+comp:6 a skos:Concept;
+  dct:identifier "6";
+  skos:prefLabel "Storage"@en;
+  skos:inScheme <https://example.com/ArchComp/>;
+  skos:topConceptOf <https://example.com/ArchComp/> .
+
+comp:7 a skos:Concept;
+  dct:identifier "7";
+  skos:prefLabel "Transformation"@en;
+  skos:inScheme <https://example.com/ArchComp/>;
+  skos:topConceptOf <https://example.com/ArchComp/> .
+
+<https://example.com/ArchComp/> a skos:ConceptScheme;
+  skos:hasTopConcept comp:1, comp:2, comp:3, comp:4, comp:5, comp:6, comp:7 .
+
+DatasetSpecification:1 a sd:DatasetSpecification;
+  dct:identifier "1";
+  rdfs:label "Apache OpenOffice" .
+
+DatasetSpecification:2 a sd:DatasetSpecification;
+  dct:identifier "2";
+  rdfs:label "AWS DynamoDB" .
+
+DatasetSpecification:3 a sd:DatasetSpecification;
+  dct:identifier "3";
+  rdfs:label "Denodo" .
+
+DatasetSpecification:4 a sd:DatasetSpecification;
+  dct:identifier "4";
+  rdfs:label "Apache Spark" .
+
+DatasetSpecification:5 a sd:DatasetSpecification;
+  dct:identifier "5";
+  rdfs:label "Trino" .
+
+DatasetSpecification:6 a sd:DatasetSpecification;
+  dct:identifier "6";
+  rdfs:label "PrestoDB" .
+
+DatasetSpecification:7 a sd:DatasetSpecification;
+  dct:identifier "7";
+  rdfs:label "AWS Athena" .
+
+DatasetSpecification:8 a sd:DatasetSpecification;
+  dct:identifier "8";
+  rdfs:label "AWS Redshift" .
+
+DatasetSpecification:9 a sd:DatasetSpecification;
+  dct:identifier "9";
+  rdfs:label "Bibtex" .
+
+DatasetSpecification:10 a sd:DatasetSpecification;
+  dct:identifier "10";
+  rdfs:label "Binary" .
+
+DatasetSpecification:11 a sd:DatasetSpecification;
+  dct:identifier "11";
+  rdfs:label "CBOR" .
+
+DatasetSpecification:12 a sd:DatasetSpecification;
+  dct:identifier "12";
+  rdfs:label "CSV" .
+
+DatasetSpecification:13 a sd:DatasetSpecification;
+  dct:identifier "13";
+  rdfs:label "Databricks" .
+
+DatasetSpecification:14 a sd:DatasetSpecification;
+  dct:identifier "14";
+  rdfs:label "DB2" .
+
+DatasetSpecification:15 a sd:DatasetSpecification;
+  dct:identifier "15";
+  rdfs:label "DOCx" .
+
+DatasetSpecification:16 a sd:DatasetSpecification;
+  dct:identifier "16";
+  rdfs:label "Dremio" .
+
+DatasetSpecification:17 a sd:DatasetSpecification;
+  dct:identifier "17";
+  rdfs:label "DuckDB" .
+
+DatasetSpecification:18 a sd:DatasetSpecification;
+  dct:identifier "18";
+  rdfs:label "EXIF Metadata" .
+
+DatasetSpecification:19 a sd:DatasetSpecification;
+  dct:identifier "19";
+  rdfs:label "Feather" .
+
+DatasetSpecification:20 a sd:DatasetSpecification;
+  dct:identifier "20";
+  rdfs:label "FTP" .
+
+DatasetSpecification:21 a sd:DatasetSpecification;
+  dct:identifier "21";
+  rdfs:label "GeoJSON" .
+
+DatasetSpecification:22 a sd:DatasetSpecification;
+  dct:identifier "22";
+  rdfs:label "Google BigQuery" .
+
+DatasetSpecification:23 a sd:DatasetSpecification;
+  dct:identifier "23";
+  rdfs:label "HexTuples" .
+
+DatasetSpecification:24 a sd:DatasetSpecification;
+  dct:identifier "24";
+  rdfs:label "HTML" .
+
+DatasetSpecification:25 a sd:DatasetSpecification;
+  dct:identifier "25";
+  rdfs:label "HTTP Get" .
+
+DatasetSpecification:26 a sd:DatasetSpecification;
+  dct:identifier "26";
+  rdfs:label "JSON" .
+
+DatasetSpecification:27 a sd:DatasetSpecification;
+  dct:identifier "27";
+  rdfs:label "JSON-LD" .
+
+DatasetSpecification:28 a sd:DatasetSpecification;
+  dct:identifier "28";
+  rdfs:label "KRSS" .
+
+DatasetSpecification:29 a sd:DatasetSpecification;
+  dct:identifier "29";
+  rdfs:label "LibreOffice" .
+
+DatasetSpecification:30 a sd:DatasetSpecification;
+  dct:identifier "30";
+  rdfs:label "Local files" .
+
+DatasetSpecification:31 a sd:DatasetSpecification;
+  dct:identifier "31";
+  rdfs:label "MARC" .
+
+DatasetSpecification:32 a sd:DatasetSpecification;
+  dct:identifier "32";
+  rdfs:label "MariaDB" .
+
+DatasetSpecification:33 a sd:DatasetSpecification;
+  dct:identifier "33";
+  rdfs:label "Markdown" .
+
+DatasetSpecification:34 a sd:DatasetSpecification;
+  dct:identifier "34";
+  rdfs:label "Microdata" .
+
+DatasetSpecification:35 a sd:DatasetSpecification;
+  dct:identifier "35";
+  rdfs:label "SQL Server" .
+
+DatasetSpecification:36 a sd:DatasetSpecification;
+  dct:identifier "36";
+  rdfs:label "MQTT" .
+
+DatasetSpecification:37 a sd:DatasetSpecification;
+  dct:identifier "37";
+  rdfs:label "MySQL" .
+
+DatasetSpecification:38 a sd:DatasetSpecification;
+  dct:identifier "38";
+  rdfs:label "N-Quads" .
+
+DatasetSpecification:39 a sd:DatasetSpecification;
+  dct:identifier "39";
+  rdfs:label "N-Triples" .
+
+DatasetSpecification:40 a sd:DatasetSpecification;
+  dct:identifier "40";
+  rdfs:label "OBO" .
+
+DatasetSpecification:41 a sd:DatasetSpecification;
+  dct:identifier "41";
+  rdfs:label "ODS" .
+
+DatasetSpecification:42 a sd:DatasetSpecification;
+  dct:identifier "42";
+  rdfs:label "OFN" .
+
+DatasetSpecification:43 a sd:DatasetSpecification;
+  dct:identifier "43";
+  rdfs:label "OMN" .
+
+DatasetSpecification:44 a sd:DatasetSpecification;
+  dct:identifier "44";
+  rdfs:label "Oracle" .
+
+DatasetSpecification:45 a sd:DatasetSpecification;
+  dct:identifier "45";
+  rdfs:label "ORC" .
+
+DatasetSpecification:46 a sd:DatasetSpecification;
+  dct:identifier "46";
+  rdfs:label "OWL" .
+
+DatasetSpecification:47 a sd:DatasetSpecification;
+  dct:identifier "47";
+  rdfs:label "OWL/XML" .
+
+DatasetSpecification:48 a sd:DatasetSpecification;
+  dct:identifier "48";
+  rdfs:label "OWX" .
+
+DatasetSpecification:49 a sd:DatasetSpecification;
+  dct:identifier "49";
+  rdfs:label "Parquet" .
+
+DatasetSpecification:50 a sd:DatasetSpecification;
+  dct:identifier "50";
+  rdfs:label "PostgreSQL" .
+
+DatasetSpecification:51 a sd:DatasetSpecification;
+  dct:identifier "51";
+  rdfs:label "PX" .
+
+DatasetSpecification:52 a sd:DatasetSpecification;
+  dct:identifier "52";
+  rdfs:label "RDB" .
+
+DatasetSpecification:53 a sd:DatasetSpecification;
+  dct:identifier "53";
+  rdfs:label "RDF" .
+
+DatasetSpecification:54 a sd:DatasetSpecification;
+  dct:identifier "54";
+  rdfs:label "RDF/A" .
+
+DatasetSpecification:55 a sd:DatasetSpecification;
+  dct:identifier "55";
+  rdfs:label "RDF/JSON" .
+
+DatasetSpecification:56 a sd:DatasetSpecification;
+  dct:identifier "56";
+  rdfs:label "RDF/XML" .
+
+DatasetSpecification:57 a sd:DatasetSpecification;
+  dct:identifier "57";
+  rdfs:label "RDF Binary" .
+
+DatasetSpecification:58 a sd:DatasetSpecification;
+  dct:identifier "58";
+  rdfs:label "RDFS" .
+
+DatasetSpecification:59 a sd:DatasetSpecification;
+  dct:identifier "59";
+  rdfs:label "SAS" .
+
+DatasetSpecification:60 a sd:DatasetSpecification;
+  dct:identifier "60";
+  rdfs:label "SKOS" .
+
+DatasetSpecification:61 a sd:DatasetSpecification;
+  dct:identifier "61";
+  rdfs:label "Snowflake" .
+
+DatasetSpecification:62 a sd:DatasetSpecification;
+  dct:identifier "62";
+  rdfs:label "Sparql Endpoints" .
+
+DatasetSpecification:63 a sd:DatasetSpecification;
+  dct:identifier "63";
+  rdfs:label "SPSS" .
+
+DatasetSpecification:64 a sd:DatasetSpecification;
+  dct:identifier "64";
+  rdfs:label "SQL" .
+
+DatasetSpecification:65 a sd:DatasetSpecification;
+  dct:identifier "65";
+  rdfs:label "SQLite" .
+
+DatasetSpecification:66 a sd:DatasetSpecification;
+  dct:identifier "66";
+  rdfs:label "Stata" .
+
+DatasetSpecification:67 a sd:DatasetSpecification;
+  dct:identifier "67";
+  rdfs:label "streams/sensor data" .
+
+DatasetSpecification:68 a sd:DatasetSpecification;
+  dct:identifier "68";
+  rdfs:label "Tar" .
+
+DatasetSpecification:69 a sd:DatasetSpecification;
+  dct:identifier "69";
+  rdfs:label "Teiid" .
+
+DatasetSpecification:70 a sd:DatasetSpecification;
+  dct:identifier "70";
+  rdfs:label "TriG" .
+
+DatasetSpecification:71 a sd:DatasetSpecification;
+  dct:identifier "71";
+  rdfs:label "TriX" .
+
+DatasetSpecification:72 a sd:DatasetSpecification;
+  dct:identifier "72";
+  rdfs:label "TSV" .
+
+DatasetSpecification:73 a sd:DatasetSpecification;
+  dct:identifier "73";
+  rdfs:label "Turtle" .
+
+DatasetSpecification:74 a sd:DatasetSpecification;
+  dct:identifier "74";
+  rdfs:label "TXT" .
+
+DatasetSpecification:75 a sd:DatasetSpecification;
+  dct:identifier "75";
+  rdfs:label "VOWL" .
+
+DatasetSpecification:76 a sd:DatasetSpecification;
+  dct:identifier "76";
+  rdfs:label "WebSocket" .
+
+DatasetSpecification:77 a sd:DatasetSpecification;
+  dct:identifier "77";
+  rdfs:label "Wikitext" .
+
+DatasetSpecification:78 a sd:DatasetSpecification;
+  dct:identifier "78";
+  rdfs:label "XLS" .
+
+DatasetSpecification:79 a sd:DatasetSpecification;
+  dct:identifier "79";
+  rdfs:label "XLSX" .
+
+DatasetSpecification:80 a sd:DatasetSpecification;
+  dct:identifier "80";
+  rdfs:label "XML" .
+
+DatasetSpecification:81 a sd:DatasetSpecification;
+  dct:identifier "81";
+  rdfs:label "YAML" .
+
+DatasetSpecification:82 a sd:DatasetSpecification;
+  dct:identifier "82";
+  rdfs:label "N3" .
+
+DatasetSpecification:83 a sd:DatasetSpecification;
+  dct:identifier "83";
+  rdfs:label "SHACL" .
+
+DatasetSpecification:84 a sd:DatasetSpecification;
+  dct:identifier "84";
+  rdfs:label "ODF" .
+
+DatasetSpecification:85 a sd:DatasetSpecification;
+  dct:identifier "85";
+  rdfs:label "HDT" .
