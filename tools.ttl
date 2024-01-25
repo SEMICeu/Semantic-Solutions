@@ -1887,7 +1887,7 @@ softver:77 a sd:SoftwareVersion;
   dct:identifer "68";
   rdfs:label "VocBench"@en;
   dct:description "VocBench is a web-based, multilingual, collaborative development platform for managing OWL ontologies, SKOS(/XL) thesauri, Ontolex-lemon lexicons and generic RDF datasets."@en;
-  dct:type comp:1, comp:2, "comp3", "comp5";
+  dct:type comp:1, comp:2, comp:3, comp:5;
   dct:subject function:1, function:3, function:7, function:9, function:10, function:13,
     function:14;
   foaf:homepage <https://vocbench.uniroma2.it/>;
