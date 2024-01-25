@@ -9,6 +9,7 @@
 @prefix skills: <https://example.com/skills/> .
 @prefix sd: <https://w3id.org/okn/o/sd#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix softver: <https://example.com/SoftVer/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -250,387 +251,387 @@ spdx:Unlicense a skos:Concept;
     lic:CC_BYSA_4_0, spdx:CECILL-2.0, spdx:CECILL-C, lic:EUPL_1_2, lic:AGPL_3_0, lic:LGPL_2_1,
     lic:LGPL_3_0, lic:GPL_2_0, lic:GPL_3_0, lic:ISC, lic:MPL_1_1, spdx:Unlicense .
 
-<https://example.com/SoftVer/1> a sd:SoftwareVersion;
+softver:1 a sd:SoftwareVersion;
   dct:identifier "1";
   sd:hasSoftwareVersion "1.0";
   sd:hasConfiguration <https://example.com/SoftCon/1> .
 
-<https://example.com/SoftVer/2> a sd:SoftwareVersion;
+softver:2 a sd:SoftwareVersion;
   dct:identifier "2";
   sd:hasSoftwareVersion "3.2";
   sd:hasConfiguration <https://example.com/SoftCon/2> .
 
-<https://example.com/SoftVer/3> a sd:SoftwareVersion;
+softver:3 a sd:SoftwareVersion;
   dct:identifier "3";
   sd:hasSoftwareVersion "0.4.9";
   sd:hasConfiguration <https://example.com/SoftCon/3> .
 
-<https://example.com/SoftVer/4> a sd:SoftwareVersion;
+softver:4 a sd:SoftwareVersion;
   dct:identifier "4";
   sd:hasSoftwareVersion "4.5.0";
   sd:hasConfiguration <https://example.com/SoftCon/4> .
 
-<https://example.com/SoftVer/5> a sd:SoftwareVersion;
+softver:5 a sd:SoftwareVersion;
   dct:identifier "5";
   sd:hasSoftwareVersion "2.0.9.12";
   sd:hasConfiguration <https://example.com/SoftCon/5> .
 
-<https://example.com/SoftVer/6> a sd:SoftwareVersion;
+softver:6 a sd:SoftwareVersion;
   dct:identifier "6";
   sd:hasSoftwareVersion "4.3.7";
   sd:hasConfiguration <https://example.com/SoftCon/6> .
 
-<https://example.com/SoftVer/7> a sd:SoftwareVersion;
+softver:7 a sd:SoftwareVersion;
   dct:identifier "7";
   sd:hasSoftwareVersion "4.11.1";
   sd:hasConfiguration <https://example.com/SoftCon/7> .
 
-<https://example.com/SoftVer/8> a sd:SoftwareVersion;
+softver:8 a sd:SoftwareVersion;
   dct:identifier "8";
   sd:hasSoftwareVersion "1.5.0";
   sd:hasConfiguration <https://example.com/SoftCon/8> .
 
-<https://example.com/SoftVer/9> a sd:SoftwareVersion;
+softver:9 a sd:SoftwareVersion;
   dct:identifier "9";
   sd:hasSoftwareVersion "4.1.1";
   sd:hasConfiguration <https://example.com/SoftCon/9> .
 
-<https://example.com/SoftVer/10> a sd:SoftwareVersion;
+softver:10 a sd:SoftwareVersion;
   dct:identifier "10";
   sd:hasSoftwareVersion "4.10";
   sd:hasConfiguration <https://example.com/SoftCon/10> .
 
-<https://example.com/SoftVer/11> a sd:SoftwareVersion;
+softver:11 a sd:SoftwareVersion;
   dct:identifier "11";
   sd:hasSoftwareVersion "4.10";
   sd:hasConfiguration <https://example.com/SoftCon/11> .
 
-<https://example.com/SoftVer/12> a sd:SoftwareVersion;
+softver:12 a sd:SoftwareVersion;
   dct:identifier "12";
   sd:hasSoftwareVersion "0.3.2";
   sd:hasConfiguration <https://example.com/SoftCon/12> .
 
-<https://example.com/SoftVer/13> a sd:SoftwareVersion;
+softver:13 a sd:SoftwareVersion;
   dct:identifier "13";
   sd:hasSoftwareVersion "2.5.7";
   sd:hasConfiguration <https://example.com/SoftCon/13> .
 
-<https://example.com/SoftVer/14> a sd:SoftwareVersion;
+softver:14 a sd:SoftwareVersion;
   dct:identifier "14";
   sd:hasSoftwareVersion "2022-12-16";
   sd:hasConfiguration <https://example.com/SoftCon/14> .
 
-<https://example.com/SoftVer/15> a sd:SoftwareVersion;
+softver:15 a sd:SoftwareVersion;
   dct:identifier "15";
   sd:hasSoftwareVersion "4.0.8";
   sd:hasConfiguration <https://example.com/SoftCon/15> .
 
-<https://example.com/SoftVer/16> a sd:SoftwareVersion;
+softver:16 a sd:SoftwareVersion;
   dct:identifier "16";
   sd:hasSoftwareVersion "2022-08-30";
   sd:hasConfiguration <https://example.com/SoftCon/16> .
 
-<https://example.com/SoftVer/17> a sd:SoftwareVersion;
+softver:17 a sd:SoftwareVersion;
   dct:identifier "17";
   sd:hasSoftwareVersion "July-2021";
   sd:hasConfiguration <https://example.com/SoftCon/17> .
 
-<https://example.com/SoftVer/18> a sd:SoftwareVersion;
+softver:18 a sd:SoftwareVersion;
   dct:identifier "18";
   sd:hasSoftwareVersion "2.3.2";
   sd:hasConfiguration <https://example.com/SoftCon/18> .
 
-<https://example.com/SoftVer/19> a sd:SoftwareVersion;
+softver:19 a sd:SoftwareVersion;
   dct:identifier "19";
   sd:hasSoftwareVersion "2.6.4";
   sd:hasConfiguration <https://example.com/SoftCon/19> .
 
-<https://example.com/SoftVer/20> a sd:SoftwareVersion;
+softver:20 a sd:SoftwareVersion;
   dct:identifier "20";
   sd:hasSoftwareVersion "0.3.7";
   sd:hasConfiguration <https://example.com/SoftCon/20> .
 
-<https://example.com/SoftVer/21> a sd:SoftwareVersion;
+softver:21 a sd:SoftwareVersion;
   dct:identifier "21";
   sd:hasSoftwareVersion "1.7.0";
   sd:hasConfiguration <https://example.com/SoftCon/21> .
 
-<https://example.com/SoftVer/22> a sd:SoftwareVersion;
+softver:22 a sd:SoftwareVersion;
   dct:identifier "22";
   sd:hasSoftwareVersion "5.1.2";
   sd:hasConfiguration <https://example.com/SoftCon/22> .
 
-<https://example.com/SoftVer/23> a sd:SoftwareVersion;
+softver:23 a sd:SoftwareVersion;
   dct:identifier "23";
   sd:hasSoftwareVersion "2022-08-20";
   sd:hasConfiguration <https://example.com/SoftCon/23> .
 
-<https://example.com/SoftVer/24> a sd:SoftwareVersion;
+softver:24 a sd:SoftwareVersion;
   dct:identifier "24";
   sd:hasSoftwareVersion "2.1.1";
   sd:hasConfiguration <https://example.com/SoftCon/24> .
 
-<https://example.com/SoftVer/25> a sd:SoftwareVersion;
+softver:25 a sd:SoftwareVersion;
   dct:identifier "25";
   sd:hasSoftwareVersion "3.7.7";
   sd:hasConfiguration <https://example.com/SoftCon/25> .
 
-<https://example.com/SoftVer/26> a sd:SoftwareVersion;
+softver:26 a sd:SoftwareVersion;
   dct:identifier "26";
   sd:hasSoftwareVersion "22.07";
   sd:hasConfiguration <https://example.com/SoftCon/26> .
 
-<https://example.com/SoftVer/27> a sd:SoftwareVersion;
+softver:27 a sd:SoftwareVersion;
   dct:identifier "27";
   sd:hasSoftwareVersion "0.0.16";
   sd:hasConfiguration <https://example.com/SoftCon/27> .
 
-<https://example.com/SoftVer/28> a sd:SoftwareVersion;
+softver:28 a sd:SoftwareVersion;
   dct:identifier "28";
   sd:hasSoftwareVersion "0.3";
   sd:hasConfiguration <https://example.com/SoftCon/28> .
 
-<https://example.com/SoftVer/29> a sd:SoftwareVersion;
+softver:29 a sd:SoftwareVersion;
   dct:identifier "29";
   sd:hasSoftwareVersion "2.2.3";
   sd:hasConfiguration <https://example.com/SoftCon/29> .
 
-<https://example.com/SoftVer/30> a sd:SoftwareVersion;
+softver:30 a sd:SoftwareVersion;
   dct:identifier "30";
   sd:hasSoftwareVersion "2.13.3";
   sd:hasConfiguration <https://example.com/SoftCon/30> .
 
-<https://example.com/SoftVer/31> a sd:SoftwareVersion;
+softver:31 a sd:SoftwareVersion;
   dct:identifier "31";
   sd:hasSoftwareVersion "0.25.0";
   sd:hasConfiguration <https://example.com/SoftCon/31> .
 
-<https://example.com/SoftVer/32> a sd:SoftwareVersion;
+softver:32 a sd:SoftwareVersion;
   dct:identifier "32";
   sd:hasSoftwareVersion "2.0.3";
   sd:hasConfiguration <https://example.com/SoftCon/32> .
 
-<https://example.com/SoftVer/33> a sd:SoftwareVersion;
+softver:33 a sd:SoftwareVersion;
   dct:identifier "33";
   sd:hasSoftwareVersion "2_2_0_16";
   sd:hasConfiguration <https://example.com/SoftCon/33> .
 
-<https://example.com/SoftVer/34> a sd:SoftwareVersion;
+softver:34 a sd:SoftwareVersion;
   dct:identifier "34";
   sd:hasSoftwareVersion "2_2_0_16";
   sd:hasConfiguration <https://example.com/SoftCon/34> .
 
-<https://example.com/SoftVer/35> a sd:SoftwareVersion;
+softver:35 a sd:SoftwareVersion;
   dct:identifier "35";
   sd:hasSoftwareVersion "3.3.1";
   sd:hasConfiguration <https://example.com/SoftCon/35> .
 
-<https://example.com/SoftVer/36> a sd:SoftwareVersion;
+softver:36 a sd:SoftwareVersion;
   dct:identifier "36";
   sd:hasSoftwareVersion "7.0.0";
   sd:hasConfiguration <https://example.com/SoftCon/36> .
 
-<https://example.com/SoftVer/37> a sd:SoftwareVersion;
+softver:37 a sd:SoftwareVersion;
   dct:identifier "37";
   sd:hasSoftwareVersion "2023-06-01";
   sd:hasConfiguration <https://example.com/SoftCon/37> .
 
-<https://example.com/SoftVer/38> a sd:SoftwareVersion;
+softver:38 a sd:SoftwareVersion;
   dct:identifier "38";
   sd:hasSoftwareVersion "1.15";
   sd:hasConfiguration <https://example.com/SoftCon/38> .
 
-<https://example.com/SoftVer/39> a sd:SoftwareVersion;
+softver:39 a sd:SoftwareVersion;
   dct:identifier "39";
   sd:hasSoftwareVersion "0.7.4";
   sd:hasConfiguration <https://example.com/SoftCon/39> .
 
-<https://example.com/SoftVer/40> a sd:SoftwareVersion;
+softver:40 a sd:SoftwareVersion;
   dct:identifier "40";
   sd:hasSoftwareVersion "2.5.2";
   sd:hasConfiguration <https://example.com/SoftCon/40> .
 
-<https://example.com/SoftVer/41> a sd:SoftwareVersion;
+softver:41 a sd:SoftwareVersion;
   dct:identifier "41";
   sd:hasSoftwareVersion "1.0";
   sd:hasConfiguration <https://example.com/SoftCon/41> .
 
-<https://example.com/SoftVer/42> a sd:SoftwareVersion;
+softver:42 a sd:SoftwareVersion;
   dct:identifier "42";
   sd:hasSoftwareVersion "6.5.1";
   sd:hasConfiguration <https://example.com/SoftCon/42> .
 
-<https://example.com/SoftVer/43> a sd:SoftwareVersion;
+softver:43 a sd:SoftwareVersion;
   dct:identifier "43";
   sd:hasSoftwareVersion "2.5.0";
   sd:hasConfiguration <https://example.com/SoftCon/43> .
 
-<https://example.com/SoftVer/44> a sd:SoftwareVersion;
+softver:44 a sd:SoftwareVersion;
   dct:identifier "44";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/44> .
 
-<https://example.com/SoftVer/45> a sd:SoftwareVersion;
+softver:45 a sd:SoftwareVersion;
   dct:identifier "45";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/45> .
 
-<https://example.com/SoftVer/46> a sd:SoftwareVersion;
+softver:46 a sd:SoftwareVersion;
   dct:identifier "46";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/46> .
 
-<https://example.com/SoftVer/47> a sd:SoftwareVersion;
+softver:47 a sd:SoftwareVersion;
   dct:identifier "47";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/47> .
 
-<https://example.com/SoftVer/48> a sd:SoftwareVersion;
+softver:48 a sd:SoftwareVersion;
   dct:identifier "48";
   sd:hasSoftwareVersion "2.1.2";
   sd:hasConfiguration <https://example.com/SoftCon/48> .
 
-<https://example.com/SoftVer/49> a sd:SoftwareVersion;
+softver:49 a sd:SoftwareVersion;
   dct:identifier "49";
   sd:hasSoftwareVersion "4.7.2.8";
   sd:hasConfiguration <https://example.com/SoftCon/49> .
 
-<https://example.com/SoftVer/50> a sd:SoftwareVersion;
+softver:50 a sd:SoftwareVersion;
   dct:identifier "50";
   sd:hasSoftwareVersion "0.7.0";
   sd:hasConfiguration <https://example.com/SoftCon/50> .
 
-<https://example.com/SoftVer/51> a sd:SoftwareVersion;
+softver:51 a sd:SoftwareVersion;
   dct:identifier "51";
   sd:hasSoftwareVersion "1.0.0";
   sd:hasConfiguration <https://example.com/SoftCon/51> .
 
-<https://example.com/SoftVer/52> a sd:SoftwareVersion;
+softver:52 a sd:SoftwareVersion;
   dct:identifier "52";
   sd:hasSoftwareVersion "1.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/52> .
 
-<https://example.com/SoftVer/53> a sd:SoftwareVersion;
+softver:53 a sd:SoftwareVersion;
   dct:identifier "53";
   sd:hasSoftwareVersion "0.1.00";
   sd:hasConfiguration <https://example.com/SoftCon/53> .
 
-<https://example.com/SoftVer/54> a sd:SoftwareVersion;
+softver:54 a sd:SoftwareVersion;
   dct:identifier "54";
   sd:hasSoftwareVersion "2.5.1";
   sd:hasConfiguration <https://example.com/SoftCon/54> .
 
-<https://example.com/SoftVer/55> a sd:SoftwareVersion;
+softver:55 a sd:SoftwareVersion;
   dct:identifier "55";
   sd:hasSoftwareVersion "3.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/55> .
 
-<https://example.com/SoftVer/56> a sd:SoftwareVersion;
+softver:56 a sd:SoftwareVersion;
   dct:identifier "56";
   sd:hasSoftwareVersion "3.6.0";
   sd:hasConfiguration <https://example.com/SoftCon/56> .
 
-<https://example.com/SoftVer/57> a sd:SoftwareVersion;
+softver:57 a sd:SoftwareVersion;
   dct:identifier "57";
   sd:hasSoftwareVersion "0.9.1";
   sd:hasConfiguration <https://example.com/SoftCon/57> .
 
-<https://example.com/SoftVer/58> a sd:SoftwareVersion;
+softver:58 a sd:SoftwareVersion;
   dct:identifier "58";
   sd:hasSoftwareVersion "2023-08-01";
   sd:hasConfiguration <https://example.com/SoftCon/58> .
 
-<https://example.com/SoftVer/59> a sd:SoftwareVersion;
+softver:59 a sd:SoftwareVersion;
   dct:identifier "59";
   sd:hasSoftwareVersion "2.3.0";
   sd:hasConfiguration <https://example.com/SoftCon/59> .
 
-<https://example.com/SoftVer/60> a sd:SoftwareVersion;
+softver:60 a sd:SoftwareVersion;
   dct:identifier "60";
   sd:hasSoftwareVersion "2.17";
   sd:hasConfiguration <https://example.com/SoftCon/60> .
 
-<https://example.com/SoftVer/61> a sd:SoftwareVersion;
+softver:61 a sd:SoftwareVersion;
   dct:identifier "61";
   sd:hasSoftwareVersion "2019-04";
   sd:hasConfiguration <https://example.com/SoftCon/61> .
 
-<https://example.com/SoftVer/62> a sd:SoftwareVersion;
+softver:62 a sd:SoftwareVersion;
   dct:identifier "62";
   sd:hasSoftwareVersion "8.6.0";
   sd:hasConfiguration <https://example.com/SoftCon/62> .
 
-<https://example.com/SoftVer/63> a sd:SoftwareVersion;
+softver:63 a sd:SoftwareVersion;
   dct:identifier "63";
   sd:hasSoftwareVersion "0.9.0";
   sd:hasConfiguration <https://example.com/SoftCon/63> .
 
-<https://example.com/SoftVer/64> a sd:SoftwareVersion;
+softver:64 a sd:SoftwareVersion;
   dct:identifier "64";
   sd:hasSoftwareVersion "2.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/64> .
 
-<https://example.com/SoftVer/65> a sd:SoftwareVersion;
+softver:65 a sd:SoftwareVersion;
   dct:identifier "65";
   sd:hasSoftwareVersion "1.2";
   sd:hasConfiguration <https://example.com/SoftCon/65> .
 
-<https://example.com/SoftVer/66> a sd:SoftwareVersion;
+softver:66 a sd:SoftwareVersion;
   dct:identifier "66";
   sd:hasSoftwareVersion "3.4.4";
   sd:hasConfiguration <https://example.com/SoftCon/66> .
 
-<https://example.com/SoftVer/67> a sd:SoftwareVersion;
+softver:67 a sd:SoftwareVersion;
   dct:identifier "67";
   sd:hasSoftwareVersion "1.1.1";
   sd:hasConfiguration <https://example.com/SoftCon/67> .
 
-<https://example.com/SoftVer/68> a sd:SoftwareVersion;
+softver:68 a sd:SoftwareVersion;
   dct:identifier "68";
   sd:hasSoftwareVersion "12.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/68> .
 
-<https://example.com/SoftVer/69> a sd:SoftwareVersion;
+softver:69 a sd:SoftwareVersion;
   dct:identifier "69";
   sd:hasSoftwareVersion "2.1";
   sd:hasConfiguration <https://example.com/SoftCon/69> .
 
-<https://example.com/SoftVer/70> a sd:SoftwareVersion;
+softver:70 a sd:SoftwareVersion;
   dct:identifier "70";
   sd:hasSoftwareVersion "0.0.2";
   sd:hasConfiguration <https://example.com/SoftCon/70> .
 
-<https://example.com/SoftVer/71> a sd:SoftwareVersion;
+softver:71 a sd:SoftwareVersion;
   dct:identifier "71";
   sd:hasSoftwareVersion "1.1.6";
   sd:hasConfiguration <https://example.com/SoftCon/71> .
 
-<https://example.com/SoftVer/72> a sd:SoftwareVersion;
+softver:72 a sd:SoftwareVersion;
   dct:identifier "72";
   sd:hasSoftwareVersion "1.4.21";
   sd:hasConfiguration <https://example.com/SoftCon/72> .
 
-<https://example.com/SoftVer/73> a sd:SoftwareVersion;
+softver:73 a sd:SoftwareVersion;
   dct:identifier "73";
   sd:hasSoftwareVersion "2023-09-13";
   sd:hasConfiguration <https://example.com/SoftCon/73> .
 
-<https://example.com/SoftVer/74> a sd:SoftwareVersion;
+softver:74 a sd:SoftwareVersion;
   dct:identifier "74";
   sd:hasSoftwareVersion "2.2.0";
   sd:hasConfiguration <https://example.com/SoftCon/74> .
 
-<https://example.com/SoftVer/75> a sd:SoftwareVersion;
+softver:75 a sd:SoftwareVersion;
   dct:identifier "75";
   sd:hasSoftwareVersion "1.2.0";
   sd:hasConfiguration <https://example.com/SoftCon/75> .
 
-<https://example.com/SoftVer/76> a sd:SoftwareVersion;
+softver:76 a sd:SoftwareVersion;
   dct:identifier "76";
   sd:hasSoftwareVersion "0.14.2";
   sd:hasConfiguration <https://example.com/SoftCon/76> .
 
-<https://example.com/SoftVer/77> a sd:SoftwareVersion;
+softver:77 a sd:SoftwareVersion;
   dct:identifier "77";
   sd:hasSoftwareVersion "2.1.10";
   sd:hasConfiguration <https://example.com/SoftCon/77> .
@@ -1028,7 +1029,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:1" .
+  sd:hasSoftwareVersion softver:1 .
 
 <https://example.com/tool/2> a ldso:Solution, sd:Software;
   dct:identifer "2";
@@ -1041,7 +1042,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:2" .
+  sd:hasSoftwareVersion softver:2 .
 
 <https://example.com/tool/3> a ldso:Solution, sd:Software;
   dct:identifer "3";
@@ -1054,7 +1055,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:MIT;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:3";
+  sd:hasSoftwareVersion softver:3;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847963> .
 
 <https://example.com/tool/4> a ldso:Solution, sd:Software;
@@ -1069,7 +1070,7 @@ spdx:Unlicense a skos:Concept;
   dct:license spdx:CeCILL-C;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:4" .
+  sd:hasSoftwareVersion softver:4 .
 
 <https://example.com/tool/5> a ldso:Solution, sd:Software;
   dct:identifer "5";
@@ -1082,7 +1083,7 @@ spdx:Unlicense a skos:Concept;
   sd:programmingLanguage "Java", "JavaScript";
   dct:license spdx:CeCILL-2.0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:5" .
+  sd:hasSoftwareVersion softver:5 .
 
 <https://example.com/tool/6> a ldso:Solution, sd:Software;
   dct:identifer "6";
@@ -1096,7 +1097,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:ISC;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:6" .
+  sd:hasSoftwareVersion softver:6 .
 
 <https://example.com/tool/7> a ldso:Solution, sd:Software;
   dct:identifer "7";
@@ -1109,7 +1110,7 @@ spdx:Unlicense a skos:Concept;
   sd:programmingLanguage "Ruby";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:7" .
+  sd:hasSoftwareVersion softver:7 .
 
 <https://example.com/tool/8> a ldso:Solution, sd:Software;
   dct:identifer "8";
@@ -1122,7 +1123,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:EUPL_1_2;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:8" .
+  sd:hasSoftwareVersion softver:8 .
 
 <https://example.com/tool/9> a ldso:Solution, sd:Software;
   dct:identifer "9";
@@ -1136,7 +1137,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:MIT;
   dbo:skills skills:3;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:9";
+  sd:hasSoftwareVersion softver:9;
   owl:sameAs <https://linkedopendata.eu/entity/Q3402190> .
 
 <https://example.com/tool/10> a ldso:Solution, sd:Software;
@@ -1150,7 +1151,7 @@ spdx:Unlicense a skos:Concept;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:10" .
+  sd:hasSoftwareVersion softver:10 .
 
 <https://example.com/tool/11> a ldso:Solution, sd:Software;
   dct:identifer "11";
@@ -1163,7 +1164,7 @@ spdx:Unlicense a skos:Concept;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:11" .
+  sd:hasSoftwareVersion softver:11 .
 
 <https://example.com/tool/12> a ldso:Solution, sd:Software;
   dct:identifer "12";
@@ -1176,7 +1177,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:MIT;
   dbo:skills skills:3;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:12" .
+  sd:hasSoftwareVersion softver:12 .
 
 <https://example.com/tool/13> a ldso:Solution, sd:Software;
   dct:identifer "13";
@@ -1190,7 +1191,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:13" .
+  sd:hasSoftwareVersion softver:13 .
 
 <https://example.com/tool/14> a ldso:Solution, sd:Software;
   dct:identifer "14";
@@ -1204,7 +1205,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:MIT;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:14";
+  sd:hasSoftwareVersion softver:14;
   owl:sameAs <https://linkedopendata.eu/entity/Q3287800> .
 
 <https://example.com/tool/15> a ldso:Solution, sd:Software;
@@ -1219,7 +1220,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:15";
+  sd:hasSoftwareVersion softver:15;
   owl:sameAs <https://linkedopendata.eu/entity/Q3990893> .
 
 <https://example.com/tool/16> a ldso:Solution, sd:Software;
@@ -1233,7 +1234,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:ISC;
   dbo:skills skills:4;
   dbp:ui dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:16" .
+  sd:hasSoftwareVersion softver:16 .
 
 <https://example.com/tool/17> a ldso:Solution, sd:Software;
   dct:identifer "17";
@@ -1246,7 +1247,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:17" .
+  sd:hasSoftwareVersion softver:17 .
 
 <https://example.com/tool/18> a ldso:Solution, sd:Software;
   dct:identifer "18";
@@ -1258,7 +1259,7 @@ spdx:Unlicense a skos:Concept;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:18" .
+  sd:hasSoftwareVersion softver:18 .
 
 <https://example.com/tool/19> a ldso:Solution, sd:Software;
   dct:identifer "19";
@@ -1272,7 +1273,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:19" .
+  sd:hasSoftwareVersion softver:19 .
 
 <https://example.com/tool/20> a ldso:Solution, sd:Software;
   dct:identifer "20";
@@ -1285,7 +1286,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:20" .
+  sd:hasSoftwareVersion softver:20 .
 
 <https://example.com/tool/21> a ldso:Solution, sd:Software;
   dct:identifer "21";
@@ -1299,7 +1300,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:21" .
+  sd:hasSoftwareVersion softver:21 .
 
 <https://example.com/tool/22> a ldso:Solution, sd:Software;
   dct:identifer "22";
@@ -1313,7 +1314,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:22";
+  sd:hasSoftwareVersion softver:22;
   owl:sameAs <https://linkedopendata.eu/entity/Q3287542> .
 
 <https://example.com/tool/23> a ldso:Solution, sd:Software;
@@ -1327,7 +1328,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:23" .
+  sd:hasSoftwareVersion softver:23 .
 
 <https://example.com/tool/24> a ldso:Solution, sd:Software;
   dct:identifer "24";
@@ -1341,7 +1342,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:24";
+  sd:hasSoftwareVersion softver:24;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847981> .
 
 <https://example.com/tool/25> a ldso:Solution, sd:Software;
@@ -1356,7 +1357,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:2, skills:9;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:25" .
+  sd:hasSoftwareVersion softver:25 .
 
 <https://example.com/tool/26> a ldso:Solution, sd:Software;
   dct:identifer "26";
@@ -1368,7 +1369,7 @@ spdx:Unlicense a skos:Concept;
   sd:programmingLanguage "Java", "PLpgSQL";
   dct:license lic:GPL_3_0;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:26" .
+  sd:hasSoftwareVersion softver:26 .
 
 <https://example.com/tool/27> a ldso:Solution, sd:Software;
   dct:identifer "27";
@@ -1380,7 +1381,7 @@ spdx:Unlicense a skos:Concept;
   sd:programmingLanguage "JavaScript";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:27" .
+  sd:hasSoftwareVersion softver:27 .
 
 <https://example.com/tool/28> a ldso:Solution, sd:Software;
   dct:identifer "28";
@@ -1393,7 +1394,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:CC_BYNC_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:28" .
+  sd:hasSoftwareVersion softver:28 .
 
 <https://example.com/tool/29> a ldso:Solution, sd:Software;
   dct:identifer "29";
@@ -1406,7 +1407,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:LGPL_3_0;
   dbo:skills skills:7;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:29" .
+  sd:hasSoftwareVersion softver:29 .
 
 <https://example.com/tool/30> a ldso:Solution, sd:Software;
   dct:identifer "30";
@@ -1419,7 +1420,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:30" .
+  sd:hasSoftwareVersion softver:30 .
 
 <https://example.com/tool/31> a ldso:Solution, sd:Software;
   dct:identifer "31";
@@ -1432,7 +1433,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:31" .
+  sd:hasSoftwareVersion softver:31 .
 
 <https://example.com/tool/32> a ldso:Solution, sd:Software;
   dct:identifer "32";
@@ -1445,7 +1446,7 @@ spdx:Unlicense a skos:Concept;
   dct:license lic:GPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:32" .
+  sd:hasSoftwareVersion softver:32 .
 
 <https://example.com/tool/33> a ldso:Solution, sd:Software;
   dct:identifer "33";
@@ -1459,7 +1460,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "C";
   dct:license lic:LGPL_2_1, lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:33" .
+  sd:hasSoftwareVersion softver:33 .
 
 <https://example.com/tool/34> a ldso:Solution, sd:Software;
   dct:identifer "34";
@@ -1473,7 +1474,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:LGPL_2_1, lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:34" .
+  sd:hasSoftwareVersion softver:34 .
 
 <https://example.com/tool/35> a ldso:Solution, sd:Software;
   dct:identifer "35";
@@ -1487,7 +1488,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license spdx:Unlicense;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:35" .
+  sd:hasSoftwareVersion softver:35 .
 
 <https://example.com/tool/36> a ldso:Solution, sd:Software;
   dct:identifer "36";
@@ -1500,7 +1501,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "Python";
   dct:license lic:BSD_3_CLAUSE;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:36" .
+  sd:hasSoftwareVersion softver:36 .
 
 <https://example.com/tool/37> a ldso:Solution, sd:Software;
   dct:identifer "37";
@@ -1512,7 +1513,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "Perl", "Ruby";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:37" .
+  sd:hasSoftwareVersion softver:37 .
 
 <https://example.com/tool/38> a ldso:Solution, sd:Software;
   dct:identifer "38";
@@ -1525,7 +1526,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:38" .
+  sd:hasSoftwareVersion softver:38 .
 
 <https://example.com/tool/39> a ldso:Solution, sd:Software;
   dct:identifer "39";
@@ -1539,7 +1540,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:39" .
+  sd:hasSoftwareVersion softver:39 .
 
 <https://example.com/tool/40> a ldso:Solution, sd:Software;
   dct:identifer "40";
@@ -1551,7 +1552,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "Java";
   dct:license lic:EUPL_1_2;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:40" .
+  sd:hasSoftwareVersion softver:40 .
 
 <https://example.com/tool/41> a ldso:Solution, sd:Software;
   dct:identifer "41";
@@ -1564,7 +1565,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:GPL_3_0;
   dbo:skills skills:8;
   dbp:ui dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:41" .
+  sd:hasSoftwareVersion softver:41 .
 
 <https://example.com/tool/42> a ldso:Solution, sd:Software;
   dct:identifer "42";
@@ -1578,7 +1579,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MIT;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:42";
+  sd:hasSoftwareVersion softver:42;
   owl:sameAs <https://linkedopendata.eu/entity/Q3285193> .
 
 <https://example.com/tool/43> a ldso:Solution, sd:Software;
@@ -1593,7 +1594,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MIT;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:43";
+  sd:hasSoftwareVersion softver:43;
   owl:sameAs <https://linkedopendata.eu/entity/Q3285201> .
 
 <https://example.com/tool/44> a ldso:Solution, sd:Software;
@@ -1608,7 +1609,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:44" .
+  sd:hasSoftwareVersion softver:44 .
 
 <https://example.com/tool/45> a ldso:Solution, sd:Software;
   dct:identifer "45";
@@ -1622,7 +1623,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:45" .
+  sd:hasSoftwareVersion softver:45 .
 
 <https://example.com/tool/46> a ldso:Solution, sd:Software;
   dct:identifer "46";
@@ -1636,7 +1637,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:46" .
+  sd:hasSoftwareVersion softver:46 .
 
 <https://example.com/tool/47> a ldso:Solution, sd:Software;
   dct:identifer "47";
@@ -1650,7 +1651,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:47" .
+  sd:hasSoftwareVersion softver:47 .
 
 <https://example.com/tool/48> a ldso:Solution, sd:Software;
   dct:identifer "48";
@@ -1664,7 +1665,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:CC_BYSA_4_0;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:48";
+  sd:hasSoftwareVersion softver:48;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847986> .
 
 <https://example.com/tool/49> a ldso:Solution, sd:Software;
@@ -1679,7 +1680,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:APACHE_2_0;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:49";
+  sd:hasSoftwareVersion softver:49;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847988> .
 
 <https://example.com/tool/50> a ldso:Solution, sd:Software;
@@ -1694,7 +1695,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:50";
+  sd:hasSoftwareVersion softver:50;
   owl:sameAs <https://linkedopendata.eu/entity/Q4703817> .
 
 <https://example.com/tool/51> a ldso:Solution, sd:Software;
@@ -1709,7 +1710,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:AGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:51" .
+  sd:hasSoftwareVersion softver:51 .
 
 <https://example.com/tool/52> a ldso:Solution, sd:Software;
   dct:identifer "52";
@@ -1721,7 +1722,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "Python", "Jinja";
   dct:license lic:MIT;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:52";
+  sd:hasSoftwareVersion softver:52;
   owl:sameAs <https://linkedopendata.eu/entity/Q6874065> .
 
 <https://example.com/tool/53> a ldso:Solution, sd:Software;
@@ -1736,7 +1737,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:53" .
+  sd:hasSoftwareVersion softver:53 .
 
 <https://example.com/tool/54> a ldso:Solution, sd:Software;
   dct:identifer "54";
@@ -1748,7 +1749,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "Python";
   dct:license spdx:Unlicense;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:54" .
+  sd:hasSoftwareVersion softver:54 .
 
 <https://example.com/tool/55> a ldso:Solution, sd:Software;
   dct:identifer "55";
@@ -1762,7 +1763,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:55";
+  sd:hasSoftwareVersion softver:55;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847992> .
 
 <https://example.com/tool/56> a ldso:Solution, sd:Software;
@@ -1777,7 +1778,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:56" .
+  sd:hasSoftwareVersion softver:56 .
 
 <https://example.com/tool/57> a ldso:Solution, sd:Software;
   dct:identifer "57";
@@ -1791,7 +1792,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:57" .
+  sd:hasSoftwareVersion softver:57 .
 
 <https://example.com/tool/58> a ldso:Solution, sd:Software;
   dct:identifer "58";
@@ -1805,7 +1806,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:58" .
+  sd:hasSoftwareVersion softver:58 .
 
 <https://example.com/tool/59> a ldso:Solution, sd:Software;
   dct:identifer "59";
@@ -1819,7 +1820,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:59" .
+  sd:hasSoftwareVersion softver:59 .
 
 <https://example.com/tool/60> a ldso:Solution, sd:Software;
   dct:identifer "60";
@@ -1833,7 +1834,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:60" .
+  sd:hasSoftwareVersion softver:60 .
 
 <https://example.com/tool/61> a ldso:Solution, sd:Software;
   dct:identifer "61";
@@ -1846,7 +1847,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "Ocaml";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:61" .
+  sd:hasSoftwareVersion softver:61 .
 
 <https://example.com/tool/62> a ldso:Solution, sd:Software;
   dct:identifer "62";
@@ -1859,7 +1860,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "JavaScript";
   dct:license lic:LGPL_3_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:62";
+  sd:hasSoftwareVersion softver:62;
   owl:sameAs <https://linkedopendata.eu/entity/Q3402605> .
 
 <https://example.com/tool/63> a ldso:Solution, sd:Software;
@@ -1874,7 +1875,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:63";
+  sd:hasSoftwareVersion softver:63;
   owl:sameAs <https://linkedopendata.eu/entity/Q3815901> .
 
 <https://example.com/tool/64> a ldso:Solution, sd:Software;
@@ -1889,7 +1890,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:64";
+  sd:hasSoftwareVersion softver:64;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847995> .
 
 <https://example.com/tool/65> a ldso:Solution, sd:Software;
@@ -1904,7 +1905,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:BSD_2_CLAUSE;
   dbo:skills skills:6;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:65";
+  sd:hasSoftwareVersion softver:65;
   owl:sameAs <https://linkedopendata.eu/entity/Q3989923> .
 
 <https://example.com/tool/66> a ldso:Solution, sd:Software;
@@ -1918,7 +1919,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "PHP", "JavaScript";
   dct:license lic:GPL_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:66" .
+  sd:hasSoftwareVersion softver:66 .
 
 <https://example.com/tool/67> a ldso:Solution, sd:Software;
   dct:identifer "67";
@@ -1932,7 +1933,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:67" .
+  sd:hasSoftwareVersion softver:67 .
 
 <https://example.com/tool/68> a ldso:Solution, sd:Software;
   dct:identifer "68";
@@ -1947,7 +1948,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:68";
+  sd:hasSoftwareVersion softver:68;
   owl:sameAs <https://linkedopendata.eu/entity/Q6850036> .
 
 <https://example.com/tool/69> a ldso:Solution, sd:Software;
@@ -1962,7 +1963,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:MPL_1_1;
   dbo:skills skills:1;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:69" .
+  sd:hasSoftwareVersion softver:69 .
 
 <https://example.com/tool/70> a ldso:Solution, sd:Software;
   dct:identifer "70";
@@ -1974,7 +1975,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "TypeScript", "JavaScript";
   dct:license lic:MIT;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:70" .
+  sd:hasSoftwareVersion softver:70 .
 
 <https://example.com/tool/71> a ldso:Solution, sd:Software;
   dct:identifer "71";
@@ -1987,7 +1988,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "JavaScript";
   dct:license lic:MIT;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:71" .
+  sd:hasSoftwareVersion softver:71 .
 
 <https://example.com/tool/72> a ldso:Solution, sd:Software;
   dct:identifer "72";
@@ -2001,7 +2002,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:72" .
+  sd:hasSoftwareVersion softver:72 .
 
 <https://example.com/tool/73> a ldso:Solution, sd:Software;
   dct:identifer "73";
@@ -2014,7 +2015,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "TypeScript", "Vue";
   dct:license lic:BSD_3_CLAUSE;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:73" .
+  sd:hasSoftwareVersion softver:73 .
 
 <https://example.com/tool/74> a ldso:Solution, sd:Software;
   dct:identifer "74";
@@ -2028,7 +2029,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:74" .
+  sd:hasSoftwareVersion softver:74 .
 
 <https://example.com/tool/75> a ldso:Solution, sd:Software;
   dct:identifer "75";
@@ -2040,7 +2041,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:programmingLanguage "TypeScript";
   dct:license lic:LGPL_2_1;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:75" .
+  sd:hasSoftwareVersion softver:75 .
 
 <https://example.com/tool/76> a ldso:Solution, sd:Software;
   dct:identifer "76";
@@ -2054,7 +2055,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:AGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion "SoftVer:76" .
+  sd:hasSoftwareVersion softver:76 .
 
 <https://example.com/tool/77> a ldso:Solution, sd:Software;
   dct:identifer "77";
@@ -2068,7 +2069,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion "SoftVer:77" .
+  sd:hasSoftwareVersion softver:77 .
 
 source:1 a sd:SourceCode;
   dct:identifier "1";
