@@ -1400,8 +1400,7 @@ softver:77 a sd:SoftwareVersion;
 <https://example.com/tool/33> a ldso:Solution, sd:Software;
   dct:identifer "33";
   rdfs:label "Raptor"@en;
-  dct:description """Raptor is a free software / Open Source C library that provides a set of parsers and serializers that
-generate Resource Description Framework (RDF) triples by parsing syntaxes or serialize the triples into a syntax."""@en;
+  dct:description "Raptor is a free software / Open Source C library that provides a set of parsers and serializers that generate Resource Description Framework (RDF) triples by parsing syntaxes or serialize the triples into a syntax."@en;
   dct:type comp:7;
   dct:subject function:12;
   foaf:homepage <https://librdf.org/raptor/>;
