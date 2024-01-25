@@ -1161,7 +1161,7 @@ softver:77 a sd:SoftwareVersion;
   dct:identifer "15";
   rdfs:label "LinkedDataHub"@en;
   dct:description "LinkedDataHub is open source software you can use to manage data, create visualizations and build apps on RDF Knowledge Graphs."@en;
-  dct:type <https://example.com/ArchComp/2;comp:3;comp:5>, comp:7;
+  dct:type comp:2, comp:3, comp:5, comp:7;
   dct:subject function:1, function:7, function:11, function:12, function:13;
   foaf:homepage <https://atomgraph.github.io/LinkedDataHub/>;
   sd:hasSourceCode source:15;
@@ -1704,7 +1704,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:identifer "55";
   rdfs:label "ShowVOC"@en;
   dct:description "It can create reports (tabular, diagrams) about ontology and display concepts in diagrams"@en;
-  dct:type <https://example.com/ArchComp/3;comp:4>;
+  dct:type comp:3, comp:4;
   dct:subject function:4, function:5, function:13;
   foaf:homepage <https://showvoc.uniroma2.it/downloads/>;
   sd:hasSourceCode source:55;
