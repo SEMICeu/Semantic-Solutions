@@ -25,7 +25,7 @@
 @prefix xls2rdf: <https://xls2rdf.sparna.fr/vocabulary#> .
 @prefix ldso: <https://data.europa.eu/lds/ontology#> .
 @prefix DatasetSpecification: <https://example.com/DataSpec/> .
-@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix dbo: <https://dbpedia.org/ontology/Software> .
 @prefix dbp: <https://dbpedia.org/property/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
 @prefix esco: <http://data.europa.eu/esco/model#> .
@@ -34,26 +34,17 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 
-dbr:Graphical_user_interface a skos:Concept;
+dbr:Graphical_user_interface a <https://dbpedia.org/ontology/SoftwareSoftware>;
   dct:identifier "Graphical_user_interface";
-  skos:prefLabel "Graphical user interface"@en;
-  skos:inScheme <https://dbpedia.org/resource/>;
-  skos:topConceptOf <https://dbpedia.org/resource/> .
+  skos:prefLabel "Graphical user interface"@en .
 
-dbr:Command-line_interface a skos:Concept;
+dbr:Command-line_interface a <https://dbpedia.org/ontology/SoftwareSoftware>;
   dct:identifier "Command-line_interface";
-  skos:prefLabel "Command-line interface"@en;
-  skos:inScheme <https://dbpedia.org/resource/>;
-  skos:topConceptOf <https://dbpedia.org/resource/> .
+  skos:prefLabel "Command-line interface"@en .
 
-dbr:Web_API a skos:Concept;
+dbr:Web_API a <https://dbpedia.org/ontology/SoftwareSoftware>;
   dct:identifier "Web_API";
-  skos:prefLabel "Web API"@en;
-  skos:inScheme <https://dbpedia.org/resource/>;
-  skos:topConceptOf <https://dbpedia.org/resource/> .
-
-<https://dbpedia.org/resource/> a skos:ConceptScheme;
-  skos:hasTopConcept dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API .
+  skos:prefLabel "Web API"@en .
 
 function:1 a skos:Concept;
   dct:identifier "1";
@@ -1027,7 +1018,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:1;
   sd:programmingLanguage "JavaScript";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:1 .
 
@@ -1040,7 +1031,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:2;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:2 .
 
@@ -1053,7 +1044,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:3;
   sd:programmingLanguage "Java";
   dct:license lic:MIT;
-  dbo:skills skills:5;
+  <https://dbpedia.org/ontology/Softwareskills> skills:5;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:3;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847963> .
@@ -1068,7 +1059,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:4;
   sd:programmingLanguage "Java";
   dct:license spdx:CeCILL-C;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:4 .
 
@@ -1095,7 +1086,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:6;
   sd:programmingLanguage "JavaScript";
   dct:license lic:ISC;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:6 .
 
@@ -1121,7 +1112,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:8;
   sd:programmingLanguage "Java";
   dct:license lic:EUPL_1_2;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:8 .
 
@@ -1135,7 +1126,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:9;
   sd:programmingLanguage "Ruby";
   dct:license lic:MIT;
-  dbo:skills skills:3;
+  <https://dbpedia.org/ontology/Softwareskills> skills:3;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:9;
   owl:sameAs <https://linkedopendata.eu/entity/Q3402190> .
@@ -1175,7 +1166,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:12;
   sd:programmingLanguage "Ruby";
   dct:license lic:MIT;
-  dbo:skills skills:3;
+  <https://dbpedia.org/ontology/Softwareskills> skills:3;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:12 .
 
@@ -1189,7 +1180,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:13;
   sd:programmingLanguage "JavaScript";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:13 .
 
@@ -1203,7 +1194,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:14;
   sd:programmingLanguage "Java", "JavaScript";
   dct:license lic:MIT;
-  dbo:skills skills:6;
+  <https://dbpedia.org/ontology/Softwareskills> skills:6;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:14;
   owl:sameAs <https://linkedopendata.eu/entity/Q3287800> .
@@ -1218,7 +1209,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:15;
   sd:programmingLanguage "XSLT", "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:6;
+  <https://dbpedia.org/ontology/Softwareskills> skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:15;
   owl:sameAs <https://linkedopendata.eu/entity/Q3990893> .
@@ -1232,7 +1223,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:16;
   sd:programmingLanguage "XSLT", "CSS", "Java";
   dct:license lic:ISC;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Web_API;
   sd:hasSoftwareVersion softver:16 .
 
@@ -1245,7 +1236,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:17;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:17 .
 
@@ -1271,7 +1262,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:19;
   sd:programmingLanguage "Python";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:5;
+  <https://dbpedia.org/ontology/Softwareskills> skills:5;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:19 .
 
@@ -1284,7 +1275,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:20;
   sd:programmingLanguage "Java";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:20 .
 
@@ -1298,7 +1289,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:21;
   sd:programmingLanguage "Python";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:21 .
 
@@ -1312,7 +1303,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:22;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:6;
+  <https://dbpedia.org/ontology/Softwareskills> skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:22;
   owl:sameAs <https://linkedopendata.eu/entity/Q3287542> .
@@ -1326,7 +1317,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:23;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:23 .
 
@@ -1340,7 +1331,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:24;
   sd:programmingLanguage "JavaScript";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:24;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847981> .
@@ -1355,7 +1346,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:25;
   sd:programmingLanguage "Java", "JavaScript";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:2, skills:9;
+  <https://dbpedia.org/ontology/Softwareskills> skills:2, skills:9;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:25 .
 
@@ -1392,7 +1383,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:28;
   sd:programmingLanguage "Java";
   dct:license lic:CC_BYNC_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:28 .
 
@@ -1405,7 +1396,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:29;
   sd:programmingLanguage "Java";
   dct:license lic:LGPL_3_0;
-  dbo:skills skills:7;
+  <https://dbpedia.org/ontology/Softwareskills> skills:7;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:29 .
 
@@ -1418,7 +1409,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:30;
   sd:programmingLanguage "Python";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:30 .
 
@@ -1431,7 +1422,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:31;
   sd:programmingLanguage "Python";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:31 .
 
@@ -1444,7 +1435,7 @@ softver:77 a sd:SoftwareVersion;
   sd:hasSourceCode source:32;
   sd:programmingLanguage "Java";
   dct:license lic:GPL_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:32 .
 
@@ -1472,7 +1463,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:34;
   sd:programmingLanguage "C";
   dct:license lic:LGPL_2_1, lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:34 .
 
@@ -1486,7 +1477,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:35;
   sd:programmingLanguage "Ruby";
   dct:license spdx:Unlicense;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:35 .
 
@@ -1524,7 +1515,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:38;
   sd:programmingLanguage "Java", "Scala";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:38 .
 
@@ -1538,7 +1529,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:39;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:39 .
 
@@ -1563,7 +1554,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:41;
   sd:programmingLanguage "Java", "XLST";
   dct:license lic:GPL_3_0;
-  dbo:skills skills:8;
+  <https://dbpedia.org/ontology/Softwareskills> skills:8;
   dbp:ui dbr:Web_API;
   sd:hasSoftwareVersion softver:41 .
 
@@ -1577,7 +1568,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:42;
   sd:programmingLanguage "Java";
   dct:license lic:MIT;
-  dbo:skills skills:5;
+  <https://dbpedia.org/ontology/Softwareskills> skills:5;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:42;
   owl:sameAs <https://linkedopendata.eu/entity/Q3285193> .
@@ -1592,7 +1583,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:43;
   sd:programmingLanguage "Scala", "Java";
   dct:license lic:MIT;
-  dbo:skills skills:5;
+  <https://dbpedia.org/ontology/Softwareskills> skills:5;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:43;
   owl:sameAs <https://linkedopendata.eu/entity/Q3285201> .
@@ -1607,7 +1598,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:44;
   sd:programmingLanguage "Java";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:44 .
 
@@ -1621,7 +1612,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:45;
   sd:programmingLanguage "Java";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:45 .
 
@@ -1635,7 +1626,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:46;
   sd:programmingLanguage "Java";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:46 .
 
@@ -1649,7 +1640,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:47;
   sd:programmingLanguage "Java";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:47 .
 
@@ -1663,7 +1654,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:48;
   sd:programmingLanguage "JavaScript";
   dct:license lic:CC_BYSA_4_0;
-  dbo:skills skills:5;
+  <https://dbpedia.org/ontology/Softwareskills> skills:5;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:48;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847986> .
@@ -1678,7 +1669,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:49;
   sd:programmingLanguage "Python";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:5;
+  <https://dbpedia.org/ontology/Softwareskills> skills:5;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:49;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847988> .
@@ -1693,7 +1684,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:50;
   sd:programmingLanguage "JavaScript", "Java", "CSS";
   dct:license lic:LGPL_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:50;
   owl:sameAs <https://linkedopendata.eu/entity/Q4703817> .
@@ -1708,7 +1699,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:51;
   sd:programmingLanguage "JavaScript";
   dct:license lic:AGPL_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:51 .
 
@@ -1735,7 +1726,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:53;
   sd:programmingLanguage "Scala", "JavaScript";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:53 .
 
@@ -1761,7 +1752,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:55;
   sd:programmingLanguage "JavaScript";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:55;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847992> .
@@ -1776,7 +1767,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:56;
   sd:programmingLanguage "Scala", "TypeScript";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:56 .
 
@@ -1790,7 +1781,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:57;
   sd:programmingLanguage "Java";
   dct:license lic:LGPL_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:57 .
 
@@ -1804,7 +1795,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:58;
   sd:programmingLanguage "Java", "JavaScript";
   dct:license lic:LGPL_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:58 .
 
@@ -1818,7 +1809,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:59;
   sd:programmingLanguage "Python";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:59 .
 
@@ -1832,7 +1823,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:60;
   sd:programmingLanguage "PHP", "JavaScript";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:60 .
 
@@ -1873,7 +1864,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:63;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:6;
+  <https://dbpedia.org/ontology/Softwareskills> skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:63;
   owl:sameAs <https://linkedopendata.eu/entity/Q3815901> .
@@ -1888,7 +1879,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:64;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:6;
+  <https://dbpedia.org/ontology/Softwareskills> skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:64;
   owl:sameAs <https://linkedopendata.eu/entity/Q6847995> .
@@ -1903,7 +1894,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:65;
   sd:programmingLanguage "Java";
   dct:license lic:BSD_2_CLAUSE;
-  dbo:skills skills:6;
+  <https://dbpedia.org/ontology/Softwareskills> skills:6;
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:65;
   owl:sameAs <https://linkedopendata.eu/entity/Q3989923> .
@@ -1931,7 +1922,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:67;
   sd:programmingLanguage "JavaScript";
   dct:license lic:MIT;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:67 .
 
@@ -1946,7 +1937,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:68;
   sd:programmingLanguage "Java";
   dct:license lic:BSD_3_CLAUSE;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:68;
   owl:sameAs <https://linkedopendata.eu/entity/Q6850036> .
@@ -1961,7 +1952,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:69;
   sd:programmingLanguage "JavaScript";
   dct:license lic:MPL_1_1;
-  dbo:skills skills:1;
+  <https://dbpedia.org/ontology/Softwareskills> skills:1;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:69 .
 
@@ -2000,7 +1991,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:72;
   sd:programmingLanguage "Java", "XSLT";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion softver:72 .
 
@@ -2027,7 +2018,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:74;
   sd:programmingLanguage "Java";
   dct:license lic:LGPL_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:74 .
 
@@ -2053,7 +2044,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:76;
   sd:programmingLanguage "Vue", "JavaScript";
   dct:license lic:AGPL_3_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion softver:76 .
 
@@ -2067,7 +2058,7 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   sd:hasSourceCode source:77;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
-  dbo:skills skills:4;
+  <https://dbpedia.org/ontology/Softwareskills> skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
   sd:hasSoftwareVersion softver:77 .
 
