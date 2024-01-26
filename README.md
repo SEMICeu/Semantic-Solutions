@@ -6,7 +6,7 @@ Each solution can have the following properties :
  - name (mandatory)
  - description (mandatory)
  - the blocks of the reference architecture to which belongs (mandatory, multiple values are permitted)
- - its function (mandatory, multiple valeus are permitted)
+ - its function (mandatory, multiple values are permitted)
  - the homepage of the solution, different from the source code repository (optional)
  - the programming languages used to develop the solution (mandatory, multiple values are permitted)
  - the licenses in which the solution is distributed (mandatory, multiple values are permitted)
