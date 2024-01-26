@@ -1,6 +1,6 @@
 # Semantic-Solutions
 
-This repository contains a list of open source applications that could be used in the context of the [Semantic Reference Architecture](https://github.com/SEMICeu/Semantic-Reference-Architecture).
+This repository contains a list of open source applications in the context of the [Semantic Reference Architecture](https://github.com/SEMICeu/Semantic-Reference-Architecture). The objective is to create a decision tree to help end user in selecting the right tool for their needs.
 
 Each solution can have the following properties :
  - name (mandatory)
