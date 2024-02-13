@@ -2085,8 +2085,8 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dct:identifer "78";
   rdfs:label "RDF Processing Toolkit"@en;
   dct:description "The RDF Processing Toolkit (RPT) integrates several of our tools into a single CLI frontend: It features commands for running SPARQL-statements on triple and quad based data both streaming and static"@en;
-  dct:type comp:7, comp:6, comp:5, comp:1;
-  dct:subject function:2, function:12, function:3, function:7;
+  dct:type comp:7, comp:6, comp:5;
+  dct:subject function:2, function:12, function:7, function:11;
   foaf:homepage <https://smartdataanalytics.github.io/RdfProcessingToolkit/>;
   sd:hasSourceCode source:78;
   sd:programmingLanguage "Java";
