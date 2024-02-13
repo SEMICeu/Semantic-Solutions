@@ -1,6 +1,5 @@
 @prefix schema: <http://schema.org/> .
 @prefix spdx: <https://spdx.org/licenses/> .
-@prefix dss: <https://example.com/dss/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix lic: <http://publications.europa.eu/resource/authority/licence/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -10,7 +9,6 @@
 @prefix skills: <https://example.com/skills/> .
 @prefix sd: <https://w3id.org/okn/o/sd#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
-@prefix softver: <https://example.com/SoftVer/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -25,7 +23,8 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix xls2rdf: <https://xls2rdf.sparna.fr/vocabulary#> .
 @prefix ldso: <https://data.europa.eu/lds/ontology#> .
-@prefix dbo: <https://dbpedia.org/ontology/Software/> .
+@prefix DatasetSpecification: <https://example.com/DataSpec/> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
 @prefix dbp: <https://dbpedia.org/property/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
 @prefix esco: <http://data.europa.eu/esco/model#> .
@@ -34,17 +33,26 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 
-dbr:Graphical_user_interface a dbo:Software;
+dbr:Graphical_user_interface a skos:Concept;
   dct:identifier "Graphical_user_interface";
-  skos:prefLabel "Graphical user interface"@en .
+  skos:prefLabel "Graphical user interface"@en;
+  skos:inScheme <https://dbpedia.org/resource/>;
+  skos:topConceptOf <https://dbpedia.org/resource/> .
 
-dbr:Command-line_interface a dbo:Software;
+dbr:Command-line_interface a skos:Concept;
   dct:identifier "Command-line_interface";
-  skos:prefLabel "Command-line interface"@en .
+  skos:prefLabel "Command-line interface"@en;
+  skos:inScheme <https://dbpedia.org/resource/>;
+  skos:topConceptOf <https://dbpedia.org/resource/> .
 
-dbr:Web_API a dbo:Software;
+dbr:Web_API a skos:Concept;
   dct:identifier "Web_API";
-  skos:prefLabel "Web API"@en .
+  skos:prefLabel "Web API"@en;
+  skos:inScheme <https://dbpedia.org/resource/>;
+  skos:topConceptOf <https://dbpedia.org/resource/> .
+
+<https://dbpedia.org/resource/> a skos:ConceptScheme;
+  skos:hasTopConcept dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API .
 
 function:1 a skos:Concept;
   dct:identifier "1";
@@ -242,719 +250,772 @@ spdx:Unlicense a skos:Concept;
     lic:CC_BYSA_4_0, spdx:CECILL-2.0, spdx:CECILL-C, lic:EUPL_1_2, lic:AGPL_3_0, lic:LGPL_2_1,
     lic:LGPL_3_0, lic:GPL_2_0, lic:GPL_3_0, lic:ISC, lic:MPL_1_1, spdx:Unlicense .
 
-softver:1 a sd:SoftwareVersion;
+<https://example.com/SoftVer/1> a sd:SoftwareVersion;
   dct:identifier "1";
   sd:hasSoftwareVersion "1.0";
   sd:hasConfiguration <https://example.com/SoftCon/1> .
 
-softver:2 a sd:SoftwareVersion;
+<https://example.com/SoftVer/2> a sd:SoftwareVersion;
   dct:identifier "2";
   sd:hasSoftwareVersion "3.2";
   sd:hasConfiguration <https://example.com/SoftCon/2> .
 
-softver:3 a sd:SoftwareVersion;
+<https://example.com/SoftVer/3> a sd:SoftwareVersion;
   dct:identifier "3";
   sd:hasSoftwareVersion "0.4.9";
   sd:hasConfiguration <https://example.com/SoftCon/3> .
 
-softver:4 a sd:SoftwareVersion;
+<https://example.com/SoftVer/4> a sd:SoftwareVersion;
   dct:identifier "4";
   sd:hasSoftwareVersion "4.5.0";
   sd:hasConfiguration <https://example.com/SoftCon/4> .
 
-softver:5 a sd:SoftwareVersion;
+<https://example.com/SoftVer/5> a sd:SoftwareVersion;
   dct:identifier "5";
   sd:hasSoftwareVersion "2.0.9.12";
   sd:hasConfiguration <https://example.com/SoftCon/5> .
 
-softver:6 a sd:SoftwareVersion;
+<https://example.com/SoftVer/6> a sd:SoftwareVersion;
   dct:identifier "6";
   sd:hasSoftwareVersion "4.3.7";
   sd:hasConfiguration <https://example.com/SoftCon/6> .
 
-softver:7 a sd:SoftwareVersion;
+<https://example.com/SoftVer/7> a sd:SoftwareVersion;
   dct:identifier "7";
   sd:hasSoftwareVersion "4.11.1";
   sd:hasConfiguration <https://example.com/SoftCon/7> .
 
-softver:8 a sd:SoftwareVersion;
+<https://example.com/SoftVer/8> a sd:SoftwareVersion;
   dct:identifier "8";
   sd:hasSoftwareVersion "1.5.0";
   sd:hasConfiguration <https://example.com/SoftCon/8> .
 
-softver:9 a sd:SoftwareVersion;
+<https://example.com/SoftVer/9> a sd:SoftwareVersion;
   dct:identifier "9";
   sd:hasSoftwareVersion "4.1.1";
   sd:hasConfiguration <https://example.com/SoftCon/9> .
 
-softver:10 a sd:SoftwareVersion;
+<https://example.com/SoftVer/10> a sd:SoftwareVersion;
   dct:identifier "10";
   sd:hasSoftwareVersion "4.10";
   sd:hasConfiguration <https://example.com/SoftCon/10> .
 
-softver:11 a sd:SoftwareVersion;
+<https://example.com/SoftVer/11> a sd:SoftwareVersion;
   dct:identifier "11";
   sd:hasSoftwareVersion "4.10";
   sd:hasConfiguration <https://example.com/SoftCon/11> .
 
-softver:12 a sd:SoftwareVersion;
+<https://example.com/SoftVer/12> a sd:SoftwareVersion;
   dct:identifier "12";
   sd:hasSoftwareVersion "0.3.2";
   sd:hasConfiguration <https://example.com/SoftCon/12> .
 
-softver:13 a sd:SoftwareVersion;
+<https://example.com/SoftVer/13> a sd:SoftwareVersion;
   dct:identifier "13";
   sd:hasSoftwareVersion "2.5.7";
   sd:hasConfiguration <https://example.com/SoftCon/13> .
 
-softver:14 a sd:SoftwareVersion;
+<https://example.com/SoftVer/14> a sd:SoftwareVersion;
   dct:identifier "14";
   sd:hasSoftwareVersion "2022-12-16";
   sd:hasConfiguration <https://example.com/SoftCon/14> .
 
-softver:15 a sd:SoftwareVersion;
+<https://example.com/SoftVer/15> a sd:SoftwareVersion;
   dct:identifier "15";
   sd:hasSoftwareVersion "4.0.8";
   sd:hasConfiguration <https://example.com/SoftCon/15> .
 
-softver:16 a sd:SoftwareVersion;
+<https://example.com/SoftVer/16> a sd:SoftwareVersion;
   dct:identifier "16";
   sd:hasSoftwareVersion "2022-08-30";
   sd:hasConfiguration <https://example.com/SoftCon/16> .
 
-softver:17 a sd:SoftwareVersion;
+<https://example.com/SoftVer/17> a sd:SoftwareVersion;
   dct:identifier "17";
   sd:hasSoftwareVersion "July-2021";
   sd:hasConfiguration <https://example.com/SoftCon/17> .
 
-softver:18 a sd:SoftwareVersion;
+<https://example.com/SoftVer/18> a sd:SoftwareVersion;
   dct:identifier "18";
   sd:hasSoftwareVersion "2.3.2";
   sd:hasConfiguration <https://example.com/SoftCon/18> .
 
-softver:19 a sd:SoftwareVersion;
+<https://example.com/SoftVer/19> a sd:SoftwareVersion;
   dct:identifier "19";
   sd:hasSoftwareVersion "2.6.4";
   sd:hasConfiguration <https://example.com/SoftCon/19> .
 
-softver:20 a sd:SoftwareVersion;
+<https://example.com/SoftVer/20> a sd:SoftwareVersion;
   dct:identifier "20";
   sd:hasSoftwareVersion "0.3.7";
   sd:hasConfiguration <https://example.com/SoftCon/20> .
 
-softver:21 a sd:SoftwareVersion;
+<https://example.com/SoftVer/21> a sd:SoftwareVersion;
   dct:identifier "21";
   sd:hasSoftwareVersion "1.7.0";
   sd:hasConfiguration <https://example.com/SoftCon/21> .
 
-softver:22 a sd:SoftwareVersion;
+<https://example.com/SoftVer/22> a sd:SoftwareVersion;
   dct:identifier "22";
   sd:hasSoftwareVersion "5.1.2";
   sd:hasConfiguration <https://example.com/SoftCon/22> .
 
-softver:23 a sd:SoftwareVersion;
+<https://example.com/SoftVer/23> a sd:SoftwareVersion;
   dct:identifier "23";
   sd:hasSoftwareVersion "2022-08-20";
   sd:hasConfiguration <https://example.com/SoftCon/23> .
 
-softver:24 a sd:SoftwareVersion;
+<https://example.com/SoftVer/24> a sd:SoftwareVersion;
   dct:identifier "24";
   sd:hasSoftwareVersion "2.1.1";
   sd:hasConfiguration <https://example.com/SoftCon/24> .
 
-softver:25 a sd:SoftwareVersion;
+<https://example.com/SoftVer/25> a sd:SoftwareVersion;
   dct:identifier "25";
   sd:hasSoftwareVersion "3.7.7";
   sd:hasConfiguration <https://example.com/SoftCon/25> .
 
-softver:26 a sd:SoftwareVersion;
+<https://example.com/SoftVer/26> a sd:SoftwareVersion;
   dct:identifier "26";
   sd:hasSoftwareVersion "22.07";
   sd:hasConfiguration <https://example.com/SoftCon/26> .
 
-softver:27 a sd:SoftwareVersion;
+<https://example.com/SoftVer/27> a sd:SoftwareVersion;
   dct:identifier "27";
   sd:hasSoftwareVersion "0.0.16";
   sd:hasConfiguration <https://example.com/SoftCon/27> .
 
-softver:28 a sd:SoftwareVersion;
+<https://example.com/SoftVer/28> a sd:SoftwareVersion;
   dct:identifier "28";
   sd:hasSoftwareVersion "0.3";
   sd:hasConfiguration <https://example.com/SoftCon/28> .
 
-softver:29 a sd:SoftwareVersion;
+<https://example.com/SoftVer/29> a sd:SoftwareVersion;
   dct:identifier "29";
   sd:hasSoftwareVersion "2.2.3";
   sd:hasConfiguration <https://example.com/SoftCon/29> .
 
-softver:30 a sd:SoftwareVersion;
+<https://example.com/SoftVer/30> a sd:SoftwareVersion;
   dct:identifier "30";
   sd:hasSoftwareVersion "2.13.3";
   sd:hasConfiguration <https://example.com/SoftCon/30> .
 
-softver:31 a sd:SoftwareVersion;
+<https://example.com/SoftVer/31> a sd:SoftwareVersion;
   dct:identifier "31";
   sd:hasSoftwareVersion "0.25.0";
   sd:hasConfiguration <https://example.com/SoftCon/31> .
 
-softver:32 a sd:SoftwareVersion;
+<https://example.com/SoftVer/32> a sd:SoftwareVersion;
   dct:identifier "32";
   sd:hasSoftwareVersion "2.0.3";
   sd:hasConfiguration <https://example.com/SoftCon/32> .
 
-softver:33 a sd:SoftwareVersion;
+<https://example.com/SoftVer/33> a sd:SoftwareVersion;
   dct:identifier "33";
   sd:hasSoftwareVersion "2_2_0_16";
   sd:hasConfiguration <https://example.com/SoftCon/33> .
 
-softver:34 a sd:SoftwareVersion;
+<https://example.com/SoftVer/34> a sd:SoftwareVersion;
   dct:identifier "34";
   sd:hasSoftwareVersion "2_2_0_16";
   sd:hasConfiguration <https://example.com/SoftCon/34> .
 
-softver:35 a sd:SoftwareVersion;
+<https://example.com/SoftVer/35> a sd:SoftwareVersion;
   dct:identifier "35";
   sd:hasSoftwareVersion "3.3.1";
   sd:hasConfiguration <https://example.com/SoftCon/35> .
 
-softver:36 a sd:SoftwareVersion;
+<https://example.com/SoftVer/36> a sd:SoftwareVersion;
   dct:identifier "36";
   sd:hasSoftwareVersion "7.0.0";
   sd:hasConfiguration <https://example.com/SoftCon/36> .
 
-softver:37 a sd:SoftwareVersion;
+<https://example.com/SoftVer/37> a sd:SoftwareVersion;
   dct:identifier "37";
   sd:hasSoftwareVersion "2023-06-01";
   sd:hasConfiguration <https://example.com/SoftCon/37> .
 
-softver:38 a sd:SoftwareVersion;
+<https://example.com/SoftVer/38> a sd:SoftwareVersion;
   dct:identifier "38";
   sd:hasSoftwareVersion "1.15";
   sd:hasConfiguration <https://example.com/SoftCon/38> .
 
-softver:39 a sd:SoftwareVersion;
+<https://example.com/SoftVer/39> a sd:SoftwareVersion;
   dct:identifier "39";
   sd:hasSoftwareVersion "0.7.4";
   sd:hasConfiguration <https://example.com/SoftCon/39> .
 
-softver:40 a sd:SoftwareVersion;
+<https://example.com/SoftVer/40> a sd:SoftwareVersion;
   dct:identifier "40";
   sd:hasSoftwareVersion "2.5.2";
   sd:hasConfiguration <https://example.com/SoftCon/40> .
 
-softver:41 a sd:SoftwareVersion;
+<https://example.com/SoftVer/41> a sd:SoftwareVersion;
   dct:identifier "41";
   sd:hasSoftwareVersion "1.0";
   sd:hasConfiguration <https://example.com/SoftCon/41> .
 
-softver:42 a sd:SoftwareVersion;
+<https://example.com/SoftVer/42> a sd:SoftwareVersion;
   dct:identifier "42";
   sd:hasSoftwareVersion "6.5.1";
   sd:hasConfiguration <https://example.com/SoftCon/42> .
 
-softver:43 a sd:SoftwareVersion;
+<https://example.com/SoftVer/43> a sd:SoftwareVersion;
   dct:identifier "43";
   sd:hasSoftwareVersion "2.5.0";
   sd:hasConfiguration <https://example.com/SoftCon/43> .
 
-softver:44 a sd:SoftwareVersion;
+<https://example.com/SoftVer/44> a sd:SoftwareVersion;
   dct:identifier "44";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/44> .
 
-softver:45 a sd:SoftwareVersion;
+<https://example.com/SoftVer/45> a sd:SoftwareVersion;
   dct:identifier "45";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/45> .
 
-softver:46 a sd:SoftwareVersion;
+<https://example.com/SoftVer/46> a sd:SoftwareVersion;
   dct:identifier "46";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/46> .
 
-softver:47 a sd:SoftwareVersion;
+<https://example.com/SoftVer/47> a sd:SoftwareVersion;
   dct:identifier "47";
   sd:hasSoftwareVersion "1.9.5";
   sd:hasConfiguration <https://example.com/SoftCon/47> .
 
-softver:48 a sd:SoftwareVersion;
+<https://example.com/SoftVer/48> a sd:SoftwareVersion;
   dct:identifier "48";
   sd:hasSoftwareVersion "2.1.2";
   sd:hasConfiguration <https://example.com/SoftCon/48> .
 
-softver:49 a sd:SoftwareVersion;
+<https://example.com/SoftVer/49> a sd:SoftwareVersion;
   dct:identifier "49";
   sd:hasSoftwareVersion "4.7.2.8";
   sd:hasConfiguration <https://example.com/SoftCon/49> .
 
-softver:50 a sd:SoftwareVersion;
+<https://example.com/SoftVer/50> a sd:SoftwareVersion;
   dct:identifier "50";
   sd:hasSoftwareVersion "0.7.0";
   sd:hasConfiguration <https://example.com/SoftCon/50> .
 
-softver:51 a sd:SoftwareVersion;
+<https://example.com/SoftVer/51> a sd:SoftwareVersion;
   dct:identifier "51";
   sd:hasSoftwareVersion "1.0.0";
   sd:hasConfiguration <https://example.com/SoftCon/51> .
 
-softver:52 a sd:SoftwareVersion;
+<https://example.com/SoftVer/52> a sd:SoftwareVersion;
   dct:identifier "52";
   sd:hasSoftwareVersion "1.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/52> .
 
-softver:53 a sd:SoftwareVersion;
+<https://example.com/SoftVer/53> a sd:SoftwareVersion;
   dct:identifier "53";
   sd:hasSoftwareVersion "0.1.00";
   sd:hasConfiguration <https://example.com/SoftCon/53> .
 
-softver:54 a sd:SoftwareVersion;
+<https://example.com/SoftVer/54> a sd:SoftwareVersion;
   dct:identifier "54";
   sd:hasSoftwareVersion "2.5.1";
   sd:hasConfiguration <https://example.com/SoftCon/54> .
 
-softver:55 a sd:SoftwareVersion;
+<https://example.com/SoftVer/55> a sd:SoftwareVersion;
   dct:identifier "55";
   sd:hasSoftwareVersion "3.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/55> .
 
-softver:56 a sd:SoftwareVersion;
+<https://example.com/SoftVer/56> a sd:SoftwareVersion;
   dct:identifier "56";
   sd:hasSoftwareVersion "3.6.0";
   sd:hasConfiguration <https://example.com/SoftCon/56> .
 
-softver:57 a sd:SoftwareVersion;
+<https://example.com/SoftVer/57> a sd:SoftwareVersion;
   dct:identifier "57";
   sd:hasSoftwareVersion "0.9.1";
   sd:hasConfiguration <https://example.com/SoftCon/57> .
 
-softver:58 a sd:SoftwareVersion;
+<https://example.com/SoftVer/58> a sd:SoftwareVersion;
   dct:identifier "58";
   sd:hasSoftwareVersion "2023-08-01";
   sd:hasConfiguration <https://example.com/SoftCon/58> .
 
-softver:59 a sd:SoftwareVersion;
+<https://example.com/SoftVer/59> a sd:SoftwareVersion;
   dct:identifier "59";
   sd:hasSoftwareVersion "2.3.0";
   sd:hasConfiguration <https://example.com/SoftCon/59> .
 
-softver:60 a sd:SoftwareVersion;
+<https://example.com/SoftVer/60> a sd:SoftwareVersion;
   dct:identifier "60";
   sd:hasSoftwareVersion "2.17";
   sd:hasConfiguration <https://example.com/SoftCon/60> .
 
-softver:61 a sd:SoftwareVersion;
+<https://example.com/SoftVer/61> a sd:SoftwareVersion;
   dct:identifier "61";
   sd:hasSoftwareVersion "2019-04";
   sd:hasConfiguration <https://example.com/SoftCon/61> .
 
-softver:62 a sd:SoftwareVersion;
+<https://example.com/SoftVer/62> a sd:SoftwareVersion;
   dct:identifier "62";
   sd:hasSoftwareVersion "8.6.0";
   sd:hasConfiguration <https://example.com/SoftCon/62> .
 
-softver:63 a sd:SoftwareVersion;
+<https://example.com/SoftVer/63> a sd:SoftwareVersion;
   dct:identifier "63";
   sd:hasSoftwareVersion "0.9.0";
   sd:hasConfiguration <https://example.com/SoftCon/63> .
 
-softver:64 a sd:SoftwareVersion;
+<https://example.com/SoftVer/64> a sd:SoftwareVersion;
   dct:identifier "64";
   sd:hasSoftwareVersion "2.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/64> .
 
-softver:65 a sd:SoftwareVersion;
+<https://example.com/SoftVer/65> a sd:SoftwareVersion;
   dct:identifier "65";
   sd:hasSoftwareVersion "1.2";
   sd:hasConfiguration <https://example.com/SoftCon/65> .
 
-softver:66 a sd:SoftwareVersion;
+<https://example.com/SoftVer/66> a sd:SoftwareVersion;
   dct:identifier "66";
   sd:hasSoftwareVersion "3.4.4";
   sd:hasConfiguration <https://example.com/SoftCon/66> .
 
-softver:67 a sd:SoftwareVersion;
+<https://example.com/SoftVer/67> a sd:SoftwareVersion;
   dct:identifier "67";
   sd:hasSoftwareVersion "1.1.1";
   sd:hasConfiguration <https://example.com/SoftCon/67> .
 
-softver:68 a sd:SoftwareVersion;
+<https://example.com/SoftVer/68> a sd:SoftwareVersion;
   dct:identifier "68";
   sd:hasSoftwareVersion "12.1.0";
   sd:hasConfiguration <https://example.com/SoftCon/68> .
 
-softver:69 a sd:SoftwareVersion;
+<https://example.com/SoftVer/69> a sd:SoftwareVersion;
   dct:identifier "69";
   sd:hasSoftwareVersion "2.1";
   sd:hasConfiguration <https://example.com/SoftCon/69> .
 
-softver:70 a sd:SoftwareVersion;
+<https://example.com/SoftVer/70> a sd:SoftwareVersion;
   dct:identifier "70";
   sd:hasSoftwareVersion "0.0.2";
   sd:hasConfiguration <https://example.com/SoftCon/70> .
 
-softver:71 a sd:SoftwareVersion;
+<https://example.com/SoftVer/71> a sd:SoftwareVersion;
   dct:identifier "71";
   sd:hasSoftwareVersion "1.1.6";
   sd:hasConfiguration <https://example.com/SoftCon/71> .
 
-softver:72 a sd:SoftwareVersion;
+<https://example.com/SoftVer/72> a sd:SoftwareVersion;
   dct:identifier "72";
   sd:hasSoftwareVersion "1.4.21";
   sd:hasConfiguration <https://example.com/SoftCon/72> .
 
-softver:73 a sd:SoftwareVersion;
+<https://example.com/SoftVer/73> a sd:SoftwareVersion;
   dct:identifier "73";
   sd:hasSoftwareVersion "2023-09-13";
   sd:hasConfiguration <https://example.com/SoftCon/73> .
 
-softver:74 a sd:SoftwareVersion;
+<https://example.com/SoftVer/74> a sd:SoftwareVersion;
   dct:identifier "74";
   sd:hasSoftwareVersion "2.2.0";
   sd:hasConfiguration <https://example.com/SoftCon/74> .
 
-softver:75 a sd:SoftwareVersion;
+<https://example.com/SoftVer/75> a sd:SoftwareVersion;
   dct:identifier "75";
   sd:hasSoftwareVersion "1.2.0";
   sd:hasConfiguration <https://example.com/SoftCon/75> .
 
-softver:76 a sd:SoftwareVersion;
+<https://example.com/SoftVer/76> a sd:SoftwareVersion;
   dct:identifier "76";
   sd:hasSoftwareVersion "0.14.2";
   sd:hasConfiguration <https://example.com/SoftCon/76> .
 
-softver:77 a sd:SoftwareVersion;
+<https://example.com/SoftVer/77> a sd:SoftwareVersion;
   dct:identifier "77";
   sd:hasSoftwareVersion "2.1.10";
   sd:hasConfiguration <https://example.com/SoftCon/77> .
 
+<https://example.com/SoftVer/78> a sd:SoftwareVersion;
+  dct:identifier "78";
+  sd:hasSoftwareVersion "1.9.8";
+  sd:hasConfiguration <https://example.com/SoftCon/78> .
+
 <https://example.com/SoftCon/1> a sd:SoftwareConfiguration;
   dct:identifier "1";
-  sd:hasInput dss:56, dss:73, dss:39 .
+  sd:hasInput "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
 
 <https://example.com/SoftCon/2> a sd:SoftwareConfiguration;
   dct:identifier "2";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/3> a sd:SoftwareConfiguration;
   dct:identifier "3";
-  sd:hasInput dss:12, dss:26, dss:80 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80" .
 
 <https://example.com/SoftCon/4> a sd:SoftwareConfiguration;
   dct:identifier "4" .
 
 <https://example.com/SoftCon/5> a sd:SoftwareConfiguration;
   dct:identifier "5";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/6> a sd:SoftwareConfiguration;
   dct:identifier "6";
-  sd:hasInput dss:56, dss:39, dss:38, dss:73, dss:70;
-  sd:hasOutput dss:56, dss:39, dss:38, dss:73, dss:70 .
+  sd:hasInput "DataSpecification:56", "DataSpecification:39", "DataSpecification:38",
+    "DataSpecification:73", "DataSpecification:70";
+  sd:hasOutput "DataSpecification:56", "DataSpecification:39", "DataSpecification:38",
+    "DataSpecification:73", "DataSpecification:70" .
 
 <https://example.com/SoftCon/7> a sd:SoftwareConfiguration;
   dct:identifier "7";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/8> a sd:SoftwareConfiguration;
   dct:identifier "8";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/9> a sd:SoftwareConfiguration;
   dct:identifier "9";
-  sd:hasInput dss:62 .
+  sd:hasInput "DataSpecification:62" .
 
 <https://example.com/SoftCon/10> a sd:SoftwareConfiguration;
   dct:identifier "10";
-  sd:hasInput dss:73, dss:56, dss:39, dss:27, dss:55, dss:70, dss:38, dss:71, dss:57;
-  sd:hasOutput dss:73, dss:56, dss:39, dss:27, dss:55, dss:70, dss:38, dss:71, dss:57 .
+  sd:hasInput "DataSpecification:73", "DataSpecification:56", "DataSpecification:39",
+    "DataSpecification:27", "DataSpecification:55", "DataSpecification:70", "DataSpecification:38",
+    "DataSpecification:71", "DataSpecification:57";
+  sd:hasOutput "DataSpecification:73", "DataSpecification:56", "DataSpecification:39",
+    "DataSpecification:27", "DataSpecification:55", "DataSpecification:70", "DataSpecification:38",
+    "DataSpecification:71", "DataSpecification:57" .
 
 <https://example.com/SoftCon/11> a sd:SoftwareConfiguration;
   dct:identifier "11";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/12> a sd:SoftwareConfiguration;
   dct:identifier "12";
-  sd:hasInput dss:73 .
+  sd:hasInput "DataSpecification:73" .
 
 <https://example.com/SoftCon/13> a sd:SoftwareConfiguration;
   dct:identifier "13";
-  sd:hasInput dss:12, dss:26, dss:80, dss:78, dss:79, dss:46 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:78", "DataSpecification:79", "DataSpecification:46" .
 
 <https://example.com/SoftCon/14> a sd:SoftwareConfiguration;
   dct:identifier "14";
-  sd:hasInput dss:30, dss:20, dss:25, dss:62, dss:12, dss:85, dss:27, dss:80, dss:53;
-  sd:hasOutput dss:72 .
+  sd:hasInput "DataSpecification:30", "DataSpecification:20", "DataSpecification:25",
+    "DataSpecification:62", "DataSpecification:12", "DataSpecification:85", "DataSpecification:27",
+    "DataSpecification:80", "DataSpecification:53";
+  sd:hasOutput DatasetSpecification:72 .
 
 <https://example.com/SoftCon/15> a sd:SoftwareConfiguration;
   dct:identifier "15";
-  sd:hasInput dss:12, dss:53;
-  sd:hasOutput dss:72 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:53";
+  sd:hasOutput DatasetSpecification:72 .
 
 <https://example.com/SoftCon/16> a sd:SoftwareConfiguration;
   dct:identifier "16";
-  sd:hasInput dss:46 .
+  sd:hasInput "DataSpecification:46" .
 
 <https://example.com/SoftCon/17> a sd:SoftwareConfiguration;
   dct:identifier "17";
-  sd:hasInput dss:56, dss:47, dss:46, dss:40, dss:28, dss:73 .
+  sd:hasInput "DataSpecification:56", "DataSpecification:47", "DataSpecification:46",
+    "DataSpecification:40", "DataSpecification:28", "DataSpecification:73" .
 
 <https://example.com/SoftCon/18> a sd:SoftwareConfiguration;
   dct:identifier "18";
-  sd:hasInput dss:12, dss:26, dss:80, dss:53, dss:56, dss:73, dss:39;
-  sd:hasOutput dss:12, dss:26, dss:80, dss:53, dss:56, dss:73, dss:39 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:53", "DataSpecification:56", "DataSpecification:73", "DataSpecification:39";
+  sd:hasOutput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:53", "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
 
 <https://example.com/SoftCon/19> a sd:SoftwareConfiguration;
   dct:identifier "19";
-  sd:hasInput dss:37, dss:50, dss:44, dss:64, dss:32, dss:12, dss:72, dss:78, dss:79,
-    dss:49, dss:19, dss:45, dss:66, dss:59, dss:63, dss:41, dss:26, dss:80 .
+  sd:hasInput "DataSpecification:37", "DataSpecification:50", "DataSpecification:44",
+    "DataSpecification:64", "DataSpecification:32", "DataSpecification:12", "DataSpecification:72",
+    "DataSpecification:78", "DataSpecification:79", "DataSpecification:49", "DataSpecification:19",
+    "DataSpecification:45", "DataSpecification:66", "DataSpecification:59", "DataSpecification:63",
+    "DataSpecification:41", "DataSpecification:26", "DataSpecification:80" .
 
 <https://example.com/SoftCon/20> a sd:SoftwareConfiguration;
   dct:identifier "20";
-  sd:hasInput dss:46, dss:60, dss:53 .
+  sd:hasInput "DataSpecification:46", "DataSpecification:60", "DataSpecification:53" .
 
 <https://example.com/SoftCon/21> a sd:SoftwareConfiguration;
   dct:identifier "21";
-  sd:hasInput dss:46 .
+  sd:hasInput "DataSpecification:46" .
 
 <https://example.com/SoftCon/22> a sd:SoftwareConfiguration;
   dct:identifier "22";
-  sd:hasInput dss:50, dss:37, dss:32, dss:64, dss:44, dss:14, dss:61, dss:13, dss:22,
-    dss:8, dss:17, dss:2, dss:3, dss:16, dss:69, dss:4, dss:5, dss:6, dss:7 .
+  sd:hasInput "DataSpecification:50", "DataSpecification:37", "DataSpecification:32",
+    "DataSpecification:64", "DataSpecification:44", "DataSpecification:14", "DataSpecification:61",
+    "DataSpecification:13", "DataSpecification:22", "DataSpecification:8", "DataSpecification:17",
+    "DataSpecification:2", "DataSpecification:3", "DataSpecification:16", "DataSpecification:69",
+    "DataSpecification:4", "DataSpecification:5", "DataSpecification:6", "DataSpecification:7" .
 
 <https://example.com/SoftCon/23> a sd:SoftwareConfiguration;
   dct:identifier "23";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/24> a sd:SoftwareConfiguration;
   dct:identifier "24";
-  sd:hasInput dss:58, dss:46, dss:60 .
+  sd:hasInput "DataSpecification:58", "DataSpecification:46", "DataSpecification:60" .
 
 <https://example.com/SoftCon/25> a sd:SoftwareConfiguration;
   dct:identifier "25";
-  sd:hasInput dss:12, dss:72, dss:74, dss:26, dss:80, dss:41, dss:78, dss:79, dss:51,
-    dss:31, dss:53, dss:77;
-  sd:hasOutput dss:12, dss:64, dss:72, dss:78, dss:79, dss:24, dss:84 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:72", "DataSpecification:74",
+    "DataSpecification:26", "DataSpecification:80", "DataSpecification:41", "DataSpecification:78",
+    "DataSpecification:79", "DataSpecification:51", "DataSpecification:31", "DataSpecification:53",
+    "DataSpecification:77";
+  sd:hasOutput DatasetSpecification:12, DatasetSpecification:64, DatasetSpecification:72,
+    DatasetSpecification:78, DatasetSpecification:79, <https://example.com/DataSpec/%2024>,
+    <https://example.com/DataSpec/%2084> .
 
 <https://example.com/SoftCon/26> a sd:SoftwareConfiguration;
   dct:identifier "26";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/27> a sd:SoftwareConfiguration;
   dct:identifier "27";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/28> a sd:SoftwareConfiguration;
   dct:identifier "28";
-  sd:hasInput dss:39 .
+  sd:hasInput "DataSpecification:39" .
 
 <https://example.com/SoftCon/29> a sd:SoftwareConfiguration;
   dct:identifier "29";
-  sd:hasInput dss:78 .
+  sd:hasInput "DataSpecification:78" .
 
 <https://example.com/SoftCon/30> a sd:SoftwareConfiguration;
   dct:identifier "30";
-  sd:hasInput dss:46 .
+  sd:hasInput "DataSpecification:46" .
 
 <https://example.com/SoftCon/31> a sd:SoftwareConfiguration;
   dct:identifier "31";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/32> a sd:SoftwareConfiguration;
   dct:identifier "32";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/33> a sd:SoftwareConfiguration;
   dct:identifier "33";
-  sd:hasInput dss:80 .
+  sd:hasInput "DataSpecification:80" .
 
 <https://example.com/SoftCon/34> a sd:SoftwareConfiguration;
   dct:identifier "34";
-  sd:hasInput dss:56, dss:39, dss:73;
-  sd:hasOutput dss:56, dss:39, dss:73 .
+  sd:hasInput "DataSpecification:56", "DataSpecification:39", "DataSpecification:73";
+  sd:hasOutput "DataSpecification:56", "DataSpecification:39", "DataSpecification:73" .
 
 <https://example.com/SoftCon/35> a sd:SoftwareConfiguration;
   dct:identifier "35";
-  sd:hasInput dss:39, dss:38;
-  sd:hasOutput dss:39, dss:38 .
+  sd:hasInput "DataSpecification:39", "DataSpecification:38";
+  sd:hasOutput "DataSpecification:39", "DataSpecification:38" .
 
 <https://example.com/SoftCon/36> a sd:SoftwareConfiguration;
   dct:identifier "36";
-  sd:hasInput dss:56, dss:82, dss:39, dss:38, dss:73, dss:71, dss:27, dss:23, dss:54,
-    dss:34;
-  sd:hasOutput dss:56, dss:82, dss:39, dss:38, dss:73, dss:71, dss:27, dss:23, dss:54,
-    dss:34 .
+  sd:hasInput "DataSpecification:56", "DataSpecification:82", "DataSpecification:39",
+    "DataSpecification:38", "DataSpecification:73", "DataSpecification:71", "DataSpecification:27",
+    "DataSpecification:23", "DataSpecification:54", "DataSpecification:34";
+  sd:hasOutput "DataSpecification:56", "DataSpecification:82", "DataSpecification:39",
+    "DataSpecification:38", "DataSpecification:73", "DataSpecification:71", "DataSpecification:27",
+    "DataSpecification:23", "DataSpecification:54", "DataSpecification:34" .
 
 <https://example.com/SoftCon/37> a sd:SoftwareConfiguration;
   dct:identifier "37";
-  sd:hasInput dss:53, dss:73 .
+  sd:hasInput "DataSpecification:53", "DataSpecification:73" .
 
 <https://example.com/SoftCon/38> a sd:SoftwareConfiguration;
   dct:identifier "38";
-  sd:hasInput dss:57, dss:27, dss:82, dss:38, dss:39, dss:54, dss:55, dss:56, dss:70,
-    dss:71, dss:73;
-  sd:hasOutput dss:57, dss:27, dss:82, dss:38, dss:39, dss:54, dss:55, dss:56, dss:70,
-    dss:71, dss:73 .
+  sd:hasInput "DataSpecification:57", "DataSpecification:27", "DataSpecification:82",
+    "DataSpecification:38", "DataSpecification:39", "DataSpecification:54", "DataSpecification:55",
+    "DataSpecification:56", "DataSpecification:70", "DataSpecification:71", "DataSpecification:73";
+  sd:hasOutput "DataSpecification:57", "DataSpecification:27", "DataSpecification:82",
+    "DataSpecification:38", "DataSpecification:39", "DataSpecification:54", "DataSpecification:55",
+    "DataSpecification:56", "DataSpecification:70", "DataSpecification:71", "DataSpecification:73" .
 
 <https://example.com/SoftCon/39> a sd:SoftwareConfiguration;
   dct:identifier "39";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/40> a sd:SoftwareConfiguration;
   dct:identifier "40";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/41> a sd:SoftwareConfiguration;
   dct:identifier "41";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/42> a sd:SoftwareConfiguration;
   dct:identifier "42";
-  sd:hasInput dss:79, dss:41, dss:12, dss:26, dss:80, dss:37, dss:50, dss:44, dss:64,
-    dss:62, dss:25 .
+  sd:hasInput "DataSpecification:79", "DataSpecification:41", "DataSpecification:12",
+    "DataSpecification:26", "DataSpecification:80", "DataSpecification:37", "DataSpecification:50",
+    "DataSpecification:44", "DataSpecification:64", "DataSpecification:62", "DataSpecification:25" .
 
 <https://example.com/SoftCon/43> a sd:SoftwareConfiguration;
   dct:identifier "43";
-  sd:hasInput dss:12, dss:26, dss:80, dss:67 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80",
+    "DataSpecification:67" .
 
 <https://example.com/SoftCon/44> a sd:SoftwareConfiguration;
   dct:identifier "44";
-  sd:hasInput dss:26, dss:40, dss:42, dss:43, dss:46, dss:48, dss:73;
-  sd:hasOutput dss:26, dss:40, dss:42, dss:43, dss:46, dss:48, dss:73 .
+  sd:hasInput "DataSpecification:26", "DataSpecification:40", "DataSpecification:42",
+    "DataSpecification:43", "DataSpecification:46", "DataSpecification:48", "DataSpecification:73";
+  sd:hasOutput "DataSpecification:26", "DataSpecification:40", "DataSpecification:42",
+    "DataSpecification:43", "DataSpecification:46", "DataSpecification:48", "DataSpecification:73" .
 
 <https://example.com/SoftCon/45> a sd:SoftwareConfiguration;
   dct:identifier "45";
-  sd:hasInput dss:72, dss:12, dss:24, dss:26, dss:79 .
+  sd:hasInput "DataSpecification:72", "DataSpecification:12", "DataSpecification:24",
+    "DataSpecification:26", "DataSpecification:79" .
 
 <https://example.com/SoftCon/46> a sd:SoftwareConfiguration;
   dct:identifier "46";
-  sd:hasInput dss:46 .
+  sd:hasInput "DataSpecification:46" .
 
 <https://example.com/SoftCon/47> a sd:SoftwareConfiguration;
   dct:identifier "47";
-  sd:hasInput dss:46, dss:60 .
+  sd:hasInput "DataSpecification:46", "DataSpecification:60" .
 
 <https://example.com/SoftCon/48> a sd:SoftwareConfiguration;
   dct:identifier "48";
-  sd:hasInput dss:12, dss:26, dss:80 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:80" .
 
 <https://example.com/SoftCon/49> a sd:SoftwareConfiguration;
   dct:identifier "49";
-  sd:hasInput dss:12, dss:26, dss:52, dss:80 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:52",
+    "DataSpecification:80" .
 
 <https://example.com/SoftCon/50> a sd:SoftwareConfiguration;
   dct:identifier "50";
-  sd:hasInput dss:53, dss:80, dss:73, dss:82, dss:70 .
+  sd:hasInput "DataSpecification:53", "DataSpecification:80", "DataSpecification:73",
+    "DataSpecification:82", "DataSpecification:70" .
 
 <https://example.com/SoftCon/51> a sd:SoftwareConfiguration;
   dct:identifier "51";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/52> a sd:SoftwareConfiguration;
   dct:identifier "52";
-  sd:hasInput dss:83, dss:58 .
+  sd:hasInput "DataSpecification:83", "DataSpecification:58" .
 
 <https://example.com/SoftCon/53> a sd:SoftwareConfiguration;
   dct:identifier "53";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/54> a sd:SoftwareConfiguration;
   dct:identifier "54";
-  sd:hasOutput dss:73, dss:39, dss:82 .
+  sd:hasOutput "DataSpecification:73", "DataSpecification:39", "DataSpecification:82" .
 
 <https://example.com/SoftCon/55> a sd:SoftwareConfiguration;
   dct:identifier "55";
-  sd:hasInput dss:62 .
+  sd:hasInput "DataSpecification:62" .
 
 <https://example.com/SoftCon/56> a sd:SoftwareConfiguration;
   dct:identifier "56";
-  sd:hasInput dss:62, dss:53, dss:26, dss:80, dss:12, dss:37 .
+  sd:hasInput "DataSpecification:62", "DataSpecification:53", "DataSpecification:26",
+    "DataSpecification:80", "DataSpecification:12", "DataSpecification:37" .
 
 <https://example.com/SoftCon/57> a sd:SoftwareConfiguration;
   dct:identifier "57";
-  sd:hasInput dss:58, dss:46, dss:60 .
+  sd:hasInput "DataSpecification:58", "DataSpecification:46", "DataSpecification:60" .
 
 <https://example.com/SoftCon/58> a sd:SoftwareConfiguration;
   dct:identifier "58";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/59> a sd:SoftwareConfiguration;
   dct:identifier "59";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/60> a sd:SoftwareConfiguration;
   dct:identifier "60";
-  sd:hasInput dss:62, dss:60 .
+  sd:hasInput "DataSpecification:62", "DataSpecification:60" .
 
 <https://example.com/SoftCon/61> a sd:SoftwareConfiguration;
   dct:identifier "61";
-  sd:hasInput dss:62 .
+  sd:hasInput "DataSpecification:62" .
 
 <https://example.com/SoftCon/62> a sd:SoftwareConfiguration;
   dct:identifier "62";
-  sd:hasInput dss:62 .
+  sd:hasInput "DataSpecification:62" .
 
 <https://example.com/SoftCon/63> a sd:SoftwareConfiguration;
   dct:identifier "63";
-  sd:hasInput dss:26, dss:24, dss:12, dss:80, dss:10, dss:74, dss:33, dss:78, dss:79,
-    dss:15, dss:18, dss:9, dss:81;
-  sd:hasOutput "DatasetSpecification:72" .
+  sd:hasInput "DataSpecification:26", "DataSpecification:24", "DataSpecification:12",
+    "DataSpecification:80", "DataSpecification:10", "DataSpecification:74", "DataSpecification:33",
+    "DataSpecification:78", "DataSpecification:79", "DataSpecification:15", "DataSpecification:18",
+    "DataSpecification:9", "DataSpecification:81";
+  sd:hasOutput DatasetSpecification:72 .
 
 <https://example.com/SoftCon/64> a sd:SoftwareConfiguration;
   dct:identifier "64";
-  sd:hasInput dss:53, dss:64, dss:80, dss:26, dss:12, dss:21, dss:24, dss:11, dss:74,
-    dss:36, dss:76, dss:25 .
+  sd:hasInput "DataSpecification:53", "DataSpecification:64", "DataSpecification:80",
+    "DataSpecification:26", "DataSpecification:12", "DataSpecification:21", "DataSpecification:24",
+    "DataSpecification:11", "DataSpecification:74", "DataSpecification:36", "DataSpecification:76",
+    "DataSpecification:25" .
 
 <https://example.com/SoftCon/65> a sd:SoftwareConfiguration;
   dct:identifier "65";
-  sd:hasInput dss:12, dss:72 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:72" .
 
 <https://example.com/SoftCon/66> a sd:SoftwareConfiguration;
   dct:identifier "66";
-  sd:hasInput dss:60 .
+  sd:hasInput "DataSpecification:60" .
 
 <https://example.com/SoftCon/67> a sd:SoftwareConfiguration;
   dct:identifier "67";
-  sd:hasInput dss:73, dss:39 .
+  sd:hasInput "DataSpecification:73", "DataSpecification:39" .
 
 <https://example.com/SoftCon/68> a sd:SoftwareConfiguration;
   dct:identifier "68";
-  sd:hasInput dss:46, dss:83, dss:53, dss:60 .
+  sd:hasInput "DataSpecification:46", "DataSpecification:83", "DataSpecification:53",
+    "DataSpecification:60" .
 
 <https://example.com/SoftCon/69> a sd:SoftwareConfiguration;
   dct:identifier "69";
-  sd:hasInput dss:12, dss:72, dss:78, dss:79, dss:1, dss:29, dss:37, dss:32, dss:50 .
+  sd:hasInput "DataSpecification:12", "DataSpecification:72", "DataSpecification:78",
+    "DataSpecification:79", "DataSpecification:1", "DataSpecification:29", "DataSpecification:37",
+    "DataSpecification:32", "DataSpecification:50" .
 
 <https://example.com/SoftCon/70> a sd:SoftwareConfiguration;
   dct:identifier "70";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/71> a sd:SoftwareConfiguration;
   dct:identifier "71";
-  sd:hasInput dss:75, dss:26 .
+  sd:hasInput "DataSpecification:75", "DataSpecification:26" .
 
 <https://example.com/SoftCon/72> a sd:SoftwareConfiguration;
   dct:identifier "72";
-  sd:hasInput dss:53, dss:80, dss:73, dss:46 .
+  sd:hasInput "DataSpecification:53", "DataSpecification:80", "DataSpecification:73",
+    "DataSpecification:46" .
 
 <https://example.com/SoftCon/73> a sd:SoftwareConfiguration;
   dct:identifier "73";
-  sd:hasInput dss:62 .
+  sd:hasInput "DataSpecification:62" .
 
 <https://example.com/SoftCon/74> a sd:SoftwareConfiguration;
   dct:identifier "74";
-  sd:hasInput dss:78, dss:79 .
+  sd:hasInput "DataSpecification:78", "DataSpecification:79" .
 
 <https://example.com/SoftCon/75> a sd:SoftwareConfiguration;
   dct:identifier "75";
-  sd:hasInput dss:53 .
+  sd:hasInput "DataSpecification:53" .
 
 <https://example.com/SoftCon/76> a sd:SoftwareConfiguration;
   dct:identifier "76";
-  sd:hasInput dss:39 .
+  sd:hasInput "DataSpecification:39" .
 
 <https://example.com/SoftCon/77> a sd:SoftwareConfiguration;
   dct:identifier "77";
-  sd:hasInput dss:74 .
+  sd:hasInput "DataSpecification:74" .
+
+<https://example.com/SoftCon/78> a sd:SoftwareConfiguration;
+  dct:identifier "78";
+  sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:53",
+    "DataSpecification:62", "DataSpecification:80";
+  sd:hasOutput "DataSpecification:53", "DataSpecification:62", "DataSpecification:86" .
 
 <http://data.europa.eu/m8g/tools/0.0.1> a dcat:Distribution;
   vann:preferredNamespaceURI "http://data.europa.eu/m8g/tools";
@@ -978,7 +1039,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:1 .
+  sd:hasSoftwareVersion "SoftVer:1" .
 
 <https://example.com/tool/2> a ldso:Solution, sd:Software;
   dct:identifer "2";
@@ -991,7 +1052,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:2 .
+  sd:hasSoftwareVersion "SoftVer:2" .
 
 <https://example.com/tool/3> a ldso:Solution, sd:Software;
   dct:identifer "3";
@@ -1004,7 +1065,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:3;
+  sd:hasSoftwareVersion "SoftVer:3";
   owl:sameAs <https://linkedopendata.eu/entity/Q6847963> .
 
 <https://example.com/tool/4> a ldso:Solution, sd:Software;
@@ -1019,7 +1080,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license spdx:CeCILL-C;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:4 .
+  sd:hasSoftwareVersion "SoftVer:4" .
 
 <https://example.com/tool/5> a ldso:Solution, sd:Software;
   dct:identifer "5";
@@ -1032,7 +1093,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Java", "JavaScript";
   dct:license spdx:CeCILL-2.0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:5 .
+  sd:hasSoftwareVersion "SoftVer:5" .
 
 <https://example.com/tool/6> a ldso:Solution, sd:Software;
   dct:identifer "6";
@@ -1046,7 +1107,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:ISC;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:6 .
+  sd:hasSoftwareVersion "SoftVer:6" .
 
 <https://example.com/tool/7> a ldso:Solution, sd:Software;
   dct:identifer "7";
@@ -1059,7 +1120,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Ruby";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:7 .
+  sd:hasSoftwareVersion "SoftVer:7" .
 
 <https://example.com/tool/8> a ldso:Solution, sd:Software;
   dct:identifer "8";
@@ -1072,7 +1133,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:EUPL_1_2;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:8 .
+  sd:hasSoftwareVersion "SoftVer:8" .
 
 <https://example.com/tool/9> a ldso:Solution, sd:Software;
   dct:identifer "9";
@@ -1086,7 +1147,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:3;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:9;
+  sd:hasSoftwareVersion "SoftVer:9";
   owl:sameAs <https://linkedopendata.eu/entity/Q3402190> .
 
 <https://example.com/tool/10> a ldso:Solution, sd:Software;
@@ -1100,7 +1161,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:10 .
+  sd:hasSoftwareVersion "SoftVer:10" .
 
 <https://example.com/tool/11> a ldso:Solution, sd:Software;
   dct:identifer "11";
@@ -1113,7 +1174,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:11 .
+  sd:hasSoftwareVersion "SoftVer:11" .
 
 <https://example.com/tool/12> a ldso:Solution, sd:Software;
   dct:identifer "12";
@@ -1126,7 +1187,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:3;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:12 .
+  sd:hasSoftwareVersion "SoftVer:12" .
 
 <https://example.com/tool/13> a ldso:Solution, sd:Software;
   dct:identifer "13";
@@ -1140,7 +1201,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:13 .
+  sd:hasSoftwareVersion "SoftVer:13" .
 
 <https://example.com/tool/14> a ldso:Solution, sd:Software;
   dct:identifer "14";
@@ -1154,14 +1215,14 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:14;
+  sd:hasSoftwareVersion "SoftVer:14";
   owl:sameAs <https://linkedopendata.eu/entity/Q3287800> .
 
 <https://example.com/tool/15> a ldso:Solution, sd:Software;
   dct:identifer "15";
   rdfs:label "LinkedDataHub"@en;
   dct:description "LinkedDataHub is open source software you can use to manage data, create visualizations and build apps on RDF Knowledge Graphs."@en;
-  dct:type comp:2, comp:3, comp:5, comp:7;
+  dct:type <https://example.com/ArchComp/2;comp:3;comp:5>, comp:7;
   dct:subject function:1, function:7, function:11, function:12, function:13;
   foaf:homepage <https://atomgraph.github.io/LinkedDataHub/>;
   sd:hasSourceCode source:15;
@@ -1169,7 +1230,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:15;
+  sd:hasSoftwareVersion "SoftVer:15";
   owl:sameAs <https://linkedopendata.eu/entity/Q3990893> .
 
 <https://example.com/tool/16> a ldso:Solution, sd:Software;
@@ -1183,7 +1244,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:ISC;
   dbo:skills skills:4;
   dbp:ui dbr:Web_API;
-  sd:hasSoftwareVersion softver:16 .
+  sd:hasSoftwareVersion "SoftVer:16" .
 
 <https://example.com/tool/17> a ldso:Solution, sd:Software;
   dct:identifer "17";
@@ -1196,7 +1257,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:17 .
+  sd:hasSoftwareVersion "SoftVer:17" .
 
 <https://example.com/tool/18> a ldso:Solution, sd:Software;
   dct:identifer "18";
@@ -1208,7 +1269,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Java";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:18 .
+  sd:hasSoftwareVersion "SoftVer:18" .
 
 <https://example.com/tool/19> a ldso:Solution, sd:Software;
   dct:identifer "19";
@@ -1222,7 +1283,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:19 .
+  sd:hasSoftwareVersion "SoftVer:19" .
 
 <https://example.com/tool/20> a ldso:Solution, sd:Software;
   dct:identifer "20";
@@ -1235,7 +1296,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:20 .
+  sd:hasSoftwareVersion "SoftVer:20" .
 
 <https://example.com/tool/21> a ldso:Solution, sd:Software;
   dct:identifer "21";
@@ -1249,7 +1310,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:21 .
+  sd:hasSoftwareVersion "SoftVer:21" .
 
 <https://example.com/tool/22> a ldso:Solution, sd:Software;
   dct:identifer "22";
@@ -1263,7 +1324,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:22;
+  sd:hasSoftwareVersion "SoftVer:22";
   owl:sameAs <https://linkedopendata.eu/entity/Q3287542> .
 
 <https://example.com/tool/23> a ldso:Solution, sd:Software;
@@ -1277,7 +1338,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:23 .
+  sd:hasSoftwareVersion "SoftVer:23" .
 
 <https://example.com/tool/24> a ldso:Solution, sd:Software;
   dct:identifer "24";
@@ -1291,7 +1352,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:24;
+  sd:hasSoftwareVersion "SoftVer:24";
   owl:sameAs <https://linkedopendata.eu/entity/Q6847981> .
 
 <https://example.com/tool/25> a ldso:Solution, sd:Software;
@@ -1306,7 +1367,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:2, skills:9;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:25 .
+  sd:hasSoftwareVersion "SoftVer:25" .
 
 <https://example.com/tool/26> a ldso:Solution, sd:Software;
   dct:identifer "26";
@@ -1318,7 +1379,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Java", "PLpgSQL";
   dct:license lic:GPL_3_0;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:26 .
+  sd:hasSoftwareVersion "SoftVer:26" .
 
 <https://example.com/tool/27> a ldso:Solution, sd:Software;
   dct:identifer "27";
@@ -1330,7 +1391,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "JavaScript";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:27 .
+  sd:hasSoftwareVersion "SoftVer:27" .
 
 <https://example.com/tool/28> a ldso:Solution, sd:Software;
   dct:identifer "28";
@@ -1343,7 +1404,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:CC_BYNC_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:28 .
+  sd:hasSoftwareVersion "SoftVer:28" .
 
 <https://example.com/tool/29> a ldso:Solution, sd:Software;
   dct:identifer "29";
@@ -1356,7 +1417,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:LGPL_3_0;
   dbo:skills skills:7;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:29 .
+  sd:hasSoftwareVersion "SoftVer:29" .
 
 <https://example.com/tool/30> a ldso:Solution, sd:Software;
   dct:identifer "30";
@@ -1369,7 +1430,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:30 .
+  sd:hasSoftwareVersion "SoftVer:30" .
 
 <https://example.com/tool/31> a ldso:Solution, sd:Software;
   dct:identifer "31";
@@ -1382,7 +1443,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:31 .
+  sd:hasSoftwareVersion "SoftVer:31" .
 
 <https://example.com/tool/32> a ldso:Solution, sd:Software;
   dct:identifer "32";
@@ -1395,12 +1456,13 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:GPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:32 .
+  sd:hasSoftwareVersion "SoftVer:32" .
 
 <https://example.com/tool/33> a ldso:Solution, sd:Software;
   dct:identifer "33";
   rdfs:label "Raptor"@en;
-  dct:description "Raptor is a free software / Open Source C library that provides a set of parsers and serializers that generate Resource Description Framework (RDF) triples by parsing syntaxes or serialize the triples into a syntax."@en;
+  dct:description """Raptor is a free software / Open Source C library that provides a set of parsers and serializers that
+generate Resource Description Framework (RDF) triples by parsing syntaxes or serialize the triples into a syntax."""@en;
   dct:type comp:7;
   dct:subject function:12;
   foaf:homepage <https://librdf.org/raptor/>;
@@ -1408,7 +1470,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "C";
   dct:license lic:LGPL_2_1, lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:33 .
+  sd:hasSoftwareVersion "SoftVer:33" .
 
 <https://example.com/tool/34> a ldso:Solution, sd:Software;
   dct:identifer "34";
@@ -1422,7 +1484,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:LGPL_2_1, lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:34 .
+  sd:hasSoftwareVersion "SoftVer:34" .
 
 <https://example.com/tool/35> a ldso:Solution, sd:Software;
   dct:identifer "35";
@@ -1436,7 +1498,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license spdx:Unlicense;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:35 .
+  sd:hasSoftwareVersion "SoftVer:35" .
 
 <https://example.com/tool/36> a ldso:Solution, sd:Software;
   dct:identifer "36";
@@ -1449,7 +1511,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Python";
   dct:license lic:BSD_3_CLAUSE;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:36 .
+  sd:hasSoftwareVersion "SoftVer:36" .
 
 <https://example.com/tool/37> a ldso:Solution, sd:Software;
   dct:identifer "37";
@@ -1461,7 +1523,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Perl", "Ruby";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:37 .
+  sd:hasSoftwareVersion "SoftVer:37" .
 
 <https://example.com/tool/38> a ldso:Solution, sd:Software;
   dct:identifer "38";
@@ -1474,7 +1536,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:38 .
+  sd:hasSoftwareVersion "SoftVer:38" .
 
 <https://example.com/tool/39> a ldso:Solution, sd:Software;
   dct:identifer "39";
@@ -1488,7 +1550,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:39 .
+  sd:hasSoftwareVersion "SoftVer:39" .
 
 <https://example.com/tool/40> a ldso:Solution, sd:Software;
   dct:identifer "40";
@@ -1500,7 +1562,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Java";
   dct:license lic:EUPL_1_2;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:40 .
+  sd:hasSoftwareVersion "SoftVer:40" .
 
 <https://example.com/tool/41> a ldso:Solution, sd:Software;
   dct:identifer "41";
@@ -1513,7 +1575,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:GPL_3_0;
   dbo:skills skills:8;
   dbp:ui dbr:Web_API;
-  sd:hasSoftwareVersion softver:41 .
+  sd:hasSoftwareVersion "SoftVer:41" .
 
 <https://example.com/tool/42> a ldso:Solution, sd:Software;
   dct:identifer "42";
@@ -1527,7 +1589,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:42;
+  sd:hasSoftwareVersion "SoftVer:42";
   owl:sameAs <https://linkedopendata.eu/entity/Q3285193> .
 
 <https://example.com/tool/43> a ldso:Solution, sd:Software;
@@ -1542,7 +1604,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:43;
+  sd:hasSoftwareVersion "SoftVer:43";
   owl:sameAs <https://linkedopendata.eu/entity/Q3285201> .
 
 <https://example.com/tool/44> a ldso:Solution, sd:Software;
@@ -1557,7 +1619,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:44 .
+  sd:hasSoftwareVersion "SoftVer:44" .
 
 <https://example.com/tool/45> a ldso:Solution, sd:Software;
   dct:identifer "45";
@@ -1571,7 +1633,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:45 .
+  sd:hasSoftwareVersion "SoftVer:45" .
 
 <https://example.com/tool/46> a ldso:Solution, sd:Software;
   dct:identifer "46";
@@ -1585,7 +1647,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:46 .
+  sd:hasSoftwareVersion "SoftVer:46" .
 
 <https://example.com/tool/47> a ldso:Solution, sd:Software;
   dct:identifer "47";
@@ -1599,7 +1661,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:47 .
+  sd:hasSoftwareVersion "SoftVer:47" .
 
 <https://example.com/tool/48> a ldso:Solution, sd:Software;
   dct:identifer "48";
@@ -1613,7 +1675,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:CC_BYSA_4_0;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:48;
+  sd:hasSoftwareVersion "SoftVer:48";
   owl:sameAs <https://linkedopendata.eu/entity/Q6847986> .
 
 <https://example.com/tool/49> a ldso:Solution, sd:Software;
@@ -1628,7 +1690,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:5;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:49;
+  sd:hasSoftwareVersion "SoftVer:49";
   owl:sameAs <https://linkedopendata.eu/entity/Q6847988> .
 
 <https://example.com/tool/50> a ldso:Solution, sd:Software;
@@ -1643,7 +1705,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:50;
+  sd:hasSoftwareVersion "SoftVer:50";
   owl:sameAs <https://linkedopendata.eu/entity/Q4703817> .
 
 <https://example.com/tool/51> a ldso:Solution, sd:Software;
@@ -1658,7 +1720,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:AGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:51 .
+  sd:hasSoftwareVersion "SoftVer:51" .
 
 <https://example.com/tool/52> a ldso:Solution, sd:Software;
   dct:identifer "52";
@@ -1670,7 +1732,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Python", "Jinja";
   dct:license lic:MIT;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:52;
+  sd:hasSoftwareVersion "SoftVer:52";
   owl:sameAs <https://linkedopendata.eu/entity/Q6874065> .
 
 <https://example.com/tool/53> a ldso:Solution, sd:Software;
@@ -1685,7 +1747,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:53 .
+  sd:hasSoftwareVersion "SoftVer:53" .
 
 <https://example.com/tool/54> a ldso:Solution, sd:Software;
   dct:identifer "54";
@@ -1697,13 +1759,13 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Python";
   dct:license spdx:Unlicense;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:54 .
+  sd:hasSoftwareVersion "SoftVer:54" .
 
 <https://example.com/tool/55> a ldso:Solution, sd:Software;
   dct:identifer "55";
   rdfs:label "ShowVOC"@en;
   dct:description "It can create reports (tabular, diagrams) about ontology and display concepts in diagrams"@en;
-  dct:type comp:3, comp:4;
+  dct:type <https://example.com/ArchComp/3;comp:4>;
   dct:subject function:4, function:5, function:13;
   foaf:homepage <https://showvoc.uniroma2.it/downloads/>;
   sd:hasSourceCode source:55;
@@ -1711,7 +1773,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:55;
+  sd:hasSoftwareVersion "SoftVer:55";
   owl:sameAs <https://linkedopendata.eu/entity/Q6847992> .
 
 <https://example.com/tool/56> a ldso:Solution, sd:Software;
@@ -1726,7 +1788,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:56 .
+  sd:hasSoftwareVersion "SoftVer:56" .
 
 <https://example.com/tool/57> a ldso:Solution, sd:Software;
   dct:identifer "57";
@@ -1740,7 +1802,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:57 .
+  sd:hasSoftwareVersion "SoftVer:57" .
 
 <https://example.com/tool/58> a ldso:Solution, sd:Software;
   dct:identifer "58";
@@ -1754,7 +1816,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:58 .
+  sd:hasSoftwareVersion "SoftVer:58" .
 
 <https://example.com/tool/59> a ldso:Solution, sd:Software;
   dct:identifer "59";
@@ -1768,7 +1830,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:59 .
+  sd:hasSoftwareVersion "SoftVer:59" .
 
 <https://example.com/tool/60> a ldso:Solution, sd:Software;
   dct:identifer "60";
@@ -1782,7 +1844,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:60 .
+  sd:hasSoftwareVersion "SoftVer:60" .
 
 <https://example.com/tool/61> a ldso:Solution, sd:Software;
   dct:identifer "61";
@@ -1795,7 +1857,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "Ocaml";
   dct:license lic:APACHE_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:61 .
+  sd:hasSoftwareVersion "SoftVer:61" .
 
 <https://example.com/tool/62> a ldso:Solution, sd:Software;
   dct:identifer "62";
@@ -1808,7 +1870,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "JavaScript";
   dct:license lic:LGPL_3_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:62;
+  sd:hasSoftwareVersion "SoftVer:62";
   owl:sameAs <https://linkedopendata.eu/entity/Q3402605> .
 
 <https://example.com/tool/63> a ldso:Solution, sd:Software;
@@ -1823,7 +1885,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:63;
+  sd:hasSoftwareVersion "SoftVer:63";
   owl:sameAs <https://linkedopendata.eu/entity/Q3815901> .
 
 <https://example.com/tool/64> a ldso:Solution, sd:Software;
@@ -1838,7 +1900,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:6;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:64;
+  sd:hasSoftwareVersion "SoftVer:64";
   owl:sameAs <https://linkedopendata.eu/entity/Q6847995> .
 
 <https://example.com/tool/65> a ldso:Solution, sd:Software;
@@ -1853,7 +1915,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_2_CLAUSE;
   dbo:skills skills:6;
   dbp:ui dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:65;
+  sd:hasSoftwareVersion "SoftVer:65";
   owl:sameAs <https://linkedopendata.eu/entity/Q3989923> .
 
 <https://example.com/tool/66> a ldso:Solution, sd:Software;
@@ -1867,7 +1929,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "PHP", "JavaScript";
   dct:license lic:GPL_2_0;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:66 .
+  sd:hasSoftwareVersion "SoftVer:66" .
 
 <https://example.com/tool/67> a ldso:Solution, sd:Software;
   dct:identifer "67";
@@ -1881,13 +1943,13 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MIT;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:67 .
+  sd:hasSoftwareVersion "SoftVer:67" .
 
 <https://example.com/tool/68> a ldso:Solution, sd:Software;
   dct:identifer "68";
   rdfs:label "VocBench"@en;
   dct:description "VocBench is a web-based, multilingual, collaborative development platform for managing OWL ontologies, SKOS(/XL) thesauri, Ontolex-lemon lexicons and generic RDF datasets."@en;
-  dct:type comp:1, comp:2, comp:3, comp:5;
+  dct:type comp:1, comp:2, "comp3", "comp5";
   dct:subject function:1, function:3, function:7, function:9, function:10, function:13,
     function:14;
   foaf:homepage <https://vocbench.uniroma2.it/>;
@@ -1896,7 +1958,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:BSD_3_CLAUSE;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:68;
+  sd:hasSoftwareVersion "SoftVer:68";
   owl:sameAs <https://linkedopendata.eu/entity/Q6850036> .
 
 <https://example.com/tool/69> a ldso:Solution, sd:Software;
@@ -1911,7 +1973,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:MPL_1_1;
   dbo:skills skills:1;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:69 .
+  sd:hasSoftwareVersion "SoftVer:69" .
 
 <https://example.com/tool/70> a ldso:Solution, sd:Software;
   dct:identifer "70";
@@ -1923,7 +1985,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "TypeScript", "JavaScript";
   dct:license lic:MIT;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:70 .
+  sd:hasSoftwareVersion "SoftVer:70" .
 
 <https://example.com/tool/71> a ldso:Solution, sd:Software;
   dct:identifer "71";
@@ -1936,7 +1998,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "JavaScript";
   dct:license lic:MIT;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:71 .
+  sd:hasSoftwareVersion "SoftVer:71" .
 
 <https://example.com/tool/72> a ldso:Solution, sd:Software;
   dct:identifer "72";
@@ -1950,7 +2012,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:72 .
+  sd:hasSoftwareVersion "SoftVer:72" .
 
 <https://example.com/tool/73> a ldso:Solution, sd:Software;
   dct:identifer "73";
@@ -1963,7 +2025,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "TypeScript", "Vue";
   dct:license lic:BSD_3_CLAUSE;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:73 .
+  sd:hasSoftwareVersion "SoftVer:73" .
 
 <https://example.com/tool/74> a ldso:Solution, sd:Software;
   dct:identifer "74";
@@ -1977,7 +2039,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:LGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:74 .
+  sd:hasSoftwareVersion "SoftVer:74" .
 
 <https://example.com/tool/75> a ldso:Solution, sd:Software;
   dct:identifer "75";
@@ -1989,7 +2051,7 @@ softver:77 a sd:SoftwareVersion;
   sd:programmingLanguage "TypeScript";
   dct:license lic:LGPL_2_1;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion softver:75 .
+  sd:hasSoftwareVersion "SoftVer:75" .
 
 <https://example.com/tool/76> a ldso:Solution, sd:Software;
   dct:identifer "76";
@@ -2003,7 +2065,7 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:AGPL_3_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface;
-  sd:hasSoftwareVersion softver:76 .
+  sd:hasSoftwareVersion "SoftVer:76" .
 
 <https://example.com/tool/77> a ldso:Solution, sd:Software;
   dct:identifer "77";
@@ -2017,7 +2079,21 @@ softver:77 a sd:SoftwareVersion;
   dct:license lic:APACHE_2_0;
   dbo:skills skills:4;
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface, dbr:Web_API;
-  sd:hasSoftwareVersion softver:77 .
+  sd:hasSoftwareVersion "SoftVer:77" .
+
+<https://example.com/tool/78> a ldso:Solution, sd:Software;
+  dct:identifer "78";
+  rdfs:label "RDF Processing Toolkit"@en;
+  dct:description "The RDF Processing Toolkit (RPT) integrates several of our tools into a single CLI frontend: It features commands for running SPARQL-statements on triple and quad based data both streaming and static"@en;
+  dct:type comp:7, comp:6, comp:5, comp:1;
+  dct:subject function:2, function:12, function:3, function:7;
+  foaf:homepage <https://smartdataanalytics.github.io/RdfProcessingToolkit/>;
+  sd:hasSourceCode source:78;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:78" .
 
 source:1 a sd:SourceCode;
   dct:identifier "1";
@@ -2097,7 +2173,7 @@ source:19 a sd:SourceCode;
 
 source:20 a sd:SourceCode;
   dct:identifier "20";
-  sd:codeRepository <https://github.com/lmazuel/onagui> .
+  sd:codeRepository <https://github.com/lmazuel/onadbr:Graphical_user_interface> .
 
 source:21 a sd:SourceCode;
   dct:identifier "21";
@@ -2327,6 +2403,10 @@ source:77 a sd:SourceCode;
   dct:identifier "77";
   sd:codeRepository <https://github.com/EBISPOT/ZOOMA> .
 
+source:78 a sd:SourceCode;
+  dct:identifier "78";
+  sd:codeRepository <https://github.com/SmartDataAnalytics/RdfProcessingToolkit> .
+
 skills:1 a esco:Skill;
   dct:identifier "1";
   rdfs:label "Coda language" .
@@ -2362,346 +2442,6 @@ skills:8 a esco:Skill;
 skills:9 a esco:Skill;
   dct:identifier "9";
   rdfs:label "Jython" .
-
-dss:1 a sd:DatasetSpecification;
-  dct:identifier "1";
-  rdfs:label "Apache OpenOffice" .
-
-dss:2 a sd:DatasetSpecification;
-  dct:identifier "2";
-  rdfs:label "AWS DynamoDB" .
-
-dss:3 a sd:DatasetSpecification;
-  dct:identifier "3";
-  rdfs:label "Denodo" .
-
-dss:4 a sd:DatasetSpecification;
-  dct:identifier "4";
-  rdfs:label "Apache Spark" .
-
-dss:5 a sd:DatasetSpecification;
-  dct:identifier "5";
-  rdfs:label "Trino" .
-
-dss:6 a sd:DatasetSpecification;
-  dct:identifier "6";
-  rdfs:label "PrestoDB" .
-
-dss:7 a sd:DatasetSpecification;
-  dct:identifier "7";
-  rdfs:label "AWS Athena" .
-
-dss:8 a sd:DatasetSpecification;
-  dct:identifier "8";
-  rdfs:label "AWS Redshift" .
-
-dss:9 a sd:DatasetSpecification;
-  dct:identifier "9";
-  rdfs:label "Bibtex" .
-
-dss:10 a sd:DatasetSpecification;
-  dct:identifier "10";
-  rdfs:label "Binary" .
-
-dss:11 a sd:DatasetSpecification;
-  dct:identifier "11";
-  rdfs:label "CBOR" .
-
-dss:12 a sd:DatasetSpecification;
-  dct:identifier "12";
-  rdfs:label "CSV" .
-
-dss:13 a sd:DatasetSpecification;
-  dct:identifier "13";
-  rdfs:label "Databricks" .
-
-dss:14 a sd:DatasetSpecification;
-  dct:identifier "14";
-  rdfs:label "DB2" .
-
-dss:15 a sd:DatasetSpecification;
-  dct:identifier "15";
-  rdfs:label "DOCx" .
-
-dss:16 a sd:DatasetSpecification;
-  dct:identifier "16";
-  rdfs:label "Dremio" .
-
-dss:17 a sd:DatasetSpecification;
-  dct:identifier "17";
-  rdfs:label "DuckDB" .
-
-dss:18 a sd:DatasetSpecification;
-  dct:identifier "18";
-  rdfs:label "EXIF Metadata" .
-
-dss:19 a sd:DatasetSpecification;
-  dct:identifier "19";
-  rdfs:label "Feather" .
-
-dss:20 a sd:DatasetSpecification;
-  dct:identifier "20";
-  rdfs:label "FTP" .
-
-dss:21 a sd:DatasetSpecification;
-  dct:identifier "21";
-  rdfs:label "GeoJSON" .
-
-dss:22 a sd:DatasetSpecification;
-  dct:identifier "22";
-  rdfs:label "Google BigQuery" .
-
-dss:23 a sd:DatasetSpecification;
-  dct:identifier "23";
-  rdfs:label "HexTuples" .
-
-dss:24 a sd:DatasetSpecification;
-  dct:identifier "24";
-  rdfs:label "HTML" .
-
-dss:25 a sd:DatasetSpecification;
-  dct:identifier "25";
-  rdfs:label "HTTP Get" .
-
-dss:26 a sd:DatasetSpecification;
-  dct:identifier "26";
-  rdfs:label "JSON" .
-
-dss:27 a sd:DatasetSpecification;
-  dct:identifier "27";
-  rdfs:label "JSON-LD" .
-
-dss:28 a sd:DatasetSpecification;
-  dct:identifier "28";
-  rdfs:label "KRSS" .
-
-dss:29 a sd:DatasetSpecification;
-  dct:identifier "29";
-  rdfs:label "LibreOffice" .
-
-dss:30 a sd:DatasetSpecification;
-  dct:identifier "30";
-  rdfs:label "Local files" .
-
-dss:31 a sd:DatasetSpecification;
-  dct:identifier "31";
-  rdfs:label "MARC" .
-
-dss:32 a sd:DatasetSpecification;
-  dct:identifier "32";
-  rdfs:label "MariaDB" .
-
-dss:33 a sd:DatasetSpecification;
-  dct:identifier "33";
-  rdfs:label "Markdown" .
-
-dss:34 a sd:DatasetSpecification;
-  dct:identifier "34";
-  rdfs:label "Microdata" .
-
-dss:35 a sd:DatasetSpecification;
-  dct:identifier "35";
-  rdfs:label "SQL Server" .
-
-dss:36 a sd:DatasetSpecification;
-  dct:identifier "36";
-  rdfs:label "MQTT" .
-
-dss:37 a sd:DatasetSpecification;
-  dct:identifier "37";
-  rdfs:label "MySQL" .
-
-dss:38 a sd:DatasetSpecification;
-  dct:identifier "38";
-  rdfs:label "N-Quads" .
-
-dss:39 a sd:DatasetSpecification;
-  dct:identifier "39";
-  rdfs:label "N-Triples" .
-
-dss:40 a sd:DatasetSpecification;
-  dct:identifier "40";
-  rdfs:label "OBO" .
-
-dss:41 a sd:DatasetSpecification;
-  dct:identifier "41";
-  rdfs:label "ODS" .
-
-dss:42 a sd:DatasetSpecification;
-  dct:identifier "42";
-  rdfs:label "OFN" .
-
-dss:43 a sd:DatasetSpecification;
-  dct:identifier "43";
-  rdfs:label "OMN" .
-
-dss:44 a sd:DatasetSpecification;
-  dct:identifier "44";
-  rdfs:label "Oracle" .
-
-dss:45 a sd:DatasetSpecification;
-  dct:identifier "45";
-  rdfs:label "ORC" .
-
-dss:46 a sd:DatasetSpecification;
-  dct:identifier "46";
-  rdfs:label "OWL" .
-
-dss:47 a sd:DatasetSpecification;
-  dct:identifier "47";
-  rdfs:label "OWL/XML" .
-
-dss:48 a sd:DatasetSpecification;
-  dct:identifier "48";
-  rdfs:label "OWX" .
-
-dss:49 a sd:DatasetSpecification;
-  dct:identifier "49";
-  rdfs:label "Parquet" .
-
-dss:50 a sd:DatasetSpecification;
-  dct:identifier "50";
-  rdfs:label "PostgreSQL" .
-
-dss:51 a sd:DatasetSpecification;
-  dct:identifier "51";
-  rdfs:label "PX" .
-
-dss:52 a sd:DatasetSpecification;
-  dct:identifier "52";
-  rdfs:label "RDB" .
-
-dss:53 a sd:DatasetSpecification;
-  dct:identifier "53";
-  rdfs:label "RDF" .
-
-dss:54 a sd:DatasetSpecification;
-  dct:identifier "54";
-  rdfs:label "RDF/A" .
-
-dss:55 a sd:DatasetSpecification;
-  dct:identifier "55";
-  rdfs:label "RDF/JSON" .
-
-dss:56 a sd:DatasetSpecification;
-  dct:identifier "56";
-  rdfs:label "RDF/XML" .
-
-dss:57 a sd:DatasetSpecification;
-  dct:identifier "57";
-  rdfs:label "RDF Binary" .
-
-dss:58 a sd:DatasetSpecification;
-  dct:identifier "58";
-  rdfs:label "RDFS" .
-
-dss:59 a sd:DatasetSpecification;
-  dct:identifier "59";
-  rdfs:label "SAS" .
-
-dss:60 a sd:DatasetSpecification;
-  dct:identifier "60";
-  rdfs:label "SKOS" .
-
-dss:61 a sd:DatasetSpecification;
-  dct:identifier "61";
-  rdfs:label "Snowflake" .
-
-dss:62 a sd:DatasetSpecification;
-  dct:identifier "62";
-  rdfs:label "Sparql Endpoints" .
-
-dss:63 a sd:DatasetSpecification;
-  dct:identifier "63";
-  rdfs:label "SPSS" .
-
-dss:64 a sd:DatasetSpecification;
-  dct:identifier "64";
-  rdfs:label "SQL" .
-
-dss:65 a sd:DatasetSpecification;
-  dct:identifier "65";
-  rdfs:label "SQLite" .
-
-dss:66 a sd:DatasetSpecification;
-  dct:identifier "66";
-  rdfs:label "Stata" .
-
-dss:67 a sd:DatasetSpecification;
-  dct:identifier "67";
-  rdfs:label "streams/sensor data" .
-
-dss:68 a sd:DatasetSpecification;
-  dct:identifier "68";
-  rdfs:label "Tar" .
-
-dss:69 a sd:DatasetSpecification;
-  dct:identifier "69";
-  rdfs:label "Teiid" .
-
-dss:70 a sd:DatasetSpecification;
-  dct:identifier "70";
-  rdfs:label "TriG" .
-
-dss:71 a sd:DatasetSpecification;
-  dct:identifier "71";
-  rdfs:label "TriX" .
-
-dss:72 a sd:DatasetSpecification;
-  dct:identifier "72";
-  rdfs:label "TSV" .
-
-dss:73 a sd:DatasetSpecification;
-  dct:identifier "73";
-  rdfs:label "Turtle" .
-
-dss:74 a sd:DatasetSpecification;
-  dct:identifier "74";
-  rdfs:label "TXT" .
-
-dss:75 a sd:DatasetSpecification;
-  dct:identifier "75";
-  rdfs:label "VOWL" .
-
-dss:76 a sd:DatasetSpecification;
-  dct:identifier "76";
-  rdfs:label "WebSocket" .
-
-dss:77 a sd:DatasetSpecification;
-  dct:identifier "77";
-  rdfs:label "Wikitext" .
-
-dss:78 a sd:DatasetSpecification;
-  dct:identifier "78";
-  rdfs:label "XLS" .
-
-dss:79 a sd:DatasetSpecification;
-  dct:identifier "79";
-  rdfs:label "XLSX" .
-
-dss:80 a sd:DatasetSpecification;
-  dct:identifier "80";
-  rdfs:label "XML" .
-
-dss:81 a sd:DatasetSpecification;
-  dct:identifier "81";
-  rdfs:label "YAML" .
-
-dss:82 a sd:DatasetSpecification;
-  dct:identifier "82";
-  rdfs:label "N3" .
-
-dss:83 a sd:DatasetSpecification;
-  dct:identifier "83";
-  rdfs:label "SHACL" .
-
-dss:84 a sd:DatasetSpecification;
-  dct:identifier "84";
-  rdfs:label "ODF" .
-
-dss:85 a sd:DatasetSpecification;
-  dct:identifier "85";
-  rdfs:label "HDT" .
 
 comp:1 a skos:Concept;
   dct:identifier "1";
@@ -2747,3 +2487,347 @@ comp:7 a skos:Concept;
 
 <https://example.com/ArchComp/> a skos:ConceptScheme;
   skos:hasTopConcept comp:1, comp:2, comp:3, comp:4, comp:5, comp:6, comp:7 .
+
+DatasetSpecification:1 a sd:DatasetSpecification;
+  dct:identifier "1";
+  rdfs:label "Apache OpenOffice" .
+
+DatasetSpecification:2 a sd:DatasetSpecification;
+  dct:identifier "2";
+  rdfs:label "AWS DynamoDB" .
+
+DatasetSpecification:3 a sd:DatasetSpecification;
+  dct:identifier "3";
+  rdfs:label "Denodo" .
+
+DatasetSpecification:4 a sd:DatasetSpecification;
+  dct:identifier "4";
+  rdfs:label "Apache Spark" .
+
+DatasetSpecification:5 a sd:DatasetSpecification;
+  dct:identifier "5";
+  rdfs:label "Trino" .
+
+DatasetSpecification:6 a sd:DatasetSpecification;
+  dct:identifier "6";
+  rdfs:label "PrestoDB" .
+
+DatasetSpecification:7 a sd:DatasetSpecification;
+  dct:identifier "7";
+  rdfs:label "AWS Athena" .
+
+DatasetSpecification:8 a sd:DatasetSpecification;
+  dct:identifier "8";
+  rdfs:label "AWS Redshift" .
+
+DatasetSpecification:9 a sd:DatasetSpecification;
+  dct:identifier "9";
+  rdfs:label "Bibtex" .
+
+DatasetSpecification:10 a sd:DatasetSpecification;
+  dct:identifier "10";
+  rdfs:label "Binary" .
+
+DatasetSpecification:11 a sd:DatasetSpecification;
+  dct:identifier "11";
+  rdfs:label "CBOR" .
+
+DatasetSpecification:12 a sd:DatasetSpecification;
+  dct:identifier "12";
+  rdfs:label "CSV" .
+
+DatasetSpecification:13 a sd:DatasetSpecification;
+  dct:identifier "13";
+  rdfs:label "Databricks" .
+
+DatasetSpecification:14 a sd:DatasetSpecification;
+  dct:identifier "14";
+  rdfs:label "DB2" .
+
+DatasetSpecification:15 a sd:DatasetSpecification;
+  dct:identifier "15";
+  rdfs:label "DOCx" .
+
+DatasetSpecification:16 a sd:DatasetSpecification;
+  dct:identifier "16";
+  rdfs:label "Dremio" .
+
+DatasetSpecification:17 a sd:DatasetSpecification;
+  dct:identifier "17";
+  rdfs:label "DuckDB" .
+
+DatasetSpecification:18 a sd:DatasetSpecification;
+  dct:identifier "18";
+  rdfs:label "EXIF Metadata" .
+
+DatasetSpecification:19 a sd:DatasetSpecification;
+  dct:identifier "19";
+  rdfs:label "Feather" .
+
+DatasetSpecification:20 a sd:DatasetSpecification;
+  dct:identifier "20";
+  rdfs:label "FTP" .
+
+DatasetSpecification:21 a sd:DatasetSpecification;
+  dct:identifier "21";
+  rdfs:label "GeoJSON" .
+
+DatasetSpecification:22 a sd:DatasetSpecification;
+  dct:identifier "22";
+  rdfs:label "Google BigQuery" .
+
+DatasetSpecification:23 a sd:DatasetSpecification;
+  dct:identifier "23";
+  rdfs:label "HexTuples" .
+
+DatasetSpecification:24 a sd:DatasetSpecification;
+  dct:identifier "24";
+  rdfs:label "HTML" .
+
+DatasetSpecification:25 a sd:DatasetSpecification;
+  dct:identifier "25";
+  rdfs:label "HTTP Get" .
+
+DatasetSpecification:26 a sd:DatasetSpecification;
+  dct:identifier "26";
+  rdfs:label "JSON" .
+
+DatasetSpecification:27 a sd:DatasetSpecification;
+  dct:identifier "27";
+  rdfs:label "JSON-LD" .
+
+DatasetSpecification:28 a sd:DatasetSpecification;
+  dct:identifier "28";
+  rdfs:label "KRSS" .
+
+DatasetSpecification:29 a sd:DatasetSpecification;
+  dct:identifier "29";
+  rdfs:label "LibreOffice" .
+
+DatasetSpecification:30 a sd:DatasetSpecification;
+  dct:identifier "30";
+  rdfs:label "Local files" .
+
+DatasetSpecification:31 a sd:DatasetSpecification;
+  dct:identifier "31";
+  rdfs:label "MARC" .
+
+DatasetSpecification:32 a sd:DatasetSpecification;
+  dct:identifier "32";
+  rdfs:label "MariaDB" .
+
+DatasetSpecification:33 a sd:DatasetSpecification;
+  dct:identifier "33";
+  rdfs:label "Markdown" .
+
+DatasetSpecification:34 a sd:DatasetSpecification;
+  dct:identifier "34";
+  rdfs:label "Microdata" .
+
+DatasetSpecification:35 a sd:DatasetSpecification;
+  dct:identifier "35";
+  rdfs:label "SQL Server" .
+
+DatasetSpecification:36 a sd:DatasetSpecification;
+  dct:identifier "36";
+  rdfs:label "MQTT" .
+
+DatasetSpecification:37 a sd:DatasetSpecification;
+  dct:identifier "37";
+  rdfs:label "MySQL" .
+
+DatasetSpecification:38 a sd:DatasetSpecification;
+  dct:identifier "38";
+  rdfs:label "N-Quads" .
+
+DatasetSpecification:39 a sd:DatasetSpecification;
+  dct:identifier "39";
+  rdfs:label "N-Triples" .
+
+DatasetSpecification:40 a sd:DatasetSpecification;
+  dct:identifier "40";
+  rdfs:label "OBO" .
+
+DatasetSpecification:41 a sd:DatasetSpecification;
+  dct:identifier "41";
+  rdfs:label "ODS" .
+
+DatasetSpecification:42 a sd:DatasetSpecification;
+  dct:identifier "42";
+  rdfs:label "OFN" .
+
+DatasetSpecification:43 a sd:DatasetSpecification;
+  dct:identifier "43";
+  rdfs:label "OMN" .
+
+DatasetSpecification:44 a sd:DatasetSpecification;
+  dct:identifier "44";
+  rdfs:label "Oracle" .
+
+DatasetSpecification:45 a sd:DatasetSpecification;
+  dct:identifier "45";
+  rdfs:label "ORC" .
+
+DatasetSpecification:46 a sd:DatasetSpecification;
+  dct:identifier "46";
+  rdfs:label "OWL" .
+
+DatasetSpecification:47 a sd:DatasetSpecification;
+  dct:identifier "47";
+  rdfs:label "OWL/XML" .
+
+DatasetSpecification:48 a sd:DatasetSpecification;
+  dct:identifier "48";
+  rdfs:label "OWX" .
+
+DatasetSpecification:49 a sd:DatasetSpecification;
+  dct:identifier "49";
+  rdfs:label "Parquet" .
+
+DatasetSpecification:50 a sd:DatasetSpecification;
+  dct:identifier "50";
+  rdfs:label "PostgreSQL" .
+
+DatasetSpecification:51 a sd:DatasetSpecification;
+  dct:identifier "51";
+  rdfs:label "PX" .
+
+DatasetSpecification:52 a sd:DatasetSpecification;
+  dct:identifier "52";
+  rdfs:label "RDB" .
+
+DatasetSpecification:53 a sd:DatasetSpecification;
+  dct:identifier "53";
+  rdfs:label "RDF" .
+
+DatasetSpecification:54 a sd:DatasetSpecification;
+  dct:identifier "54";
+  rdfs:label "RDF/A" .
+
+DatasetSpecification:55 a sd:DatasetSpecification;
+  dct:identifier "55";
+  rdfs:label "RDF/JSON" .
+
+DatasetSpecification:56 a sd:DatasetSpecification;
+  dct:identifier "56";
+  rdfs:label "RDF/XML" .
+
+DatasetSpecification:57 a sd:DatasetSpecification;
+  dct:identifier "57";
+  rdfs:label "RDF Binary" .
+
+DatasetSpecification:58 a sd:DatasetSpecification;
+  dct:identifier "58";
+  rdfs:label "RDFS" .
+
+DatasetSpecification:59 a sd:DatasetSpecification;
+  dct:identifier "59";
+  rdfs:label "SAS" .
+
+DatasetSpecification:60 a sd:DatasetSpecification;
+  dct:identifier "60";
+  rdfs:label "SKOS" .
+
+DatasetSpecification:61 a sd:DatasetSpecification;
+  dct:identifier "61";
+  rdfs:label "Snowflake" .
+
+DatasetSpecification:62 a sd:DatasetSpecification;
+  dct:identifier "62";
+  rdfs:label "Sparql Endpoints" .
+
+DatasetSpecification:63 a sd:DatasetSpecification;
+  dct:identifier "63";
+  rdfs:label "SPSS" .
+
+DatasetSpecification:64 a sd:DatasetSpecification;
+  dct:identifier "64";
+  rdfs:label "SQL" .
+
+DatasetSpecification:65 a sd:DatasetSpecification;
+  dct:identifier "65";
+  rdfs:label "SQLite" .
+
+DatasetSpecification:66 a sd:DatasetSpecification;
+  dct:identifier "66";
+  rdfs:label "Stata" .
+
+DatasetSpecification:67 a sd:DatasetSpecification;
+  dct:identifier "67";
+  rdfs:label "streams/sensor data" .
+
+DatasetSpecification:68 a sd:DatasetSpecification;
+  dct:identifier "68";
+  rdfs:label "Tar" .
+
+DatasetSpecification:69 a sd:DatasetSpecification;
+  dct:identifier "69";
+  rdfs:label "Teiid" .
+
+DatasetSpecification:70 a sd:DatasetSpecification;
+  dct:identifier "70";
+  rdfs:label "TriG" .
+
+DatasetSpecification:71 a sd:DatasetSpecification;
+  dct:identifier "71";
+  rdfs:label "TriX" .
+
+DatasetSpecification:72 a sd:DatasetSpecification;
+  dct:identifier "72";
+  rdfs:label "TSV" .
+
+DatasetSpecification:73 a sd:DatasetSpecification;
+  dct:identifier "73";
+  rdfs:label "Turtle" .
+
+DatasetSpecification:74 a sd:DatasetSpecification;
+  dct:identifier "74";
+  rdfs:label "TXT" .
+
+DatasetSpecification:75 a sd:DatasetSpecification;
+  dct:identifier "75";
+  rdfs:label "VOWL" .
+
+DatasetSpecification:76 a sd:DatasetSpecification;
+  dct:identifier "76";
+  rdfs:label "WebSocket" .
+
+DatasetSpecification:77 a sd:DatasetSpecification;
+  dct:identifier "77";
+  rdfs:label "Wikitext" .
+
+DatasetSpecification:78 a sd:DatasetSpecification;
+  dct:identifier "78";
+  rdfs:label "XLS" .
+
+DatasetSpecification:79 a sd:DatasetSpecification;
+  dct:identifier "79";
+  rdfs:label "XLSX" .
+
+DatasetSpecification:80 a sd:DatasetSpecification;
+  dct:identifier "80";
+  rdfs:label "XML" .
+
+DatasetSpecification:81 a sd:DatasetSpecification;
+  dct:identifier "81";
+  rdfs:label "YAML" .
+
+DatasetSpecification:82 a sd:DatasetSpecification;
+  dct:identifier "82";
+  rdfs:label "N3" .
+
+DatasetSpecification:83 a sd:DatasetSpecification;
+  dct:identifier "83";
+  rdfs:label "SHACL" .
+
+DatasetSpecification:84 a sd:DatasetSpecification;
+  dct:identifier "84";
+  rdfs:label "ODF" .
+
+DatasetSpecification:85 a sd:DatasetSpecification;
+  dct:identifier "85";
+  rdfs:label "HDT" .
+
+DatasetSpecification:86 a sd:DatasetSpecification;
+  dct:identifier "86";
+  rdfs:label "TARQL" .
