@@ -179,13 +179,13 @@ lic:CC_BYSA_4_0 a skos:Concept;
   skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
   skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
 
-spdx:CECILL-2.0 a skos:Concept;
+<http://spdx.org/licenses/CECILL-2.0> a skos:Concept;
   dct:identifier "CECILL-2.0";
   skos:prefLabel "CeCILL Free Software License Agreement v2.0"@en;
   skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
   skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
 
-spdx:CECILL-C a skos:Concept;
+<http://spdx.org/licenses/CECILL-C> a skos:Concept;
   dct:identifier "CECILL-C";
   skos:prefLabel "CeCILL-C Free Software License Agreement"@en;
   skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
@@ -239,7 +239,7 @@ lic:MPL_1_1 a skos:Concept;
   skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
   skos:topConceptOf <http://publications.europa.eu/resource/authority/licence/> .
 
-spdx:Unlicense a skos:Concept;
+<http://spdx.org/licenses/Unlicense> a skos:Concept;
   dct:identifier "Unlicense";
   skos:prefLabel "The Unlicense"@en;
   skos:inScheme <http://publications.europa.eu/resource/authority/licence/>;
@@ -247,8 +247,9 @@ spdx:Unlicense a skos:Concept;
 
 <http://publications.europa.eu/resource/authority/licence/> a skos:ConceptScheme;
   skos:hasTopConcept lic:MIT, lic:APACHE_2_0, lic:BSD_2_CLAUSE, lic:BSD_3_CLAUSE, lic:CC_BYNC_3_0,
-    lic:CC_BYSA_4_0, spdx:CECILL-2.0, spdx:CECILL-C, lic:EUPL_1_2, lic:AGPL_3_0, lic:LGPL_2_1,
-    lic:LGPL_3_0, lic:GPL_2_0, lic:GPL_3_0, lic:ISC, lic:MPL_1_1, spdx:Unlicense .
+    lic:CC_BYSA_4_0, <http://spdx.org/licenses/CECILL-2.0>, <http://spdx.org/licenses/CECILL-C>,
+    lic:EUPL_1_2, lic:AGPL_3_0, lic:LGPL_2_1, lic:LGPL_3_0, lic:GPL_2_0, lic:GPL_3_0,
+    lic:ISC, lic:MPL_1_1, <http://spdx.org/licenses/Unlicense> .
 
 <https://example.com/SoftVer/1> a sd:SoftwareVersion;
   dct:identifier "1";
