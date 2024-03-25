@@ -1030,8 +1030,10 @@ lic:MPL_1_1 a skos:Concept;
 
 <https://example.com/SoftCon/79> a sd:SoftwareConfiguration;
   dct:identifier "79";
-  sd:hasInput "DataSpecification:46", "DataSpecification:56", "DataSpecification:73";
-  sd:hasOutput "DataSpecification:24" .
+  sd:hasInput "DataSpecification:46", "DataSpecification:56", "DataSpecification:73",
+    "DataSpecification:27", "DataSpecification:39", "DataSpecification:38", "DataSpecification:55",
+    "DataSpecification:70";
+  sd:hasOutput "DataSpecification:24", "DataSpecification:33" .
 
 <https://example.com/SoftCon/80> a sd:SoftwareConfiguration;
   dct:identifier "80";
