@@ -641,6 +641,16 @@ lic:MPL_1_1 a skos:Concept;
   sd:hasSoftwareVersion "1.9.8";
   sd:hasConfiguration <https://example.com/SoftCon/78> .
 
+<https://example.com/SoftVer/79> a sd:SoftwareVersion;
+  dct:identifier "79";
+  sd:hasSoftwareVersion "0.2";
+  sd:hasConfiguration <https://example.com/SoftCon/79> .
+
+<https://example.com/SoftVer/80> a sd:SoftwareVersion;
+  dct:identifier "80";
+  sd:hasSoftwareVersion "2.0.0";
+  sd:hasConfiguration <https://example.com/SoftCon/80> .
+
 <https://example.com/SoftCon/1> a sd:SoftwareConfiguration;
   dct:identifier "1";
   sd:hasInput "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
@@ -1017,6 +1027,15 @@ lic:MPL_1_1 a skos:Concept;
   sd:hasInput "DataSpecification:12", "DataSpecification:26", "DataSpecification:53",
     "DataSpecification:62", "DataSpecification:80";
   sd:hasOutput "DataSpecification:53", "DataSpecification:62", "DataSpecification:86" .
+
+<https://example.com/SoftCon/79> a sd:SoftwareConfiguration;
+  dct:identifier "79";
+  sd:hasInput "DataSpecification:46", "DataSpecification:56", "DataSpecification:73";
+  sd:hasOutput "DataSpecification:24" .
+
+<https://example.com/SoftCon/80> a sd:SoftwareConfiguration;
+  dct:identifier "80";
+  sd:hasInput "DataSpecification:60" .
 
 <http://data.europa.eu/m8g/tools/0.0.1> a dcat:Distribution;
   vann:preferredNamespaceURI "http://data.europa.eu/m8g/tools";
@@ -2096,6 +2115,32 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion "SoftVer:78" .
 
+<https://example.com/tool/79> a ldso:Solution, sd:Software;
+  dct:identifer "79";
+  rdfs:label "OwlDocGen"@en;
+  dct:description "OwlDocGen generates ontology documentation from OWL ontology definitions."@en;
+  dct:type comp:4;
+  dct:subject function:5;
+  sd:hasSourceCode source:79;
+  sd:programmingLanguage "Java";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:79" .
+
+<https://example.com/tool/80> a ldso:Solution, sd:Software;
+  dct:identifer "80";
+  rdfs:label "Atramhasis"@en;
+  dct:description "Atramhasis is an online SKOS editor. This webapplication enables users to create SKOS vocabularies consisting of Concepts and Collections."@en;
+  dct:type comp:2;
+  dct:subject function:9;
+  foaf:homepage <https://atramhasis.readthedocs.io/en/latest/>;
+  sd:hasSourceCode source:80;
+  sd:programmingLanguage "Python", "Css";
+  dct:license lic:AGPL_3_0;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:80" .
+
 source:1 a sd:SourceCode;
   dct:identifier "1";
   sd:codeRepository <https://github.com/okgreece/Alignment> .
@@ -2407,6 +2452,14 @@ source:77 a sd:SourceCode;
 source:78 a sd:SourceCode;
   dct:identifier "78";
   sd:codeRepository <https://github.com/SmartDataAnalytics/RdfProcessingToolkit> .
+
+source:79 a sd:SourceCode;
+  dct:identifier "79";
+  sd:codeRepository <https://github.com/radkovo/OwlDocGen> .
+
+source:80 a sd:SourceCode;
+  dct:identifier "80";
+  sd:codeRepository <https://github.com/OnroerendErfgoed/atramhasis> .
 
 skills:1 a esco:Skill;
   dct:identifier "1";
