@@ -651,6 +651,16 @@ lic:MPL_1_1 a skos:Concept;
   sd:hasSoftwareVersion "2.0.0";
   sd:hasConfiguration <https://example.com/SoftCon/80> .
 
+<https://example.com/SoftVer/81> a sd:SoftwareVersion;
+  dct:identifier "81";
+  sd:hasSoftwareVersion "1.0";
+  sd:hasConfiguration <https://example.com/SoftCon/81> .
+
+<https://example.com/SoftVer/82> a sd:SoftwareVersion;
+  dct:identifier "82";
+  sd:hasSoftwareVersion "0.1.3";
+  sd:hasConfiguration <https://example.com/SoftCon/82> .
+
 <https://example.com/SoftCon/1> a sd:SoftwareConfiguration;
   dct:identifier "1";
   sd:hasInput "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
@@ -1038,6 +1048,16 @@ lic:MPL_1_1 a skos:Concept;
 <https://example.com/SoftCon/80> a sd:SoftwareConfiguration;
   dct:identifier "80";
   sd:hasInput "DataSpecification:60" .
+
+<https://example.com/SoftCon/81> a sd:SoftwareConfiguration;
+  dct:identifier "81";
+  sd:hasInput "DataSpecification:73", "DataSpecification:46", "DataSpecification:83",
+    "DataSpecification:87" .
+
+<https://example.com/SoftCon/82> a sd:SoftwareConfiguration;
+  dct:identifier "82";
+  sd:hasInput "DataSpecification:73", "DataSpecification:27", "DataSpecification:38",
+    "DataSpecification:39", "DataSpecification:56", "DataSpecification:82" .
 
 <http://data.europa.eu/m8g/tools/0.0.1> a dcat:Distribution;
   vann:preferredNamespaceURI "http://data.europa.eu/m8g/tools";
@@ -2143,6 +2163,34 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion "SoftVer:80" .
 
+<https://example.com/tool/81> a ldso:Solution, sd:Software;
+  dct:identifer "81";
+  rdfs:label "RDF Playground"@en;
+  dct:description "RDF Playground allows web users to write RDF as Turtle, check its syntax, visualize the data as a graph, and use SPARQL, RDFS, OWL, SHACL and ShEx."@en;
+  dct:type comp:3, comp:5;
+  dct:subject function:7, function:13;
+  foaf:homepage <https://rdfplayground.dcc.uchile.cl/>;
+  sd:hasSourceCode source:81;
+  sd:programmingLanguage "Python", "Kotlin";
+  dct:license lic:APACHE_2_0;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:81" .
+
+<https://example.com/tool/82> a ldso:Solution, sd:Software;
+  dct:identifer "82";
+  rdfs:label "RDF Sketch"@en;
+  dct:description "Sketch RDF in the web browser with immediate visualization."@en;
+  dct:type comp:13;
+  dct:subject comp:13;
+  foaf:homepage <https://sketch.zazuko.com/>;
+  sd:hasSourceCode source:82;
+  sd:programmingLanguage "Vue", "TypeScript";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:82" .
+
 source:1 a sd:SourceCode;
   dct:identifier "1";
   sd:codeRepository <https://github.com/okgreece/Alignment> .
@@ -2462,6 +2510,14 @@ source:79 a sd:SourceCode;
 source:80 a sd:SourceCode;
   dct:identifier "80";
   sd:codeRepository <https://github.com/OnroerendErfgoed/atramhasis> .
+
+source:81 a sd:SourceCode;
+  dct:identifier "81";
+  sd:codeRepository <https://github.com/RDFPlaygroundProject/RDFPlayground> .
+
+source:82 a sd:SourceCode;
+  dct:identifier "82";
+  sd:codeRepository <https://github.com/zazuko/rdf-sketch> .
 
 skills:1 a esco:Skill;
   dct:identifier "1";
@@ -2887,3 +2943,7 @@ DatasetSpecification:85 a sd:DatasetSpecification;
 DatasetSpecification:86 a sd:DatasetSpecification;
   dct:identifier "86";
   rdfs:label "TARQL" .
+
+DatasetSpecification:87 a sd:DatasetSpecification;
+  dct:identifier "87";
+  rdfs:label "SPARQL" .
