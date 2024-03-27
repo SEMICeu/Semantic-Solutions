@@ -2017,18 +2017,6 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
   sd:hasSoftwareVersion "SoftVer:69" .
 
-<https://example.com/tool/70> a ldso:Solution, sd:Software;
-  dct:identifer "70";
-  rdfs:label "VSCode RDF Sketch"@en;
-  dct:description "Visualise RDF data in VSCode (plug-in)"@en;
-  dct:type comp:3;
-  dct:subject function:13;
-  sd:hasSourceCode source:70;
-  sd:programmingLanguage "TypeScript", "JavaScript";
-  dct:license lic:MIT;
-  dbp:ui dbr:Graphical_user_interface, dbr:Command-line_interface;
-  sd:hasSoftwareVersion "SoftVer:70" .
-
 <https://example.com/tool/71> a ldso:Solution, sd:Software;
   dct:identifer "71";
   rdfs:label "WebVOWL"@en;
