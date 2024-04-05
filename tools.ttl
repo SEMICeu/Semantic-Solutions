@@ -661,6 +661,11 @@ lic:MPL_1_1 a skos:Concept;
   sd:hasSoftwareVersion "0.1.3";
   sd:hasConfiguration <https://example.com/SoftCon/82> .
 
+<https://example.com/SoftVer/83> a sd:SoftwareVersion;
+  dct:identifier "83";
+  sd:hasSoftwareVersion "1.0.8";
+  sd:hasConfiguration <https://example.com/SoftCon/83> .
+
 <https://example.com/SoftCon/1> a sd:SoftwareConfiguration;
   dct:identifier "1";
   sd:hasInput "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
@@ -1058,6 +1063,11 @@ lic:MPL_1_1 a skos:Concept;
   dct:identifier "82";
   sd:hasInput "DataSpecification:73", "DataSpecification:27", "DataSpecification:38",
     "DataSpecification:39", "DataSpecification:56", "DataSpecification:82" .
+
+<https://example.com/SoftCon/83> a sd:SoftwareConfiguration;
+  dct:identifier "83";
+  sd:hasInput "DataSpecification:53", "DataSpecification:83";
+  sd:hasOutput "DataSpecification:53", "DataSpecification:73" .
 
 <http://data.europa.eu/m8g/tools/0.0.1> a dcat:Distribution;
   vann:preferredNamespaceURI "http://data.europa.eu/m8g/tools";
@@ -2179,6 +2189,19 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dbp:ui dbr:Graphical_user_interface;
   sd:hasSoftwareVersion "SoftVer:82" .
 
+<https://example.com/tool/83> a ldso:Solution, sd:Software;
+  dct:identifer "83";
+  rdfs:label "RDF Generator"@en;
+  dct:description "A Python package that can be used to generate RDF graphs based on SHACL constraints."@en;
+  dct:type comp:7;
+  dct:subject function:11, function:12;
+  sd:hasSourceCode source:83;
+  sd:programmingLanguage "Python";
+  dct:license lic:MIT;
+  dbo:skills skills:4;
+  dbp:ui dbr:Command-line_interface;
+  sd:hasSoftwareVersion "SoftVer:83" .
+
 source:1 a sd:SourceCode;
   dct:identifier "1";
   sd:codeRepository <https://github.com/okgreece/Alignment> .
@@ -2506,6 +2529,10 @@ source:81 a sd:SourceCode;
 source:82 a sd:SourceCode;
   dct:identifier "82";
   sd:codeRepository <https://github.com/zazuko/rdf-sketch> .
+
+source:83 a sd:SourceCode;
+  dct:identifier "83";
+  sd:codeRepository <https://github.com/mveco/RDF_generator> .
 
 skills:1 a esco:Skill;
   dct:identifier "1";
