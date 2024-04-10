@@ -666,6 +666,11 @@ lic:MPL_1_1 a skos:Concept;
   sd:hasSoftwareVersion "1.0.8";
   sd:hasConfiguration <https://example.com/SoftCon/83> .
 
+<https://example.com/SoftVer/84> a sd:SoftwareVersion;
+  dct:identifier "84";
+  sd:hasSoftwareVersion "0.4.0";
+  sd:hasConfiguration <https://example.com/SoftCon/84> .
+
 <https://example.com/SoftCon/1> a sd:SoftwareConfiguration;
   dct:identifier "1";
   sd:hasInput "DataSpecification:56", "DataSpecification:73", "DataSpecification:39" .
@@ -1068,6 +1073,10 @@ lic:MPL_1_1 a skos:Concept;
   dct:identifier "83";
   sd:hasInput "DataSpecification:53", "DataSpecification:83";
   sd:hasOutput "DataSpecification:53", "DataSpecification:73" .
+
+<https://example.com/SoftCon/84> a sd:SoftwareConfiguration;
+  dct:identifier "84";
+  sd:hasInput "DataSpecification:62" .
 
 <http://data.europa.eu/m8g/tools/0.0.1> a dcat:Distribution;
   vann:preferredNamespaceURI "http://data.europa.eu/m8g/tools";
@@ -2202,6 +2211,19 @@ generate Resource Description Framework (RDF) triples by parsing syntaxes or ser
   dbp:ui dbr:Command-line_interface;
   sd:hasSoftwareVersion "SoftVer:83" .
 
+<https://example.com/tool/84> a ldso:Solution, sd:Software;
+  dct:identifer "84";
+  rdfs:label "ViziQuer"@en;
+  dct:description "ViziQuer is a tool for visual exploration and queries over large RDF datasets. It allows users to visually construct and execute rich SPARQL queries."@en;
+  dct:type comp:3;
+  dct:subject function:6;
+  foaf:homepage <http://viziquer.lumii.lv/>;
+  sd:hasSourceCode source:84;
+  sd:programmingLanguage "JavaScript";
+  dct:license lic:MIT;
+  dbp:ui dbr:Graphical_user_interface;
+  sd:hasSoftwareVersion "SoftVer:84" .
+
 source:1 a sd:SourceCode;
   dct:identifier "1";
   sd:codeRepository <https://github.com/okgreece/Alignment> .
@@ -2533,6 +2555,10 @@ source:82 a sd:SourceCode;
 source:83 a sd:SourceCode;
   dct:identifier "83";
   sd:codeRepository <https://github.com/mveco/RDF_generator> .
+
+source:84 a sd:SourceCode;
+  dct:identifier "84";
+  sd:codeRepository <https://github.com/LUMII-Syslab/viziquer> .
 
 skills:1 a esco:Skill;
   dct:identifier "1";
