@@ -9,7 +9,7 @@ Each solution can have the following properties :
  - its function (mandatory, multiple values are permitted)
  - the homepage of the solution, different from the source code repository (optional)
  - the programming languages used to develop the solution (mandatory, multiple values are permitted)
- - the licenses in which the solution is distributed (mandatory, multiple values are permitted)
+ - the open source licenses in which the solution is distributed (mandatory, multiple values are permitted)
  - the skills needed to use the solution (optional, multiple values are permitted)
  - the user interfaces of the solution (GUI, command line or web api) (mandatory, multiple values are permitted)
  - the source code repository (mandatory)
