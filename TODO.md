@@ -14,6 +14,8 @@ https://github.com/stain/owl2jsonld (used by Ontoology)
 
 https://github.com/sparqling/sparql-formatter?s=03
 
+https://gnome.pages.gitlab.gnome.org/tinysparql/commandline.html
+
 Verify software archived:
 
 https://github.com/zazuko/ontology-manager
