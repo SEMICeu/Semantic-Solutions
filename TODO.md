@@ -20,6 +20,10 @@ https://github.com/edmondchuc/ontogram
 
 https://github.com/SmartDataAnalytics/Sparqlify
 
+https://github.com/rubensworks/graphql-to-sparql.js
+
+https://github.com/pkumod/gStore
+
 Verify software archived:
 
 https://github.com/zazuko/ontology-manager
