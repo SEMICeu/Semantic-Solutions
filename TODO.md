@@ -18,6 +18,8 @@ https://gnome.pages.gitlab.gnome.org/tinysparql/commandline.html
 
 https://github.com/edmondchuc/ontogram
 
+https://github.com/SmartDataAnalytics/Sparqlify
+
 Verify software archived:
 
 https://github.com/zazuko/ontology-manager
