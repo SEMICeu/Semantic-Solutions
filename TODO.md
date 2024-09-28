@@ -32,10 +32,16 @@ https://github.com/Wimmics/mgexplorer
 
 https://github.com/Wimmics/muvin
 
+https://github.com/usc-isi-i2/sand
+
+https://github.com/AtomGraph/Web-Client
+
+https://github.com/AtomGraph/RDF-syntax-check
+
 Verify software archived:
 
 https://github.com/zazuko/ontology-manager 
 
 https://github.com/okgreece/Alignment
 
-
+https://github.com/essepuntato/LODE
