@@ -24,7 +24,18 @@ https://github.com/rubensworks/graphql-to-sparql.js
 
 https://github.com/pkumod/gStore
 
+https://github.com/Wimmics/olivaw
+
+https://github.com/Wimmics/RDFminer
+
+https://github.com/Wimmics/mgexplorer
+
+https://github.com/Wimmics/muvin
+
 Verify software archived:
 
-https://github.com/zazuko/ontology-manager
+https://github.com/zazuko/ontology-manager 
+
+https://github.com/okgreece/Alignment
+
 
